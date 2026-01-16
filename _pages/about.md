@@ -14,7 +14,7 @@ Hi! I'm Hanwen Zhang (张瀚文), a sophomore undergraduate student in the Compu
 **Sichuan University**, Chengdu, China
 *B.Eng. in Computer Science and Technology (Elite Program)*
 September 2024 - Present
-- GPA: 3.99/4.0
+- GPA: 3.98/4.0
 - Core Courses: Data Structures, Advanced Mathematics, Linear Algebra, Discrete Mathematics
 - Awards: Outstanding League Member (2025), Dean's List
 

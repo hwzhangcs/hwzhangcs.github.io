@@ -72,4 +72,4 @@ Planning a national-level undergraduate innovation project focusing on multimoda
 
 ---
 
-I'm always open to research collaborations and interesting discussions. Feel free to reach out via email at [2024141410042@stu.scu.edu.cn](mailto:2024141410042@stu.scu.edu.cn)!
+I'm always open to research collaborations and interesting discussions. Feel free to reach out via email at [hanwen_zhang@stu.scu.edu.cn](mailto:hanwen_zhang@stu.scu.edu.cn)!

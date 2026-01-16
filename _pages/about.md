@@ -45,8 +45,6 @@ Planning a national-level undergraduate innovation project focusing on multimoda
 - **CCF CSP Certification**: 250/500 (April 2025)
 - **Huawei ICT Competition**: Provincial Third Prize, Ascend AI Track (2024)
 - **National College Mathematical Modeling Contest**: Team Leader, Results Pending
-- **Outstanding Theme League Day**: University-level Recognition (October 2024)
-- **Outstanding Social Practice Individual**: College-level (March 2025)
 
 ## Leadership & Service
 

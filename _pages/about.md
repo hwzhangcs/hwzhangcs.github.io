@@ -7,16 +7,15 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I'm Hanwen Zhang (张瀚文), a sophomore undergraduate student in the Computer Science Elite Program at [Sichuan University](https://www.scu.edu.cn/), China. I'm passionate about advancing artificial intelligence through research in **Generative Models**, **World Models**, and **Large Language Models (LLMs)**.
+Hi! I'm Hanwen Zhang (张瀚文), a sophomore undergraduate student in the Top-notch Student Training Program 2.0 (Basic Disciplines) — Honors Class at [Sichuan University](https://www.scu.edu.cn/), China. I'm passionate about advancing artificial intelligence through research in **Generative Models**, **World Models**, and **Large Language Models (LLMs)**.
 
 ## Education
 
 **Sichuan University**, Chengdu, China
-*B.Eng. in Computer Science and Technology (Elite Program)*
+*B.Eng. in Computer Science and Technology, Top-notch Student Training Program 2.0 (Basic Disciplines) — Honors Class*
 September 2024 - Present
 - GPA: 3.98/4.0
 - Core Courses: Data Structures, Advanced Mathematics, Linear Algebra, Discrete Mathematics
-- Awards: Outstanding League Member (2025), Dean's List
 
 ## Research Interests
 

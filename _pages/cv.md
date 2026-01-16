@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* **B.Eng. in Computer Science and Technology (Elite Program)**
+* **B.Eng. in Computer Science and Technology, Top-notch Student Training Program 2.0 (Basic Disciplines) — Honors Class**
   * Sichuan University, Chengdu, China
   * September 2024 - Present
   * GPA: 3.98/4.0 (Ranked 1st out of 12 students in the program)

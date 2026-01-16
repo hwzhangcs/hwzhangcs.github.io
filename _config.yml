@@ -22,7 +22,7 @@ repository               : "hwzhangcs/hwzhangcs.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Hanwen Zhang"
   pronouns         : "he/him"
   bio              : "Undergraduate Student @ Sichuan University<br>Computer Science Elite Program<br>Research Interests: Generative Models, World Models, LLM"

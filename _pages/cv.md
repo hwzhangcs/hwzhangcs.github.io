@@ -9,50 +9,64 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* **B.Eng. in Computer Science and Technology, Top-notch Student Training Program 2.0 (Basic Disciplines) — Honors Class**
-  * Sichuan University, Chengdu, China
-  * September 2024 - Present
-  * GPA: 3.98/4.0 (Ranked 1st out of 12 students in the program)
-  * Core Courses: Data Structures, Advanced Mathematics, Linear Algebra, Discrete Mathematics
+**Hanwen Zhang (张瀚文)**  
+Sichuan University (SCU) · Chengdu, China  
+Email: **hanwen_zhang@stu.scu.edu.cn** · GitHub: [hwzhangcs](https://github.com/hwzhangcs)  
+**Seeking:** **Remote research internship** (video generation / world models / multimodal & LLM systems)
 
-Research Interests
-======
-* **Generative Models**: Exploring novel approaches in diffusion models, GANs, and VAEs
-* **World Models**: Developing models that learn representations of environments for planning and decision-making
-* **Large Language Models**: Investigating multimodal learning and efficient fine-tuning techniques
+---
 
-Research Projects
-======
-* **National Innovation Training Program** (Upcoming 2026)
-  * Team Leader
-  * Focus: Multimodal learning and generative models
-  * Currently conducting preliminary research and developing the proposal
+## Education
+**Sichuan University (SCU)** — Chengdu, China  
+**B.Eng. in Computer Science and Technology**  
+Top-notch Student Training Program 2.0 (Basic Disciplines) — **Honors Class**  
+Sep 2024 – Present  
+- **GPA:** 3.98 / 4.00 (**Rank #1 / 12**)  
+- **Core courses:** Data Structures, Advanced Mathematics, Linear Algebra, Discrete Mathematics
 
-* **Granular Network Threat Detection System**
-  * Co-developer
-  * Developed a network threat detection system based on subspace learning and granular computing
-  * Software Copyright Registration No. 2025SR1158898 (July 2025)
+---
 
-Selected Projects
-======
-* **[Paper Refiner](https://github.com/hwzhangcs/paper-refiner)**: Multi-agent academic paper revision system using Yuketang AI and OpenAI for automated LaTeX paper refinement
-* **[Bouncing-Birds](https://github.com/hwzhangcs/Bouncing-Birds)**: Physics-based game built with SFML demonstrating software engineering principles
-* **Granular Network Threat Detection System**: Network threat detection system based on subspace learning and granular computing (Software Copyright No. 2025SR1158898)
+## Research Interests
+- **Video generation (diffusion/flow-style) & controllability:** speed–quality trade-offs, compute/budget-aware schedules.
+- **World models & predictive learning:** representations and dynamics for long-horizon consistency and planning-oriented evaluation.
+- **Multimodal/LLM systems:** agentic workflows, evaluation interfaces, and **reproducible** training/evaluation pipelines.
 
-Honors & Awards
-======
-* **CCF CSP Certification**: 250/500 (April 2025)
-* **Huawei ICT Competition**: Provincial Third Prize, Ascend AI Track (2024)
+---
 
-Leadership & Service
-======
-* **Vice President**, Sichuan University Artificial Intelligence Club (Elected 2025)
+## Research / Project Experience
+**Undergraduate Innovation Training Program — Team Lead (Proposal Stage)** | Nov 2025 – Oct 2026
+- Proposed an anatomy-constrained 3D reconstruction system for veterinary medicine (anatomical priors + generative refinement).
+- Designing baselines, evaluation protocol, and a reproducible experiment/reporting workflow.
+- (Docs private; available upon request)
 
-Skills
-======
-* **Programming Languages**: C/C++, Python, Java
-* **Machine Learning**: PyTorch, TensorFlow, Scikit-learn
-* **Development Tools**: Git, Linux, LaTeX, Docker
-* **Languages**: Chinese (Native), English (CET-4: 560, CET-6: 538)
+**Granular Network Threat Detection System — Co-developer** | 2025
+- Developed a network threat detection system based on subspace learning and granular computing.  
+- Contributed to model/pipeline integration, feature processing & evaluation tooling, and system-side integration (details available upon request).  
+- **Software Copyright:** Registration No. **2025SR1158898** (Jul 2025)
+
+---
+
+## Selected Open-source Projects
+- **[Paper Refiner](https://github.com/hwzhangcs/paper-refiner)**: Multi-agent LaTeX paper revision system with **patch-based editing**, **compilation checks**, and an **auditable revision trail** for **reproducible** iterations.
+- **[Bouncing-Birds](https://github.com/hwzhangcs/Bouncing-Birds)**: C++/SFML physics-based game project emphasizing modular engineering and documentation.  
+- **[Programming Practice / Smart POS System (Qt/C++)](https://github.com/hwzhangcs/programming_practice)**: responsive UI + engineering-oriented refactor & stabilization.
+
+---
+
+## Honors & Awards
+- **CCF CSP Certification:** 250 / 500 (Apr 2025)  
+- **Huawei ICT Competition:** Provincial Third Prize, Ascend AI Track (2024)
+
+---
+
+## Leadership & Service
+- **Vice President**, Sichuan University Artificial Intelligence Club (elected 2025)  
+- Volunteer service: **22+ hours**
+
+---
+
+## Skills
+- **Programming:** C/C++, Python  
+- **ML / Data:** PyTorch, scikit-learn  
+- **Systems / Tools:** Linux, Git, Docker, LaTeX  
+- **Languages:** Chinese (Native), English (CET-4: 560; CET-6: 538)

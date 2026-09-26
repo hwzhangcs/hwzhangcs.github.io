@@ -1,32 +1,25 @@
 ---
+layout: "academic"
+collection: "portfolio"
 title: "Bouncing Birds"
-excerpt: "Physics-based game built with SFML demonstrating software engineering principles and C++ development skills"
-collection: portfolio
+order: 3
+purpose: "Physics game with save/load and replay"
+contribution: "Worked on gameplay, collision handling, saving and loading game state, and replay functionality."
+stack: "C++ · SFML"
+code_url: "https://github.com/hwzhangcs/Bouncing-Birds"
+excerpt: "Physics game with save/load and replay. Worked on gameplay, collision handling, saving and loading game state, and replay functionality."
 ---
 
-## Overview
+Bouncing Birds is a physics game built with C++ and SFML.
 
-Bouncing Birds is a physics-based game developed using SFML (Simple and Fast Multimedia Library), showcasing practical application of software engineering principles and game development techniques.
+## My Contribution
 
-## Key Features
+- Gameplay and collision handling.
+- Saving and loading game state.
+- Replay functionality.
 
-* **Physics Engine**: Realistic collision detection and gravity simulation
-* **Game Mechanics**: Engaging gameplay with bouncing physics
-* **Graphics Rendering**: Efficient 2D graphics using SFML
-* **Software Architecture**: Clean code structure following software engineering best practices
+## Technology & Resources
 
-## Technical Stack
-
-* **Language**: C++
-* **Framework**: SFML (Simple and Fast Multimedia Library)
-* **Concepts**: Object-Oriented Programming, Game Loop, Physics Simulation
-
-## Skills Demonstrated
-
-* C++ programming and memory management
-* Game development fundamentals
-* Physics simulation and collision detection
-* Software design patterns and architecture
-* Cross-platform development
+C++ · SFML.
 
 [View on GitHub](https://github.com/hwzhangcs/Bouncing-Birds)

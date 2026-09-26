@@ -1,0 +1,43 @@
+- id: animal-reconstruction
+  title: "Bone-to-Shape: Single-Image Animal Reconstruction"
+  role: Project Lead
+  institution: Sichuan University
+  date: "2026"
+  program: Provincial Undergraduate Innovation Training Program
+  selected: true
+  detail_url: /research/bone-to-shape/
+  diagram: /assets/diagrams/bone-to-shape.svg
+  summary: A project for veterinary applications that generates orbit-view video from one animal image, then reconstructs a 3D Gaussian Splatting representation.
+  question: How can anatomical and body-shape priors constrain the geometry reconstructed from a single animal image?
+  bullets:
+    - Lead a project that generates orbit-view video from a single animal image and reconstructs a 3D Gaussian Splatting (3DGS) representation.
+    - Explore anatomical and body-shape priors to constrain reconstructed geometry.
+  details:
+    - "Project title: Bone-to-Shape: Anatomy-Constrained 3D Reconstruction for Veterinary Applications (骨影生形)."
+    - Passed the college midterm review. Related patent application details are listed under Intellectual Property.
+- id: cityu
+  title: City University of Hong Kong
+  role: Research Intern
+  institution: Department of Data Science
+  date: "Jul 15 – Sep 1, 2026"
+  supervisor: Xinke Li
+  selected: true
+  bullets:
+    - Investigated generative visual priors for 3D reconstruction using TRELLIS.2.
+    - Contributed to ground-truth calibration and geometric registration for FARO laser scanning in complex physical environments.
+- id: sparse-view
+  title: Sparse-View Generation and Reconstruction
+  role: Research Project
+  selected: false
+  bullets:
+    - Study sparse-view 3D generation and reconstruction using TRELLIS and GenRecon.
+    - Investigate how generative priors complete unseen structure while preserving observed evidence.
+- id: outlier-detection
+  title: Kernel-Based Outlier Detection
+  role: Research Collaboration
+  institution: Sichuan University
+  date: "Published 2026"
+  selected: false
+  bullets:
+    - Contributed to method design and formal analysis for kernel self-representation learning based fuzzy neighborhood outlier detection.
+    - Third author of the resulting article in International Journal of Approximate Reasoning.

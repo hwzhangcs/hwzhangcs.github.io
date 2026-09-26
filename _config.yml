@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Hanwen Zhang / 张瀚文"
 title_separator          : "-"
 name                     : &name "Hanwen Zhang"
-description              : &description "Hanwen Zhang's academic portfolio - Undergraduate at Sichuan University"
+description              : &description "Hanwen Zhang - Computer science honors undergraduate researching 3D reconstruction and generative visual priors"
 url                      : https://hwzhangcs.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "hwzhangcs/hwzhangcs.github.io"
@@ -22,10 +22,10 @@ repository               : "hwzhangcs/hwzhangcs.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpg"
+  avatar           : "profile-sunset-light.png"
   name             : "Hanwen Zhang"
   pronouns         : "he/him"
-  bio              : "Undergraduate Student @ Sichuan University<br>Computer Science Elite Program<br>Research Interests: Generative Models, World Models, LLM"
+  bio              : "CS Honors Undergraduate · Sichuan University"
   location         : "Chengdu, China"
   employer         : "Sichuan University"
   uri              : # URL
@@ -94,7 +94,7 @@ publication_category:
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false      #change to true to add link to talkmap on talks page
 comments:
@@ -124,7 +124,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
@@ -163,8 +163,28 @@ analytics:
 include:
   - .htaccess
   - _pages
-  - files
 exclude:
+  - templates
+  - _posts
+  - _drafts
+  - files
+  - talkmap
+  - markdown_generator
+  - scripts
+  - docs
+  - CONTRIBUTING.md
+  - _pages/markdown.md
+  - _pages/page-archive.html
+  - _pages/talkmap.html
+  - _pages/year-archive.html
+  - _pages/collection-archive.html
+  - _pages/archive-layout-with-content.md
+  - _pages/talks.html
+  - _pages/teaching.html
+  - _pages/non-menu-page.md
+  - _pages/terms.md
+  - _pages/category-archive.html
+  - _pages/tag-archive.html
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -241,46 +261,46 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: academic
       author_profile: true
       read_time: true
-      comments: true
-      share: true
+      comments: false
+      share: false
       related: true
   # _pages
   - scope:
       path: ""
       type: pages
     values:
-      layout: single
+      layout: academic
       author_profile: true
   # _teaching
   - scope:
       path: ""
       type: teaching
     values:
-      layout: single
+      layout: academic
       author_profile: true
-      share: true
-      comments: true
+      share: false
+      comments: false
   # _publications
   - scope:
       path: ""
       type: publications
     values:
-      layout: single
+      layout: academic
       author_profile: true
-      share: true
-      comments: true
+      share: false
+      comments: false
   # _portfolio
   - scope:
       path: ""
       type: portfolio
     values:
-      layout: single
+      layout: academic
       author_profile: true
-      share: true
-      comment: true
+      share: false
+      comments: false
   # _talks
   - scope:
       path: ""
@@ -288,7 +308,7 @@ defaults:
     values:
       layout: talk
       author_profile: true
-      share: true
+      share: false
 
 
 # Sass/SCSS
@@ -306,7 +326,6 @@ timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins
 plugins:
-  - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
@@ -315,7 +334,6 @@ plugins:
 
 # Mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap

@@ -1,0 +1,23 @@
+{% assign research = site.data.research | where: 'id', 'animal-reconstruction' | first %}
+<article class="work-feature">
+  <figure class="work-visual">
+    <a href="{{ research.detail_url | relative_url }}"><img src="{{ research.diagram | relative_url }}" alt="Bone-to-Shape workflow: input image, generated orbit views, and 3D Gaussian reconstruction." width="560" height="360"></a>
+    <figcaption>Workflow schematic</figcaption>
+  </figure>
+  <div class="work-body">
+    <p class="work-kicker">Ongoing research <span>· {{ research.date }}</span></p>
+    <h3><a href="{{ research.detail_url | relative_url }}">Bone-to-Shape</a></h3>
+    <p class="work-subtitle">Anatomy-constrained animal reconstruction from a single image</p>
+    <p class="entry-meta">{{ research.role }} · {{ research.institution }}</p>
+    <p>{{ research.summary }}</p>
+    <p class="work-focus"><strong>Research question</strong> {{ research.question }}</p>
+    <p class="resource-links"><a href="{{ research.detail_url | relative_url }}">Project overview <span aria-hidden="true">→</span></a><a href="{{ research.detail_url | append: '#progress' | relative_url }}">Progress &amp; role</a></p>
+  </div>
+</article>
+{% assign internship = site.data.research | where: 'id', 'cityu' | first %}
+<article class="experience-compact">
+  <div class="entry-heading"><h3>Research internship · {{ internship.title }}</h3><span class="entry-date">{{ internship.date }}</span></div>
+  <p class="entry-meta">{{ internship.institution }} · Supervisor: {{ internship.supervisor }}</p>
+  <p>Investigated <strong>generative visual priors with TRELLIS.2</strong> and contributed to <strong>FARO laser-scanning calibration and geometric registration</strong> in complex physical environments.</p>
+  <a class="text-link" href="{{ '/cv/#cityu' | relative_url }}">Internship details →</a>
+</article>

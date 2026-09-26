@@ -1,0 +1,16 @@
+{% assign project = site.portfolio | where: 'order', 1 | first %}
+<article class="work-feature work-feature--software">
+  <figure class="work-visual">
+    <a href="{{ project.url | relative_url }}"><img src="{{ '/assets/diagrams/paper-refiner.svg' | relative_url }}" alt="Paper Refiner architecture: an orchestrator coordinates reviewer feedback and editor patches." width="560" height="360" loading="lazy"></a>
+    <figcaption>Architecture schematic</figcaption>
+  </figure>
+  <div class="work-body">
+    <p class="work-kicker">Open-source software</p>
+    <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+    <p class="work-subtitle">From review feedback to traceable LaTeX revisions</p>
+    <p>{{ project.contribution }}</p>
+    <p class="entry-note">A reviewer identifies issues; an editor proposes JSON patches. The workflow records revisions and reports so changes can be inspected.</p>
+    <ul class="work-tags" aria-label="Project capabilities"><li>Review &amp; edit</li><li>Structured patches</li><li>Version history</li></ul>
+    <p class="resource-links"><a href="{{ project.url | relative_url }}">Workflow &amp; implementation <span aria-hidden="true">→</span></a><a href="{{ project.code_url }}">GitHub</a></p>
+  </div>
+</article>

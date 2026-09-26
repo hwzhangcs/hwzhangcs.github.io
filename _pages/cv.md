@@ -1,72 +1,108 @@
 ---
-layout: archive
+layout: academic
 title: "CV"
 permalink: /cv/
-author_profile: true
+updated: 2026-09-24
+excerpt: "Hanwen Zhang's education, research experience, publications, software projects, honors, and service."
 redirect_from:
   - /resume
+  - /cv-json/
+  - /resume-json
 ---
 
-{% include base_path %}
+**Hanwen Zhang (张瀚文)** · Sichuan University · Chengdu, China<br>
+[hanwen_zhang@stu.scu.edu.cn](mailto:hanwen_zhang@stu.scu.edu.cn) · [GitHub](https://github.com/hwzhangcs)
 
-**Hanwen Zhang (张瀚文)**  
-Sichuan University (SCU) · Chengdu, China  
-Email: **hanwen_zhang@stu.scu.edu.cn** · GitHub: [hwzhangcs](https://github.com/hwzhangcs)  
-**Seeking:** **Remote research internship** (video generation / world models / multimodal & LLM systems)
+Seeking long-term remote research internships. Planning to apply for Fall 2028 PhD admission.
 
----
+<div class="cv-tools"><button class="print-button" type="button" data-print>Print / Save as PDF</button></div>
+
+<nav class="cv-index" aria-label="CV sections">
+<ul>
+<li><a href="#education">Education</a></li>
+<li><a href="#research-interests">Interests</a></li>
+<li><a href="#research-experience">Research</a></li>
+<li><a href="#publications">Publications</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#intellectual-property">Patents &amp; Copyrights</a></li>
+<li><a href="#honors">Honors</a></li>
+<li><a href="#activities">Activities &amp; Service</a></li>
+<li><a href="#skills">Skills</a></li>
+</ul>
+</nav>
 
 ## Education
-**Sichuan University (SCU)** — Chengdu, China  
-**B.Eng. in Computer Science and Technology**  
-Top-notch Student Training Program 2.0 (Basic Disciplines) — **Honors Class**  
-Sep 2024 – Present  
-- **GPA:** 3.98 / 4.00 (**Rank #1 / 12**)  
-- **Core courses:** Data Structures, Advanced Mathematics, Linear Algebra, Discrete Mathematics
 
----
+<div class="entry-heading"><h3>Sichuan University</h3><span class="entry-date">Sep 2024 – Present</span></div>
+<p class="entry-meta">B.Eng. in Computer Science and Technology<br>Top-notch Student Training Program 2.0 (Honors Class)</p>
+
+**GPA: 3.96/4.00 · Rank: 1st in honors class**<br>
+Weighted average: 93.76/100. Grades as of September 23, 2026.
+
+<details markdown="1">
+<summary>Coursework and additional grade details</summary>
+
+Compulsory-course GPA: 3.95/4.00; compulsory-course weighted average: 93.61/100.
+
+Selected coursework: Operating System (99), Theory of Computation (98), Theory of Optimization (98), Probability Statistics (97), Numerical Computing Method (97), Introduction to Artificial Intelligence (96), Discrete Mathematics (94), Introduction to Multimodal Learning (90).
+</details>
 
 ## Research Interests
-- **Video generation (diffusion/flow-style) & controllability:** speed–quality trade-offs, compute/budget-aware schedules.
-- **World models & predictive learning:** representations and dynamics for long-horizon consistency and planning-oriented evaluation.
-- **Multimodal/LLM systems:** agentic workflows, evaluation interfaces, and **reproducible** training/evaluation pipelines.
 
----
+Visual generation and 3D reconstruction, with a longer-term interest in generative world models for spatial reasoning and action.
 
-## Research / Project Experience
-**Undergraduate Innovation Training Program — Team Lead (Proposal Stage)** | Nov 2025 – Oct 2026
-- Proposed an anatomy-constrained 3D reconstruction system for veterinary medicine (anatomical priors + generative refinement).
-- Designing baselines, evaluation protocol, and a reproducible experiment/reporting workflow.
-- (Docs private; available upon request)
+## Research Experience
 
-**Granular Network Threat Detection System — Co-developer** | 2025
-- Developed a network threat detection system based on subspace learning and granular computing.  
-- Contributed to model/pipeline integration, feature processing & evaluation tooling, and system-side integration (details available upon request).  
-- **Software Copyright:** Registration No. **2025SR1158898** (Jul 2025)
+{% include research.html %}
 
----
+## Publications
 
-## Selected Open-source Projects
-- **[Paper Refiner](https://github.com/hwzhangcs/paper-refiner)**: Multi-agent LaTeX paper revision system with **patch-based editing**, **compilation checks**, and an **auditable revision trail** for **reproducible** iterations.
-- **[Bouncing-Birds](https://github.com/hwzhangcs/Bouncing-Birds)**: C++/SFML physics-based game project emphasizing modular engineering and documentation.  
-- **[Programming Practice / Smart POS System (Qt/C++)](https://github.com/hwzhangcs/programming_practice)**: responsive UI + engineering-oriented refactor & stabilization.
+{% include publications.html %}
 
----
+## Software & Engineering Projects
+{: #projects }
 
-## Honors & Awards
-- **CCF CSP Certification:** 250 / 500 (Apr 2025)  
-- **Huawei ICT Competition:** Provincial Third Prize, Ascend AI Track (2024)
+{% include projects.html %}
 
----
+<article class="entry additional-project">
+<div class="entry-heading"><h3>Deep-Hole Guardian (深孔卫士)</h3><span class="entry-date">2026</span></div>
+<p class="entry-meta">Team Member · University-Level Undergraduate Innovation Training Program</p>
+<p>Participated in a project on embodied perception for deep blind-hole defect identification and control with a SCARA robot. Passed the college midterm review.</p>
+</article>
 
-## Leadership & Service
-- **Vice President**, Sichuan University Artificial Intelligence Club (elected 2025)  
-- Volunteer service: **22+ hours**
+## Patents & Software Copyrights
+{: #intellectual-property }
 
----
+{% include hanwen-ip.md %}
+
+## Honors
+
+{% include hanwen-awards.md %}
+
+### Competitions & Assessments
+{: .cv-subheading }
+
+- **2026 MCM:** Successful Participant.
+- **CCF CSP:** highest score 250/500, March 30, 2025 (top 20.6% in that sitting); top 11.23% in the May 31, 2026 sitting.
+
+## Activities & Service
+{: #activities }
+
+### Academic Exchange
+{: .cv-subheading }
+
+- **UNSW Business School**, “Discovery: Foundations and Applications,” July 20–31, 2026. Completed a 30-hour in-person program; led development of a Hackathon prototype combining financial candlestick analysis and multi-agent collaboration.
+- **CNCC 2025**, Harbin, October 22–25, 2025. Conference participant.
+
+### Leadership & Service
+{: .cv-subheading }
+
+- **President**, Sichuan University AI Club; previously Vice President.
+- **League Branch Secretary**, 2024 Honors Class, College of Computer Science; helped organize the class's successful “Jiang Jie Class” application.
 
 ## Skills
-- **Programming:** C/C++, Python  
-- **ML / Data:** PyTorch, scikit-learn  
-- **Systems / Tools:** Linux, Git, Docker, LaTeX  
-- **Languages:** Chinese (Native), English (CET-4: 560; CET-6: 538)
+
+- **Programming:** C/C++, Python.
+- **ML / Data:** PyTorch, scikit-learn.
+- **Tools:** Linux, Git, Docker, LaTeX.
+- **Languages:** Chinese (native); English (CET-6: 538).

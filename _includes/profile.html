@@ -1,0 +1,18 @@
+<aside class="profile" aria-label="About Hanwen Zhang">
+  <div class="profile-photo">
+    <div class="profile-photo-crop">
+      <img src="{{ site.author.avatar | prepend: '/images/' | relative_url }}" alt="Hanwen Zhang" width="1448" height="1086" fetchpriority="high">
+    </div>
+  </div>
+  <div class="profile-info">
+    <p class="profile-name">{{ site.author.name }}</p>
+    <p class="profile-pronouns">{{ site.author.pronouns }}</p>
+    <p class="profile-bio">CS Honors Undergraduate<br>Sichuan University</p>
+    <p class="profile-location">{{ site.author.location }}</p>
+    <ul class="profile-links">
+      <li><a href="mailto:{{ site.author.email }}"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a></li>
+      <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+      <li><a href="{{ '/cv/' | relative_url }}"><i class="fas fa-file-lines" aria-hidden="true"></i> CV</a></li>
+    </ul>
+  </div>
+</aside>

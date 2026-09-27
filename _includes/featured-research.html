@@ -4,7 +4,7 @@
 <article class="feature">
   <a class="feature-figure" href="{{ research.detail_url | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ research.diagram | relative_url }}" alt="" width="560" height="360"></a>
   <div class="feature-body">
-    <p class="kicker">Current project · {{ research.date }}–</p>
+    <p class="kicker">Current project · since {{ research.short_date | remove: "–" }}</p>
     <h3><a href="{{ research.detail_url | relative_url }}">Bone-to-Shape</a> <span class="title-zh" lang="zh">骨影生形</span></h3>
     <p class="feature-deck">Anatomy-constrained animal reconstruction from a single image</p>
     <p>From one photograph of an animal, the pipeline generates an orbit-view video and reconstructs a 3D Gaussian Splatting model, for veterinary applications.</p>
@@ -20,7 +20,7 @@
     <p class="meta">Research intern · {{ internship.institution }}, {{ internship.title }} · Supervisor: {{ internship.supervisor }}</p>
     <p>Investigated generative visual priors with TRELLIS.2, and contributed to ground-truth calibration and geometric registration for FARO laser scanning in complex physical environments.</p>
   </div></li>
-  <li><time>{{ embodied.date }}</time><div>
+  <li><time>{{ embodied.short_date }}</time><div>
     <h3>{{ embodied.home_title }}</h3>
     <p class="meta">{{ embodied.role }} · Deep-Hole Guardian <span lang="zh">(深孔卫士)</span> · {{ embodied.program }}</p>
     <p>Embodied perception for identifying and controlling deep blind-hole defects with a SCARA robot. Passed the college midterm review.</p>

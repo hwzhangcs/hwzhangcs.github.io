@@ -36,6 +36,7 @@ I lead the project. My work focuses on the single-image-to-novel-view-to-3DGS wo
 
 ## Progress
 
+- Applied to Sichuan University's Undergraduate Innovation Training Program in the {{ project.applied }} round; approved in the 2026 project list announced {{ project.approved }}.
 - Passed the college midterm review under the Provincial Undergraduate Innovation Training Program.
 - First-listed inventor on the related Chinese invention patent application, **202611403381.7**, filed September 10, 2026.
 - The application passed preliminary examination on September 22, 2026. It is pending publication and **has not been granted**.

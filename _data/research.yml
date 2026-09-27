@@ -2,8 +2,11 @@
   title: "Bone-to-Shape: Single-Image Animal Reconstruction"
   role: Project Lead
   institution: Sichuan University
-  date: "2026"
+  date: "Jan 2026 – Present"
+  short_date: "Jan 2026–"
   program: Provincial Undergraduate Innovation Training Program
+  applied: November 18 – December 9, 2025
+  approved: January 19, 2026
   selected: true
   detail_url: /research/bone-to-shape/
   diagram: /assets/diagrams/bone-to-shape.svg
@@ -15,6 +18,7 @@
   milestone: Passed the college midterm review
   details:
     - "Project title: Bone-to-Shape: Anatomy-Constrained 3D Reconstruction for Veterinary Applications (骨影生形)."
+    - Applied in the November 18 – December 9, 2025 round; approved in the 2026 project list announced January 19, 2026.
     - Passed the college midterm review. Related patent application details are listed under Intellectual Property.
 - id: cityu
   title: City University of Hong Kong
@@ -31,7 +35,8 @@
   home_title: Embodied perception for deep-hole defect inspection
   role: Team Member
   program: University-Level Undergraduate Innovation Training Program
-  date: "2026"
+  date: "Jan 2026 – Present"
+  short_date: "Jan 2026–"
   selected: true
   bullets:
     - Participated in a project on embodied perception for deep blind-hole defect identification and control with a SCARA robot.

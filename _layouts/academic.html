@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<main id="content" class="page{% if page.url == '/cv/' %} cv-content{% endif %}{% if page.hero %} page--home{% endif %}">
+  {% if page.hero %}
+    {% include home/hero.html %}
+  {% else %}
+  <header class="page-header">
+    {% if page.back_url %}<a class="back-link" href="{{ page.back_url | relative_url }}">← {{ page.back_label }}</a>{% elsif page.collection == 'portfolio' %}<a class="back-link" href="{{ '/portfolio/' | relative_url }}">← Software</a>{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.updated %}<p class="page-meta">Updated {{ page.updated | date: '%B %-d, %Y' }}</p>{% endif %}
+  </header>
+  {% endif %}
+  {{ content }}
+</main>

@@ -1,0 +1,24 @@
+{% assign edu = site.data.education %}
+<header class="hero">
+  <div class="hero-head">
+    <h1 class="hero-name">Hanwen Zhang <span lang="zh">张瀚文</span></h1>
+    <p class="hero-role">Computer Science Honors Class · {{ edu.institution }}</p>
+    <p class="hero-credentials"><span class="cred">Third-year</span><span class="sep" aria-hidden="true">·</span><span class="cred"><strong>Ranked {{ edu.rank_short }}</strong> in class</span><span class="sep" aria-hidden="true">·</span><span class="cred">GPA <strong>{{ edu.gpa | split: '/' | first }}</strong>/{{ edu.gpa | split: '/' | last }}</span></p>
+  </div>
+  <figure class="hero-portrait">
+    <img src="{{ '/images/portrait.jpg' | relative_url }}" alt="Portrait of Hanwen Zhang" width="480" height="600" fetchpriority="high">
+  </figure>
+  <ul class="hero-contact" aria-label="Contact and profiles">
+    <li>{% include icon.html name="envelope" %}<a href="mailto:{{ site.author.email }}">{{ site.author.email | replace: "@", "@<wbr>" }}</a></li>
+    <li>{% include icon.html name="google-scholar" %}<a href="{{ site.author.googlescholar }}">Google Scholar</a></li>
+    <li>{% include icon.html name="orcid" %}<a href="{{ site.author.orcid }}">ORCID</a></li>
+    <li>{% include icon.html name="github" %}<a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
+    <li>{% include icon.html name="file-lines" %}<span><a href="{{ '/cv/' | relative_url }}">CV</a> · <a href="{{ '/assets/hanwen-zhang-cv.pdf' | relative_url }}">PDF</a></span></li>
+    <li class="hero-location">{% include icon.html name="location-dot" %}{{ site.author.location }}</li>
+  </ul>
+  <div class="hero-text">
+    <p class="hero-lead">I study how to recover <strong>3D structure from very little visual evidence</strong>, combining generative models with geometric and anatomical priors.</p>
+    <p>I lead <a href="{{ '/research/bone-to-shape/' | relative_url }}">Bone-to-Shape</a>, a provincial innovation project that reconstructs animal geometry from a single image using generated views and body-shape priors. In summer 2026 I was a research intern with Xinke Li at City University of Hong Kong, studying generative priors for 3D reconstruction. In the longer term, I am interested in <strong>world models</strong> for spatial reasoning and action.</p>
+    <p class="hero-status"><span class="status-dot" aria-hidden="true"></span>Open to long-term remote research internships. Planning to apply for PhD programs for Fall 2028.</p>
+  </div>
+</header>

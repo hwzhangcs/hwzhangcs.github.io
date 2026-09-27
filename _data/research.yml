@@ -1,0 +1,79 @@
+# Research experience, in CV order. Every entry appears in the CV (_includes/cv/research.html).
+# An entry with a `homepage` block also appears in the homepage Research section
+# (_includes/home/research.html); `featured: true` gives it the large figure layout.
+# Keep unknown dates and affiliations absent rather than estimated.
+
+- id: animal-reconstruction
+  title: "Bone-to-Shape: Single-Image Animal Reconstruction"
+  role: Project Lead
+  institution: Sichuan University
+  date: "Jan 2026 – Present"
+  program: Provincial Undergraduate Innovation Training Program
+  applied: November 18 – December 9, 2025
+  approved: January 19, 2026
+  detail_url: /research/bone-to-shape/
+  diagram: /assets/diagrams/bone-to-shape.svg
+  question: How can anatomical and body-shape priors constrain the geometry reconstructed from a single animal image?
+  bullets:
+    - Lead a project that generates orbit-view video from a single animal image and reconstructs a 3D Gaussian Splatting (3DGS) representation.
+    - Explore anatomical and body-shape priors to constrain reconstructed geometry.
+  details:
+    - "Project title: Bone-to-Shape: Anatomy-Constrained 3D Reconstruction for Veterinary Applications (骨影生形)."
+    - Applied in the November 18 – December 9, 2025 round; approved in the 2026 project list announced January 19, 2026.
+    - Passed the college midterm review. Related patent application details are listed under Intellectual Property.
+  homepage:
+    featured: true
+    name: Bone-to-Shape
+    zh: 骨影生形
+    since: Jan 2026
+    deck: Anatomy-constrained animal reconstruction from a single image
+    summary: From one photograph of an animal, the pipeline generates an orbit-view video and reconstructs a 3D Gaussian Splatting model, for veterinary applications.
+    outcomes:
+      - Passed the college midterm review
+      - Invention patent application filed, first-listed inventor
+
+- id: cityu
+  title: City University of Hong Kong
+  role: Research Intern
+  institution: Department of Data Science
+  date: "Jul 15 – Sep 1, 2026"
+  mode: "Remote Jul 15–31; on site Aug 1–Sep 1"
+  supervisor: Xinke Li
+  bullets:
+    - Investigated generative visual priors for 3D reconstruction using TRELLIS.2.
+    - Contributed to ground-truth calibration and geometric registration for FARO laser scanning in complex physical environments.
+  homepage:
+    period: Jul–Sep 2026
+    title: Generative visual priors for 3D reconstruction
+    meta: "Research intern · Department of Data Science, City University of Hong Kong · Supervisor: Xinke Li"
+    summary: Investigated generative visual priors with TRELLIS.2, and contributed to ground-truth calibration and geometric registration for FARO laser scanning in complex physical environments.
+
+- id: deep-hole
+  title: "Deep-Hole Guardian (深孔卫士)"
+  role: Team Member
+  program: University-Level Undergraduate Innovation Training Program
+  date: "Jan 2026 – Present"
+  bullets:
+    - Participated in a project on embodied perception for deep blind-hole defect identification and control with a SCARA robot.
+    - Passed the college midterm review.
+  homepage:
+    period: Jan 2026–
+    title: Embodied perception for deep-hole defect inspection
+    meta: 'Team Member · Deep-Hole Guardian <span lang="zh">(深孔卫士)</span> · University-Level Undergraduate Innovation Training Program'
+    summary: Embodied perception for identifying and controlling deep blind-hole defects with a SCARA robot. Passed the college midterm review.
+
+- id: sparse-view
+  title: Sparse-View Generation and Reconstruction
+  role: Research Project
+  bullets:
+    - Study sparse-view 3D generation and reconstruction using TRELLIS and GenRecon.
+    - Investigate how generative priors complete unseen structure while preserving observed evidence.
+
+- id: outlier-detection
+  title: Kernel-Based Outlier Detection
+  role: Research Collaboration
+  institution: Sichuan University
+  date: "Published 2026"
+  bullets:
+    - Contributed to method design and formal analysis for kernel self-representation learning based fuzzy neighborhood outlier detection.
+    - Third author of the resulting article in International Journal of Approximate Reasoning.

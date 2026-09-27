@@ -1,0 +1,25 @@
+{%- comment -%} Homepage Research section: entries of _data/research.yml that have a `homepage` block. {%- endcomment -%}
+{% for item in site.data.research %}{% if item.homepage.featured %}{% assign home = item.homepage %}
+<article class="feature">
+  <a class="feature-figure" href="{{ item.detail_url | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ item.diagram | relative_url }}" alt="" width="560" height="360"></a>
+  <div class="feature-body">
+    <p class="kicker">Current project · since {{ home.since }}</p>
+    <h3><a href="{{ item.detail_url | relative_url }}">{{ home.name }}</a>{% if home.zh %} <span class="title-zh" lang="zh">{{ home.zh }}</span>{% endif %}</h3>
+    <p class="feature-deck">{{ home.deck }}</p>
+    <p>{{ home.summary }}</p>
+    <p class="question"><span>Research question.</span> {{ item.question }}</p>
+    <p class="meta">{{ item.role }} · {{ item.program }}</p>
+    <p class="outcomes">{{ home.outcomes | join: ' · ' }}</p>
+    <p class="links"><a href="{{ item.detail_url | relative_url }}">Project overview</a><a href="#patents">Patent application</a></p>
+  </div>
+</article>
+{% endif %}{% endfor %}
+<ol class="dated-list work-list">
+{% for item in site.data.research %}{% if item.homepage and item.homepage.featured != true %}
+  <li><time>{{ item.homepage.period }}</time><div>
+    <h3>{{ item.homepage.title }}</h3>
+    <p class="meta">{{ item.homepage.meta }}{% if item.mode %}<br>{{ item.mode }}{% endif %}</p>
+    <p>{{ item.homepage.summary }}</p>
+  </div></li>
+{% endif %}{% endfor %}
+</ol>

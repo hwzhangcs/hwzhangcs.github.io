@@ -1,31 +1,51 @@
 ---
-title: "Paper Refiner: Multi-Agent Academic Paper Revision System"
-excerpt: "An automated academic paper revision system using dual-agent architecture (Yuketang AI + OpenAI) for iterative LaTeX paper refinement"
-collection: portfolio
+title: "Paper Refiner"
+order: 1
+home: true
+purpose: "Multi-agent LaTeX paper revision system"
+contribution: "Designed and implemented the workflow and orchestrator, including structured patch-based editing and reproducible runs with configurations and logs."
+stack: "Python · LaTeX · JSON patches"
+code_url: "https://github.com/hwzhangcs/paper-refiner"
+excerpt: "Multi-agent LaTeX paper revision system. Designed and implemented the workflow and orchestrator, including structured patch-based editing and reproducible runs with configurations and logs."
 ---
 
-## Overview
+<p class="project-deck">A multi-agent workflow that turns review feedback into traceable LaTeX revisions.</p>
+<p class="entry-meta">My role: workflow and orchestrator design &amp; implementation</p>
+<p class="resource-links"><a href="https://github.com/hwzhangcs/paper-refiner">Source code</a><a href="https://github.com/hwzhangcs/paper-refiner#readme">README &amp; setup</a></p>
 
-Paper Refiner is an intelligent academic paper revision system that leverages multi-agent collaboration to automatically improve LaTeX papers through iterative refinement.
+## What the System Does
 
-## Key Features
+Paper Refiner connects paper review with source-level editing. A reviewer provides feedback, an editor proposes changes, and an orchestrator coordinates the revision process, compilation, and version tracking.
 
-* **Dual-Agent Architecture**: Combines Yuketang AI (Reviewer) and OpenAI (Editor) for comprehensive paper analysis and revision
-* **Iterative Refinement Process**:
-  - Initial comprehensive review with prioritized issues (P0-Critical to P2-Nice-to-have)
-  - Multi-pass refinement covering structure, coherence, paragraphs, sentences, and polish
-* **Transparent Audit Trail**: All changes applied via structured JSON patches, making them fully reversible
-* **Automatic Validation**: Ensures LaTeX compilability after each modification
+<figure class="project-diagram">
+<img src="{{ '/assets/diagrams/paper-refiner.svg' | relative_url }}" alt="An orchestrator coordinates a reviewer and editor. Feedback leads to JSON patches, with version history and revision reports." width="560" height="360">
+<figcaption>Architecture schematic based on the project’s documented workflow.</figcaption>
+</figure>
 
-## Technical Stack
+## How It Works
 
-* **Language**: Python 3.10+
-* **APIs**: OpenAI API, Yuketang AI
-* **Package Management**: uv
-* **Input/Output**: LaTeX files, JSON patches, Markdown reports
+<ol class="method-steps">
+<li><strong>Establish a review baseline.</strong> The initial review uses a compiled PDF to identify prioritized issues and produce a baseline score.</li>
+<li><strong>Revise in focused passes.</strong> Subsequent iterations address structure, coherence, paragraphs, sentences, and polish. Reviewer feedback guides the editor’s JSON patches to the LaTeX source.</li>
+<li><strong>Check and record changes.</strong> The orchestrator manages compilation checks and revision history. Reports explain the edits and track issues.</li>
+</ol>
 
-## Impact
+## My Contribution
 
-This project demonstrates the practical application of multi-agent systems in academic writing assistance, combining LLM capabilities for both critique and generation tasks.
+I designed and implemented the **workflow and orchestrator**, including coordination of review and editing, structured patch-based changes, and reproducible runs with configurations and logs.
 
-[View on GitHub](https://github.com/hwzhangcs/paper-refiner)
+## Outputs You Can Inspect
+
+| Artifact | Purpose |
+|---|---|
+| `versions/` | Paper versions across iterations |
+| `issues.json` | Identified and resolved issues |
+| `FINAL_REVISION_REPORT.md` | Summary of revisions |
+
+These output names and workflow stages are documented in the [project README](https://github.com/hwzhangcs/paper-refiner#readme).
+
+## Run the Project
+
+The project uses Python and a local LaTeX environment. The repository’s [setup guide](https://github.com/hwzhangcs/paper-refiner/blob/main/SETUP.md) covers dependencies and configuration for the reviewer and editor services.
+
+<p class="resource-links"><a href="https://github.com/hwzhangcs/paper-refiner">Explore the repository →</a><a href="{{ '/portfolio/' | relative_url }}">Other software projects</a></p>

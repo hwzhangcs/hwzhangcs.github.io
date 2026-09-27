@@ -1,43 +1,25 @@
 ---
-layout: archive
+layout: academic
 title: "Sitemap"
 permalink: /sitemap/
-author_profile: true
+excerpt: "Explore Hanwen Zhang's research, publications, software projects, and CV."
 ---
 
-{% include base_path %}
+- [Home]({{ '/' | relative_url }})
+- [Research]({{ '/#research' | relative_url }})
+- [Publications]({{ '/publications/' | relative_url }})
+- [Software Projects]({{ '/portfolio/' | relative_url }})
+- [CV]({{ '/cv/' | relative_url }})
 
-A list of all the posts and pages found on the site. For you robots out there, there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.
+## Research Project Details
 
-<h2>Pages</h2>
-{% for post in site.pages %}
-  {% unless post.sitemap == false or post.hidden == true %}
-    {% include archive-single.html %}
-  {% endunless %}
+- [Bone-to-Shape]({{ "/research/bone-to-shape/" | relative_url }})
+
+## Software Project Details
+
+{% assign projects = site.portfolio | sort: 'order' %}
+{% for project in projects %}
+- [{{ project.title }}]({{ project.url | relative_url }})
 {% endfor %}
 
-<h2>Posts</h2>
-{% for post in site.posts %}
-  {% unless post.sitemap == false or post.hidden == true %}
-    {% include archive-single.html %}
-  {% endunless %}
-{% endfor %}
-
-{% capture written_label %}'None'{% endcapture %}
-
-{% for collection in site.collections %}
-{% unless collection.output == false or collection.label == "posts" %}
-  {% capture label %}{{ collection.label }}{% endcapture %}
-  {% if label != written_label %}
-  <h2>{{ label }}</h2>
-  {% capture written_label %}{{ label }}{% endcapture %}
-  {% endif %}
-{% endunless %}
-{% for post in collection.docs %}
-  {% unless collection.output == false or collection.label == "posts" %}
-    {% unless post.sitemap == false or post.hidden == true %}
-      {% include archive-single.html %}
-    {% endunless %}
-  {% endunless %}
-{% endfor %}
-{% endfor %}
+[XML sitemap]({{ '/sitemap.xml' | relative_url }})

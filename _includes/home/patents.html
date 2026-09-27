@@ -1,0 +1,10 @@
+{% assign patents = site.data.ip | where: 'home', true %}
+<ol class="dated-list publications patents" id="patents">
+{% for item in patents %}
+  <li class="publication"><span class="venue">{{ item.label }} {{ item.year }}</span><div>
+    <h3 class="publication-title">{{ item.title }}</h3>
+    <p class="publication-authors"><strong>{{ item.role }}</strong> · Applicant: {{ item.applicant }}</p>
+    <p class="meta">{{ item.kind }} {{ item.number }}. {{ item.status }}</p>
+  </div></li>
+{% endfor %}
+</ol>

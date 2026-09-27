@@ -1,0 +1,304 @@
+%-------------------------
+% CV of Hanwen Zhang
+% Layout: Jake's Resume (https://github.com/jakegut/resume), based on
+% https://github.com/sb2nov/resume. License: MIT.
+%
+% Build:   ./scripts/build_cv_pdf.sh   (Tectonic)   or compile on Overleaf with pdfLaTeX.
+% Output:  assets/hanwen-zhang-cv.pdf, linked from the homepage and /cv/.
+% Keep facts in sync with _data/*.yml; scripts/check_cv_tex.py checks the key ones.
+% The source is ASCII on purpose so it compiles with pdfLaTeX and XeTeX alike.
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{iftex}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\ifPDFTeX
+  \input{glyphtounicode}
+\fi
+
+\hypersetup{
+  pdftitle={Hanwen Zhang - CV},
+  pdfauthor={Hanwen Zhang},
+  pdfsubject={Curriculum vitae},
+}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\ifPDFTeX
+  \pdfgentounicode=1
+\fi
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Like \resumeProjectHeading, but the left column wraps instead of overflowing.
+\newcommand{\resumeWrapHeading}[2]{
+    \item
+    \begin{tabularx}{0.97\textwidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{1.5em}}r@{}}
+      \small#1 & #2 \\
+    \end{tabularx}\vspace{-7pt}
+}
+
+% A full-width line of small text inside a section (publications, research interests).
+\newcommand{\resumeLine}[1]{\item\small{#1}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Hanwen Zhang} \\ \vspace{3pt}
+    \small Computer Science Honors Class, Sichuan University $|$ Chengdu, China \\ \vspace{1pt}
+    \small \href{mailto:hanwen_zhang@stu.scu.edu.cn}{\underline{hanwen\_zhang@stu.scu.edu.cn}} $|$
+    \href{https://hwzhangcs.github.io}{\underline{hwzhangcs.github.io}} $|$
+    \href{https://scholar.google.com/citations?user=o_uTmywAAAAJ}{\underline{Google Scholar}} $|$
+    \href{https://orcid.org/0009-0009-5637-1971}{\underline{ORCID}} $|$
+    \href{https://github.com/hwzhangcs}{\underline{github.com/hwzhangcs}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sichuan University}{Chengdu, China}
+      {B.Eng. in Computer Science and Technology}{Sep 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Top-notch Student Training Program 2.0 (Honors Class)}
+        \resumeItem{\textbf{GPA: 3.96/4.00 $\cdot$ Rank: 1st in honors class} $\cdot$ Weighted average: 93.76/100 (grades as of September 23, 2026)}
+        \resumeItem{Selected coursework: Operating System (99), Theory of Computation (98), Theory of Optimization (98), Probability Statistics (97), Numerical Computing Method (97), Introduction to Artificial Intelligence (96), Discrete Mathematics (94), Introduction to Multimodal Learning (90)}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------RESEARCH INTERESTS-----------
+\section{Research Interests}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeLine{Visual generation and 3D reconstruction, with a longer-term interest in generative world models for spatial reasoning and action.}
+  \end{itemize}
+
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Bone-to-Shape: Single-Image Animal Reconstruction}{Jan 2026 -- Present}
+      {Project Lead, Provincial Undergraduate Innovation Training Program}{Sichuan University}
+      \resumeItemListStart
+        \resumeItem{Lead a project that generates orbit-view video from a single animal image and reconstructs a 3D Gaussian Splatting (3DGS) representation, for veterinary applications.}
+        \resumeItem{Explore anatomical and body-shape priors to constrain reconstructed geometry.}
+        \resumeItem{Approved January 19, 2026 (applied November--December 2025); passed the college midterm review; first-listed inventor on the related invention patent application.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {City University of Hong Kong}{Jul 15 -- Sep 1, 2026}
+      {Research Intern, Department of Data Science (Supervisor: Xinke Li)}{Hong Kong}
+      \resumeItemListStart
+        \resumeItem{Remote Jul 15--31; on site Aug 1--Sep 1.}
+        \resumeItem{Investigated generative visual priors for 3D reconstruction using TRELLIS.2.}
+        \resumeItem{Contributed to ground-truth calibration and geometric registration for FARO laser scanning in complex physical environments.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Deep-Hole Guardian: Embodied Perception for Defect Inspection}{Jan 2026 -- Present}
+      {Team Member, University-Level Undergraduate Innovation Training Program}{Sichuan University}
+      \resumeItemListStart
+        \resumeItem{Participated in a project on embodied perception for deep blind-hole defect identification and control with a SCARA robot. Passed the college midterm review.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Kernel-Based Outlier Detection}{2026}
+      {Research Collaboration}{Sichuan University}
+      \resumeItemListStart
+        \resumeItem{Contributed to method design and formal analysis for kernel self-representation learning based fuzzy neighborhood outlier detection; third author of the resulting IJAR article.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Sparse-View Generation and Reconstruction}{}
+      {Research Project}{}
+      \resumeItemListStart
+        \resumeItem{Study sparse-view 3D generation and reconstruction using TRELLIS and GenRecon.}
+        \resumeItem{Investigate how generative priors complete unseen structure while preserving observed evidence.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeLine{Yijia Chen, Ze Zhang, \textbf{Hanwen Zhang}, Jiaqi Yang, Bingye Zhou, Zhong Yuan.
+      Kernel self-representation learning based fuzzy neighborhood outlier detection.
+      \textit{International Journal of Approximate Reasoning}, 198:109769, 2026.
+      \href{https://doi.org/10.1016/j.ijar.2026.109769}{\underline{doi:10.1016/j.ijar.2026.109769}}}
+  \end{itemize}
+
+
+%-----------PATENTS-----------
+\section{Patents \& Software Copyrights}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Animal 3D Reconstruction Using Body-Shape Priors}}{Filed Sep 10, 2026}
+      \resumeItemListStart
+        \resumeItem{\textbf{First-listed inventor}; applicant: Sichuan University.}
+        \resumeItem{Chinese invention patent application 202611403381.7. Passed preliminary examination on September 22, 2026; pending publication, not yet granted.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Granular Network Threat Detection System Based on Subspace Learning V1.0}}{Jul 3, 2025}
+      \resumeItemListStart
+        \resumeItem{Joint copyright holder. Chinese software copyright 2025SR1158898.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------HONORS-----------
+\section{Honors \& Awards}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading{\textbf{First-Class Single-Category Scholarship}, Sichuan University}{2025 -- 2026}
+    \resumeWrapHeading{\textbf{Third Prize, Sichuan Division}, 17th Chinese Mathematics Competition for College Students, Non-Mathematics Category A}{2025}
+    \resumeProjectHeading{\textbf{Third-Class Comprehensive Scholarship}, Sichuan University}{2024 -- 2025}
+    \resumeProjectHeading{\textbf{Outstanding Undergraduate Student Cadre}, Sichuan University}{2024 -- 2025}
+    \resumeProjectHeading{\textbf{Provincial Third Prize, Ascend AI Track}, Huawei ICT Competition}{2024}
+    \resumeProjectHeading{\textbf{Successful Participant}, Mathematical Contest in Modeling (MCM)}{2026}
+    \resumeWrapHeading{\textbf{CCF CSP}: highest score 250/500 (top 20.6\%, Mar 30, 2025); top 11.23\% in the May 31, 2026 sitting}{2025 -- 2026}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Software Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Paper Refiner} $|$ \emph{Python, LaTeX, JSON patches} $|$ \href{https://github.com/hwzhangcs/paper-refiner}{\underline{GitHub}}}{}
+      \resumeItemListStart
+        \resumeItem{Multi-agent LaTeX paper revision system. Designed and implemented the workflow and orchestrator, including structured patch-based editing and reproducible runs with configurations and logs.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Granular Network Threat Detection System} $|$ \emph{Subspace learning, granular computing}}{2025}
+      \resumeItemListStart
+        \resumeItem{Co-developed a network threat detection system; joint holder of its registered software copyright.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Smart POS System} $|$ \emph{C++, Qt} $|$ \href{https://github.com/hwzhangcs/programming_practice}{\underline{GitHub}}}{}
+      \resumeItemListStart
+        \resumeItem{Checkout application. Worked on application refactoring, asynchronous database access, UI components, and error handling.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Bouncing Birds} $|$ \emph{C++, SFML} $|$ \href{https://github.com/hwzhangcs/Bouncing-Birds}{\underline{GitHub}}}{}
+      \resumeItemListStart
+        \resumeItem{Physics game. Worked on gameplay, collision handling, saving and loading game state, and replay functionality.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------ACTIVITIES-----------
+\section{Activities \& Service}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sichuan University AI Club}{}
+      {President; previously Vice President}{}
+    \resumeSubheading
+      {College of Computer Science, Sichuan University}{}
+      {League Branch Secretary, 2024 Honors Class}{}
+      \resumeItemListStart
+        \resumeItem{Helped organize the class's successful ``Jiang Jie Class'' application.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {UNSW Business School}{Jul 20 -- 31, 2026}
+      {Discovery: Foundations and Applications (30-hour in-person program)}{}
+      \resumeItemListStart
+        \resumeItem{Led development of a Hackathon prototype combining financial candlestick analysis and multi-agent collaboration.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {CNCC 2025}{Oct 22 -- 25, 2025}
+      {Conference participant}{Harbin, China}
+  \resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming}{: C/C++, Python} \\
+     \textbf{ML / Data}{: PyTorch, scikit-learn} \\
+     \textbf{Tools}{: Linux, Git, Docker, LaTeX} \\
+     \textbf{Languages}{: Chinese (native); English (CET-6: 538)}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

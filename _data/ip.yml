@@ -1,0 +1,20 @@
+# Patents and software copyrights. `home: true` entries are listed with publications on the homepage.
+- title: Animal 3D Reconstruction Using Body-Shape Priors
+  zh: 基于体型先验的动物三维重建方法
+  role: First-listed inventor
+  applicant: Sichuan University
+  kind: Chinese invention patent application
+  number: 202611403381.7
+  label: Patent
+  year: 2026
+  dates: Filed September 10, 2026
+  status: Passed preliminary examination on September 22, 2026. Pending publication; not yet granted.
+  home: true
+- title: Granular Network Threat Detection System Based on Subspace Learning
+  zh: 基于子空间学习的粒网络威胁检测系统 V1.0
+  role: Joint copyright holder
+  kind: Chinese software copyright
+  number: 2025SR1158898
+  label: Software copyright
+  year: 2025
+  dates: Registered July 3, 2025

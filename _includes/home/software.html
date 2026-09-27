@@ -1,0 +1,7 @@
+{% assign projects = site.portfolio | where: 'home', true | sort: 'order' %}
+<ul class="software-list">
+{% for project in projects %}
+  <li><h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3><p>{{ project.purpose }}{% assign stack_head = project.stack | split: " · " | first | downcase %}{% assign purpose = project.purpose | downcase %}{% unless purpose contains stack_head %}<span class="stack"> · {{ project.stack }}</span>{% endunless %}</p>{% if project.code_url %}<a class="code" href="{{ project.code_url }}">Code<span class="sr-only">: {{ project.title }}</span></a>{% endif %}</li>
+{% endfor %}
+</ul>
+<p class="section-more"><a href="{{ '/portfolio/' | relative_url }}">All software projects →</a></p>

@@ -22,7 +22,7 @@ repository               : "hwzhangcs/hwzhangcs.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile-sunset-light.png"
+  avatar           : "portrait.jpg"
   name             : "Hanwen Zhang"
   pronouns         : "he/him"
   bio              : "CS Honors Undergraduate · Sichuan University"
@@ -142,7 +142,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
+og_image                 : "portrait.jpg" # Social media default site image
 og_description           :  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -174,6 +174,7 @@ exclude:
   - talkmap
   - markdown_generator
   - scripts
+  - latex
   - docs
   - CONTRIBUTING.md
   - _pages/markdown.md

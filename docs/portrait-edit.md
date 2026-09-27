@@ -1,11 +1,14 @@
-# Portrait lighting edit
+# Portrait
 
-Tool: built-in image_gen (not CLI).
+The site uses `images/portrait.jpg` (480 × 600, about 44 KB): a 4:5 head-and-shoulders crop
+for the homepage hero, the author avatar setting and the social link preview (`og_image`).
 
-Original: `images/profile-sunset.jpg` (preserved).
-Selected output: `images/profile-sunset-light.png`.
-The website retains its proportional circular crop.
+## Source
 
-## Final prompt
+1. Original photo: `images/profile-sunset.jpg` (4032 × 3024).
+2. Lighting edit: `images/profile-sunset-light.png` (1448 × 1086), a subtle local exposure lift on the face
+   made with the built-in image_gen tool. Identity, expression, sky and framing were preserved; no beautification.
+3. Crop: 480 × 600 px source region at (200, 200) of the lit image, exported as JPEG quality 84.
 
-Use case: lighting-weather. Edit this exact photograph for a personal academic website avatar. Make only a subtle local exposure/shadow lift to the face (roughly +0.3 to +0.5 EV equivalent), with a softly feathered natural transition so eyes and facial features remain readable at small avatar sizes. Preserve the person's exact identity, face geometry, expression, glasses, hair, natural skin hue and skin texture. Preserve the original warm sunset sky, cloud detail, background exposure and colors, striped shirt, pose and framing. No beautification, skin smoothing, facial reshaping, whitening, added light effects, or global exposure changes. Keep the exact original landscape 4:3 composition, subject positions and full image extent; do not crop or zoom, since the website already handles the avatar crop. Return the subtly edited photograph.
+Both source files were removed from the working tree on September 26, 2026 because the site no longer loads them.
+They remain in git history (last present in commit 46d4bb1): `git show 46d4bb1:images/profile-sunset-light.png > lit.png`.

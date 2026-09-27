@@ -25,7 +25,13 @@ Public pages use `_layouts/academic.html`, with the AcademicPages base styles an
 
 `assets/js/academic.js` handles only theme, homepage section state and printing. Normal pages do not load the previous 4.4 MB JavaScript bundle. Set `math: true`, `mermaid: true` or `plotly: true` on a page only when its content uses that library. Plotly pages must initialize their own plots.
 
-The CV page links to `assets/hanwen-zhang-cv.pdf`. After any CV change, rebuild the site and run `node scripts/build_cv_pdf.js _site` to regenerate the PDF from the print styles, then commit it. Build with `--config _config.yml,_config_docker.yml` so stylesheet URLs resolve locally. Supplemental grades expand during printing.
+The PDF CV (`assets/hanwen-zhang-cv.pdf`, linked from the homepage and `/cv/`) is compiled from `latex/cv.tex`, which uses the Jake's Resume layout (MIT). The web CV reads `_data/`; the LaTeX source is maintained by hand. After changing either:
+
+1. Edit `latex/cv.tex` to match (it is plain ASCII LaTeX, so it also compiles on Overleaf with pdfLaTeX).
+2. Run `python3 scripts/check_cv_tex.py` to confirm GPA, rank, courses, honors, publications and patent numbers agree with `_data/`.
+3. Run `./scripts/build_cv_pdf.sh` (Tectonic, or latexmk as a fallback) and commit the PDF.
+
+The web CV's Print button still prints the HTML page; supplemental grades expand during printing.
 
 ## Publication hygiene
 

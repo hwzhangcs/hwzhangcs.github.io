@@ -1,34 +1,31 @@
 ---
 layout: academic
+hero: true
 permalink: /
-title: "About Me"
-excerpt: "Hanwen Zhang, a computer science honors undergraduate at Sichuan University researching single-image animal reconstruction and generative visual priors."
+title: "Hanwen Zhang"
+excerpt: "Hanwen Zhang is a computer science undergraduate at Sichuan University working on 3D reconstruction from limited visual evidence, including single-image animal reconstruction with generative and anatomical priors."
 redirect_from:
   - /about/
   - /about.html
 ---
 
-I'm **Hanwen Zhang (张瀚文)**, a third-year Computer Science and Technology undergraduate at **Sichuan University**, in the Top-notch Student Training Program 2.0 (Honors Class).
+<section class="section" id="news" aria-labelledby="news-heading">
+<h2 id="news-heading">News</h2>
+{% include news.html %}
+</section>
 
-<p class="academic-highlight"><strong>GPA 3.96/4.00</strong><span aria-hidden="true">·</span><strong>1st in honors class</strong><a href="{{ '/cv/#education' | relative_url }}">Academic background →</a></p>
-
-My current research asks how to reconstruct **animal geometry from a single image**, using generated views and anatomical or body-shape priors. I also work on sparse-view generation and reconstruction. These interests motivate a longer-term direction in **world models for spatial reasoning and action**.
-
-<p class="opportunity"><strong>Open to long-term remote research internships.</strong> Planning for Fall 2028 PhD admission. <a href="mailto:hanwen_zhang@stu.scu.edu.cn">Get in touch →</a></p>
-
-## Selected Research
-{: #research-experience }
-
+<section class="section" id="research" aria-labelledby="research-heading">
+<h2 id="research-heading">Research</h2>
 {% include featured-research.html %}
+<p class="section-more"><a href="{{ '/cv/#research-experience' | relative_url }}">All research experience in the CV →</a></p>
+</section>
 
-<p class="section-link"><a href="{{ '/cv/#research-experience' | relative_url }}">All research experience →</a></p>
-
-## Publications
-
+<section class="section" id="publications" aria-labelledby="publications-heading">
+<h2 id="publications-heading">Publications</h2>
 {% include publications.html %}
+</section>
 
-## Research Software
-
+<section class="section" id="software" aria-labelledby="software-heading">
+<h2 id="software-heading">Software</h2>
 {% include featured-software.html %}
-
-<p class="section-link"><a href="{{ '/portfolio/' | relative_url }}">More software: C++/Qt applications, games &amp; network security →</a></p>
+</section>

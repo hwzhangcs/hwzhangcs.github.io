@@ -5,8 +5,8 @@ permalink: /sitemap/
 excerpt: "Explore Hanwen Zhang's research, publications, software projects, and CV."
 ---
 
-- [About Me]({{ '/' | relative_url }})
-- [Selected Research]({{ '/#research-experience' | relative_url }})
+- [Home]({{ '/' | relative_url }})
+- [Research]({{ '/#research' | relative_url }})
 - [Publications]({{ '/publications/' | relative_url }})
 - [Software Projects]({{ '/portfolio/' | relative_url }})
 - [CV]({{ '/cv/' | relative_url }})

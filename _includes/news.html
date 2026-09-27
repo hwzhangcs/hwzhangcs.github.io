@@ -1,0 +1,5 @@
+<ol class="dated-list news">
+{% for item in site.data.news %}
+  <li><time datetime="{{ item.date }}">{{ item.date | append: '-01' | date: '%b %Y' }}</time><p>{% if item.url %}{{ item.text }} <a class="more" href="{{ item.url | relative_url }}">→<span class="sr-only"> Details</span></a>{% else %}{{ item.text }}{% endif %}</p></li>
+{% endfor %}
+</ol>

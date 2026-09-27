@@ -2,8 +2,8 @@
 layout: academic
 title: "Bone-to-Shape"
 permalink: /research/bone-to-shape/
-back_url: /#research-experience
-back_label: Selected Research
+back_url: /#research
+back_label: Research
 excerpt: "Anatomy-constrained single-image animal reconstruction for veterinary applications: project workflow, research questions, and Hanwen Zhang's role."
 ---
 {% assign project = site.data.research | where: 'id', 'animal-reconstruction' | first %}

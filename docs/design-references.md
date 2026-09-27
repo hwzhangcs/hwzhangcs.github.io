@@ -1,19 +1,17 @@
-# AcademicPages references and content decisions
+# Design references and principles
 
-Reviewed September 24, 2026. All three sites explicitly credit AcademicPages in their footer.
+Reviewed September 26, 2026. No text, code, photos or figures were copied from any site below.
 
-- https://loevlie.github.io/ — selected papers pair a figure with title, authors, venue and resource links. Adopted the image/text rhythm for two selected works, using original workflow schematics rather than borrowing research imagery.
-- https://tianyin123.github.io/ — selected research explains each problem and author role and links titles to detailed pages. Adopted explicit project questions, roles and deeper reading paths.
-- https://recynie.github.io/ — current work is distinguished from research interests, with separate project/publication paths. Adopted concrete current research in the introduction and a clearly longer-term world-model interest.
+- https://jonbarron.info/ — name, short research statement and photo on one screen; a single consistent entry template for all work; almost no ornament.
+- https://elliottwu.com/ — closest research area (animal reconstruction); dated highlights list; own name marked in author lists.
+- https://yilundu.github.io/ — research identity stated as a question; News placed before publications.
 
-No text, code, photos, experimental figures, or results were copied from these reference sites.
+Principles applied to the homepage:
 
-## Evidence for the richer content
+1. First screen = identity. The name, a one-sentence research statement, current project, background and availability all sit above the fold. GPA and rank are one clause, not a highlighted strip.
+2. One reading column (760px) on every page. The AcademicPages sidebar was removed because it repeated the header and left an empty column.
+3. One margin column for dates and venues (News, research items, publications) gives the page a consistent rhythm without cards.
+4. Emphasis follows importance: Bone-to-Shape is the only item with a figure; publications use a citation format; software is a compact table.
+5. Type: Source Serif 4 (self-hosted, latin subset; Google Fonts is unreliable in mainland China) for the name, headings and the research question; system sans for body text. One teal accent on a warm paper background, with a matching dark theme.
 
-- Bone-to-Shape: existing `_data/research.yml` and CV patent record; no additional personal contribution, experiments or performance claims inferred. Diagram is a schematic of the already described image → orbit-view video → 3DGS workflow. The position of priors within the pipeline is intentionally not specified.
-- Paper Refiner: https://github.com/hwzhangcs/paper-refiner and its README. Workflow includes baseline PDF review, five editing passes, JSON patches, compilation checks, version history and issue/revision reports. Implementation was not run during this website update. Personal role remains the previously supplied workflow/orchestrator contribution.
-- GPA and honors-class rank: existing CV, grades dated September 23, 2026. Home now links directly to the source section.
-
-## Follow-up material
-
-Replace or supplement schematic images with user-approved actual figures or demonstrations when available. Do not label generated views as ground-truth observations or turn patent examination status into a research-quality or authorization claim. See content-review.md for unresolved factual questions.
+Content facts: see content-review.md. News entries in `_data/news.yml` must be confirmed and dated. Do not add estimated months.

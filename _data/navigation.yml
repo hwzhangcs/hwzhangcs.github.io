@@ -1,10 +1,10 @@
-# Main navigation. Research links to the selected work on the homepage.
+# Main navigation. Hash links point to sections of the homepage.
 main:
   - title: "Research"
-    url: /#research-experience
+    url: /#research
   - title: "Publications"
-    url: /publications/
-  - title: "Software Projects"
+    url: /#publications
+  - title: "Software"
     url: /portfolio/
   - title: "CV"
     url: /cv/

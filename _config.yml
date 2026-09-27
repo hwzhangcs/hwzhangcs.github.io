@@ -34,10 +34,10 @@ author:
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : # "https://scholar.google.com/citations?user=yourID" - Update when you have publications
+  googlescholar    : "https://scholar.google.com/citations?user=o_uTmywAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : # "https://orcid.org/yourorcidurl" - Update when you have ORCID
+  orcid            : "https://orcid.org/0009-0009-5637-1971"
   semantic         : # URL
   ssrn             : # URL
   pubmed           : # URL
@@ -150,6 +150,9 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "https://scholar.google.com/citations?user=o_uTmywAAAAJ"
+    - "https://orcid.org/0009-0009-5637-1971"
+    - "https://github.com/hwzhangcs"
 
 
 # Analytics

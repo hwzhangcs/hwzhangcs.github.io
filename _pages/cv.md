@@ -11,7 +11,8 @@ redirect_from:
 ---
 
 <p class="cv-identity"><strong>Hanwen Zhang <span lang="zh">张瀚文</span></strong><br>
-Sichuan University · Chengdu, China · <a href="mailto:hanwen_zhang@stu.scu.edu.cn">hanwen_zhang@stu.scu.edu.cn</a> · <a href="https://hwzhangcs.github.io/">hwzhangcs.github.io</a> · <a href="https://github.com/hwzhangcs">github.com/hwzhangcs</a></p>
+Sichuan University · Chengdu, China · <a href="mailto:hanwen_zhang@stu.scu.edu.cn">hanwen_zhang@stu.scu.edu.cn</a> · <a href="https://hwzhangcs.github.io/">hwzhangcs.github.io</a> · <a href="https://github.com/hwzhangcs">github.com/hwzhangcs</a><br>
+Google Scholar: <a href="{{ site.author.googlescholar }}">scholar.google.com/citations?user=o_uTmywAAAAJ</a> · ORCID: <a href="{{ site.author.orcid }}">0009-0009-5637-1971</a></p>
 
 Seeking long-term remote research internships. Planning to apply for Fall 2028 PhD admission.
 

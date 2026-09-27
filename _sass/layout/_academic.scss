@@ -20,6 +20,7 @@
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   --measure: 760px;
   --gutter: 104px;
+  --radius: 4px;
 
   --paper: #fbfaf7;
   --ink: #1d2125;
@@ -131,7 +132,7 @@ body.academic-site {
 html[data-theme="dark"] .hero-lead strong { color: var(--ink); }
 .page .hero-status { display: flex; gap: 10px; align-items: baseline; font-size: 15px; margin: 22px 0 0; }
 .status-dot { flex: none; width: 7px; height: 7px; border-radius: 50%; background: #3f9b6a; box-shadow: 0 0 0 3px color-mix(in srgb, #3f9b6a 20%, transparent); transform: translateY(-2px); }
-.hero-portrait img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 3px; }
+.hero-portrait img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); outline: 1px solid color-mix(in srgb, var(--ink) 10%, transparent); outline-offset: -1px; }
 .page .hero-contact { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 7px; font-size: 14px; line-height: 1.45; }
 .page .hero-contact li { display: grid; grid-template-columns: 16px minmax(0, 1fr); gap: 10px; align-items: baseline; margin: 0; }
 .hero-contact i { color: var(--muted); font-size: 13px; text-align: center; }
@@ -149,7 +150,7 @@ html[data-theme="dark"] .hero-lead strong { color: var(--ink); }
 /* Featured research */
 .feature { display: grid; grid-template-columns: 272px minmax(0, 1fr); gap: 32px; align-items: start; }
 .feature-figure { display: block; margin-top: 4px; }
-.feature-figure img { display: block; width: 100%; height: auto; border-radius: 4px; border: 1px solid var(--rule); transition: border-color .15s; }
+.feature-figure img { display: block; width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--rule); transition: border-color .15s; }
 .feature-figure:hover img { border-color: var(--accent); }
 html[data-theme="dark"] .feature-figure img, html[data-theme="dark"] .project-diagram img { filter: brightness(.88) contrast(1.05); }
 .page .kicker { font-size: 12px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
@@ -210,7 +211,7 @@ html[data-theme="dark"] .feature-figure img, html[data-theme="dark"] .project-di
 /* Project pages */
 .page .project-deck { font-family: var(--serif); font-style: italic; font-size: 21px; line-height: 1.45; color: var(--muted); }
 .project-diagram { margin: 24px 0; }
-.project-diagram img { width: 100%; max-width: 620px; height: auto; display: block; border-radius: 4px; border: 1px solid var(--rule); }
+.project-diagram img { width: 100%; max-width: 620px; height: auto; display: block; border-radius: var(--radius); border: 1px solid var(--rule); }
 .project-diagram figcaption { font-family: var(--sans); font-size: 13.5px; font-style: normal; margin-top: 8px; color: var(--muted); }
 .page .method-steps { padding-left: 24px; }
 .method-steps li { padding-left: 6px; margin-bottom: 12px; }

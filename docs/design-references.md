@@ -14,4 +14,6 @@ Principles applied to the homepage:
 4. Emphasis follows importance: Bone-to-Shape is the only item with a figure; publications use a citation format; software is a compact table.
 5. Type: Source Serif 4 (self-hosted, latin subset; Google Fonts is unreliable in mainland China) for the name, headings and the research question; system sans for body text. One teal accent on a warm paper background, with a matching dark theme.
 
+6. Portrait: a 4:5 rectangle with the shared 4px radius and a faint edge line. A circle is the template default and crops the shoulders; a large-radius rounded frame reads as an app avatar. The rectangle matches the hairline rules and figures.
+
 Content facts: see content-review.md. News entries in `_data/news.yml` must be confirmed and dated. Do not add estimated months.

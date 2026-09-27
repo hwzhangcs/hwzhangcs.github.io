@@ -111,20 +111,31 @@ body.academic-site {
 .section-more { font-size: 15px; margin-top: 24px !important; }
 
 /* Hero */
-.hero { display: grid; grid-template-columns: minmax(0, 1fr) 196px; gap: 48px; align-items: start; margin-bottom: 8px; }
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 196px;
+  grid-template-rows: auto auto auto 1fr;
+  grid-template-areas: "head photo" "text photo" "text contact" "text .";
+  column-gap: 48px;
+  margin-bottom: 8px;
+}
+.hero-head { grid-area: head; }
+.hero-text { grid-area: text; }
+.hero-portrait { grid-area: photo; margin: 6px 0 0; }
+.hero-contact { grid-area: contact; }
 .page .hero-name { font-size: 46px; line-height: 1.08; letter-spacing: -.02em; margin: 0 0 10px; }
 .hero-name span { display: inline-block; font-size: .5em; font-weight: 400; letter-spacing: .04em; color: var(--muted); vertical-align: .32em; margin-left: .3em; }
 .page .hero-role { font-size: 15px; color: var(--muted); margin-bottom: 26px; }
 .page .hero-lead { font-family: var(--serif); font-size: 23px; line-height: 1.42; letter-spacing: -.005em; margin-bottom: 20px; }
 .hero-lead strong { font-weight: 600; color: var(--accent-strong); }
 html[data-theme="dark"] .hero-lead strong { color: var(--ink); }
-.page .hero-status { display: flex; gap: 10px; align-items: baseline; font-size: 15px; margin: 22px 0 14px; }
+.page .hero-status { display: flex; gap: 10px; align-items: baseline; font-size: 15px; margin: 22px 0 0; }
 .status-dot { flex: none; width: 7px; height: 7px; border-radius: 50%; background: #3f9b6a; box-shadow: 0 0 0 3px color-mix(in srgb, #3f9b6a 20%, transparent); transform: translateY(-2px); }
-.page .hero-links { display: flex; flex-wrap: wrap; gap: 4px 0; padding: 0; margin: 0; list-style: none; font-size: 15px; }
-.hero-links li { margin: 0; }
-.hero-links li + li::before { content: "/"; color: var(--rule); margin: 0 12px; }
-.hero-portrait { margin: 6px 0 0; }
 .hero-portrait img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 3px; }
+.page .hero-contact { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 7px; font-size: 14px; line-height: 1.45; }
+.page .hero-contact li { display: grid; grid-template-columns: 16px minmax(0, 1fr); gap: 10px; align-items: baseline; margin: 0; }
+.hero-contact i { color: var(--muted); font-size: 13px; text-align: center; }
+.hero-location { color: var(--muted); }
 
 /* Shared dated list: a narrow margin column for dates and venues */
 .page .dated-list { list-style: none; padding: 0; margin: 0; }
@@ -213,7 +224,8 @@ html[data-theme="dark"] .feature-figure img, html[data-theme="dark"] .project-di
 .academic-site .site-footer-inner a { color: inherit; }
 
 @media (max-width: 760px) {
-  .hero { grid-template-columns: minmax(0, 1fr) 132px; gap: 28px; }
+  .hero { grid-template-columns: minmax(0, 1fr) 160px; column-gap: 28px; }
+  .page .hero-contact { font-size: 13px; }
   .page .hero-name { font-size: 38px; }
   .feature { grid-template-columns: minmax(0, 1fr); gap: 18px; }
   .feature-figure { max-width: 420px; }
@@ -230,10 +242,11 @@ html[data-theme="dark"] .feature-figure img, html[data-theme="dark"] .project-di
   .page { max-width: none; margin: 32px auto 72px; padding: 0 16px; }
   .page h1 { font-size: 32px; }
   .page h2 { font-size: 22px; margin-top: 44px; }
-  .hero { display: block; position: relative; }
-  .hero-portrait { position: absolute; top: 0; right: 0; width: 84px; margin: 0; }
-  .page .hero-name, .page .hero-role { padding-right: 100px; }
+  .hero { grid-template-columns: minmax(0, 1fr) 84px; grid-template-rows: auto; grid-template-areas: "head photo" "text text" "contact contact"; column-gap: 16px; }
+  .hero-portrait { margin: 0; }
   .page .hero-role { margin-bottom: 22px; }
+  .page .hero-contact { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 16px; }
+  .page .hero-contact li { display: flex; gap: 7px; }
   .page .hero-name { font-size: 34px; }
   .hero-name span { display: block; font-size: 18px; margin: 6px 0 0; vertical-align: 0; }
   .page .hero-lead { font-size: 20px; }

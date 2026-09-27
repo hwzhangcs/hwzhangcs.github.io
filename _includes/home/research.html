@@ -18,7 +18,7 @@
 {% for item in site.data.research %}{% if item.homepage and item.homepage.featured != true %}
   <li><time>{{ item.homepage.period }}</time><div>
     <h3>{{ item.homepage.title }}</h3>
-    <p class="meta">{{ item.homepage.meta }}</p>
+    <p class="meta">{{ item.homepage.meta }}{% if item.mode %}<br>{{ item.mode }}{% endif %}</p>
     <p>{{ item.homepage.summary }}</p>
   </div></li>
 {% endif %}{% endfor %}

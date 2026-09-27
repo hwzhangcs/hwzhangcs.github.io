@@ -37,6 +37,7 @@
   role: Research Intern
   institution: Department of Data Science
   date: "Jul 15 – Sep 1, 2026"
+  mode: "Remote Jul 15–31; on site Aug 1–Sep 1"
   supervisor: Xinke Li
   bullets:
     - Investigated generative visual priors for 3D reconstruction using TRELLIS.2.

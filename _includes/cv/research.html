@@ -5,6 +5,7 @@
     <p class="entry-meta">{{ item.role }}{% if item.institution %} · {{ item.institution }}{% endif %}</p>
     {% if item.program %}<p class="entry-meta">{{ item.program }}</p>{% endif %}
     {% if item.supervisor %}<p class="entry-meta">Supervisor: {{ item.supervisor }}</p>{% endif %}
+    {% if item.mode %}<p class="entry-meta">{{ item.mode }}</p>{% endif %}
     <ul class="entry-bullets">{% for bullet in item.bullets %}<li>{{ bullet }}</li>{% endfor %}</ul>
     {% if item.detail_url %}<p class="resource-links"><a href="{{ item.detail_url | relative_url }}">Project overview →</a></p>{% endif %}
     {% for detail in item.details %}<p class="entry-note">{{ detail }}</p>{% endfor %}

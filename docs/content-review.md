@@ -2,7 +2,6 @@
 
 These are editorial follow-ups, not corrected or inferred facts. Original factual claims are retained.
 
-- CityU internship (July 15–September 1, 2026) overlaps the UNSW in-person program (July 20–31, 2026). Confirm whether travel/leave or another arrangement should be explained.
 - Sparse-view generation/reconstruction has no verified dates, affiliation, role detail or outcome. Retained in the CV; omitted from selected homepage research.
 - Check official English names of the honors program, scholarships, project programs and courses against university records. Existing names are retained pending verification.
 - The patent is an application that passed preliminary examination, pending publication and not granted. Update all associated records only with confirmed status changes.

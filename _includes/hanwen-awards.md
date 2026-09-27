@@ -1,5 +1,3 @@
-- **First-Class Single-Category Scholarship (单项一等奖学金)**, Sichuan University, 2025–2026 academic year.
-- **Third-Class Comprehensive Scholarship (综合三等奖学金)**, Sichuan University, 2024–2025 academic year.
-- **Third Prize, Sichuan Division**, 17th Chinese Mathematics Competition for College Students, Non-Mathematics Category A, 2025.
-- **Outstanding Undergraduate Student Cadre**, Sichuan University, 2024–2025 academic year.
-- **Provincial Third Prize, Ascend AI Track**, Huawei ICT Competition, 2024.
+{% for honor in site.data.honors %}
+- **{{ honor.title }}{% if honor.zh %} ({{ honor.zh }}){% endif %}**, {{ honor.detail }}, {{ honor.date }}.
+{% endfor %}

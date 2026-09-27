@@ -126,7 +126,11 @@ body.academic-site {
 .hero-contact { grid-area: contact; }
 .page .hero-name { font-size: 46px; line-height: 1.08; letter-spacing: -.02em; margin: 0 0 10px; }
 .hero-name span { display: inline-block; font-size: .5em; font-weight: 400; letter-spacing: .04em; color: var(--muted); vertical-align: .32em; margin-left: .3em; }
-.page .hero-role { font-size: 15px; color: var(--muted); margin-bottom: 26px; }
+.page .hero-role { font-size: 15px; color: var(--muted); margin-bottom: 4px; }
+.page .hero-credentials { font-size: 15px; color: var(--muted); margin-bottom: 26px; font-variant-numeric: lining-nums tabular-nums; }
+.hero-credentials .cred { white-space: nowrap; }
+.hero-credentials strong { font-family: var(--serif); font-size: 17px; font-weight: 600; color: var(--ink); }
+.hero-credentials .sep, .courses .sep { color: var(--rule); margin: 0 6px; }
 .page .hero-lead { font-family: var(--serif); font-size: 23px; line-height: 1.42; letter-spacing: -.005em; margin-bottom: 20px; }
 .hero-lead strong { font-weight: 600; color: var(--accent-strong); }
 html[data-theme="dark"] .hero-lead strong { color: var(--ink); }
@@ -164,6 +168,20 @@ html[data-theme="dark"] .feature-figure img, html[data-theme="dark"] .project-di
 .question span { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); margin-right: 4px; }
 .work-list { margin-top: 36px !important; font-size: 16px; }
 .work-list > li > div > p:last-child { margin-bottom: 0; }
+
+/* Education & Honors */
+.page .standing { font-size: 15.5px; margin: 6px 0 8px; }
+.standing strong { font-family: var(--serif); font-size: 17px; }
+.page .courses { font-size: 14.5px; color: var(--muted); margin: 0; }
+.courses > span:first-child { font-size: 11.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-right: 6px; }
+.courses b { font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; }
+.page .subsection { font-size: 12px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); margin: 32px 0 12px; }
+.honors { font-size: 15.5px; }
+.honors .zh { color: var(--muted); font-size: .92em; }
+.page .outcomes { font-size: 14.5px; color: var(--ink); margin: 0 0 8px; }
+.page .outcomes::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); margin-right: 8px; transform: translateY(-2px); }
+.patents { margin-top: 20px !important; }
+.patents .publication-authors strong { border-bottom: 0; font-weight: 600; }
 
 /* Publications */
 .publication .venue { font-weight: 600; color: var(--accent); letter-spacing: .02em; }
@@ -245,7 +263,8 @@ html[data-theme="dark"] .feature-figure img, html[data-theme="dark"] .project-di
   .page h2 { font-size: 22px; margin-top: 44px; }
   .hero { grid-template-columns: minmax(0, 1fr) 84px; grid-template-rows: auto; grid-template-areas: "head photo" "text text" "contact contact"; column-gap: 16px; }
   .hero-portrait { margin: 0; }
-  .page .hero-role { margin-bottom: 22px; }
+  .page .hero-credentials { margin-bottom: 22px; display: flex; flex-wrap: wrap; gap: 2px 14px; }
+  .hero-credentials .sep { display: none; }
   .page .hero-contact { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 16px; }
   .page .hero-contact li { display: flex; gap: 7px; }
   .page .hero-name { font-size: 34px; }

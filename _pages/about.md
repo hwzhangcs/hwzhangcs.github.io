@@ -3,7 +3,7 @@ layout: academic
 hero: true
 permalink: /
 title: "Hanwen Zhang"
-excerpt: "Hanwen Zhang is a computer science undergraduate at Sichuan University working on 3D reconstruction from limited visual evidence, including single-image animal reconstruction with generative and anatomical priors."
+excerpt: "Hanwen Zhang is a computer science undergraduate at Sichuan University, ranked first in the Honors Class, working on 3D reconstruction from limited visual evidence, including single-image animal reconstruction with generative and anatomical priors."
 redirect_from:
   - /about/
   - /about.html
@@ -21,8 +21,14 @@ redirect_from:
 </section>
 
 <section class="section" id="publications" aria-labelledby="publications-heading">
-<h2 id="publications-heading">Publications</h2>
+<h2 id="publications-heading">Publications &amp; Patents</h2>
 {% include publications.html %}
+{% include home-patents.html %}
+</section>
+
+<section class="section" id="education" aria-labelledby="education-heading">
+<h2 id="education-heading">Education &amp; Honors</h2>
+{% include education-honors.html %}
 </section>
 
 <section class="section" id="software" aria-labelledby="software-heading">

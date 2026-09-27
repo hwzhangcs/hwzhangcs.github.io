@@ -3,6 +3,7 @@ layout: "academic"
 collection: "portfolio"
 title: "Paper Refiner"
 order: 1
+home: true
 purpose: "Multi-agent LaTeX paper revision system"
 contribution: "Designed and implemented the workflow and orchestrator, including structured patch-based editing and reproducible runs with configurations and logs."
 stack: "Python · LaTeX · JSON patches"

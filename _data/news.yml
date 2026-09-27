@@ -1,4 +1,4 @@
-# Newest first. Only confirmed, dated facts; the homepage shows every entry, so keep it short.
+# Newest first. Only confirmed, dated facts with research or academic weight; the homepage shows every entry.
 - date: 2026-09
   text: >-
     A Chinese invention patent application on animal 3D reconstruction with body-shape priors,
@@ -14,9 +14,3 @@
     Our paper on kernel self-representation learning for fuzzy neighborhood outlier detection
     is out in the International Journal of Approximate Reasoning.
   url: https://doi.org/10.1016/j.ijar.2026.109769
-- date: 2025-10
-  text: Attended CNCC 2025 in Harbin.
-- date: 2025-07
-  text: >-
-    Registered a joint software copyright for a granular network threat detection system.
-  url: /portfolio/network-threat-detection/

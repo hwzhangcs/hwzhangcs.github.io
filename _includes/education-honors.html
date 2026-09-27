@@ -1,0 +1,17 @@
+{% assign edu = site.data.education %}
+{% assign honors = site.data.honors | where: 'home', true %}
+<ol class="dated-list education">
+  <li><time>{{ edu.year_label }}</time><div>
+    <h3>{{ edu.institution }}</h3>
+    <p class="meta">{{ edu.degree }} · {{ edu.program }}</p>
+    <p class="standing">GPA <strong>{{ edu.gpa }}</strong> · <strong>Ranked 1st</strong> in class · Weighted average {{ edu.weighted_average }}</p>
+    <p class="courses"><span>Top courses</span> {% assign courses = edu.courses | where: 'home', true %}{% for course in courses %}{{ course.name }} <b>{{ course.score }}</b>{% unless forloop.last %}<span class="sep" aria-hidden="true"> · </span>{% endunless %}{% endfor %}</p>
+  </div></li>
+</ol>
+<h3 class="subsection">Selected honors</h3>
+<ol class="dated-list honors">
+{% for honor in honors %}
+  <li><time>{{ honor.short_date }}</time><p><strong>{{ honor.title }}</strong>{% if honor.zh %} <span lang="zh" class="zh">{{ honor.zh }}</span>{% endif %}, {{ honor.detail }}</p></li>
+{% endfor %}
+</ol>
+<p class="section-more">Also: President, Sichuan University AI Club. <a href="{{ '/cv/#honors' | relative_url }}">All honors and activities in the CV →</a></p>

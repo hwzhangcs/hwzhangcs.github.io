@@ -1,0 +1,22 @@
+# Education record used by the homepage hero, the homepage Education & Honors section and the CV.
+institution: Sichuan University
+degree: B.Eng. in Computer Science and Technology
+program: Top-notch Student Training Program 2.0 (Honors Class)
+dates: Sep 2024 – Present
+year_label: 2024–
+gpa: "3.96/4.00"
+rank: 1st in honors class
+weighted_average: "93.76/100"
+as_of: September 23, 2026
+compulsory_gpa: "3.95/4.00"
+compulsory_weighted_average: "93.61/100"
+# `home: true` courses appear on the homepage; all appear in the CV.
+courses:
+  - { name: Operating System, score: 99, home: true }
+  - { name: Theory of Computation, score: 98, home: true }
+  - { name: Theory of Optimization, score: 98, home: true }
+  - { name: Probability Statistics, score: 97, home: true }
+  - { name: Numerical Computing Method, score: 97, home: true }
+  - { name: Introduction to Artificial Intelligence, score: 96, home: true }
+  - { name: Discrete Mathematics, score: 94 }
+  - { name: Introduction to Multimodal Learning, score: 90 }

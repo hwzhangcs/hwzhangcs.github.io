@@ -12,6 +12,7 @@
   bullets:
     - Lead a project that generates orbit-view video from a single animal image and reconstructs a 3D Gaussian Splatting (3DGS) representation.
     - Explore anatomical and body-shape priors to constrain reconstructed geometry.
+  milestone: Passed the college midterm review
   details:
     - "Project title: Bone-to-Shape: Anatomy-Constrained 3D Reconstruction for Veterinary Applications (骨影生形)."
     - Passed the college midterm review. Related patent application details are listed under Intellectual Property.
@@ -25,6 +26,16 @@
   bullets:
     - Investigated generative visual priors for 3D reconstruction using TRELLIS.2.
     - Contributed to ground-truth calibration and geometric registration for FARO laser scanning in complex physical environments.
+- id: deep-hole
+  title: "Deep-Hole Guardian (深孔卫士)"
+  home_title: Embodied perception for deep-hole defect inspection
+  role: Team Member
+  program: University-Level Undergraduate Innovation Training Program
+  date: "2026"
+  selected: true
+  bullets:
+    - Participated in a project on embodied perception for deep blind-hole defect identification and control with a SCARA robot.
+    - Passed the college midterm review.
 - id: sparse-view
   title: Sparse-View Generation and Reconstruction
   role: Research Project

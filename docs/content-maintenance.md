@@ -4,15 +4,18 @@
 
 - `_includes/hero.html`: name, research statement, background and availability at the top of the homepage.
 - `_pages/about.md`: homepage section order (News, Research, Publications, Software).
-- `_data/news.yml`: dated news items, newest first. Only confirmed months.
+- `_data/news.yml`: dated news items, newest first. Only confirmed months, and only items with research or academic weight.
+- `_data/education.yml`: GPA, rank, averages and courses. Used by the hero, the homepage Education & Honors section and the CV. `home: true` courses appear on the homepage.
+- `_data/honors.yml`: all honors for the CV; `home: true` marks the three shown on the homepage.
+- `_data/ip.yml`: patents and software copyrights for the CV; `home: true` lists an item under Publications & Patents on the homepage.
 - `_pages/cv.md`: education, activities, service and skills; update `updated` only when CV content changes.
 - `_data/research.yml`: research facts. `selected: true` includes a record on the homepage; `details` appear only in the CV. Keep unknown dates and affiliations absent.
 - `_data/publications.yml`: exact titles, author order, publication metadata, contribution and DOI. Rendered consistently on the homepage, Publications and CV.
-- `_portfolio/*.md`: project facts and detail pages. `purpose`, `contribution`, `stack`, `code_url`, optional `year` and `order` also power project lists and the CV. Only use verified repository links.
+- `_portfolio/*.md`: project facts and detail pages; `home: true` lists a project on the homepage. `purpose`, `contribution`, `stack`, `code_url`, optional `year` and `order` also power project lists and the CV. Only use verified repository links.
 - `_pages/bone-to-shape.md`: research overview and progress, linked from the home and CV.
 - `assets/diagrams/`: original, explicitly labeled workflow schematics, not experimental figures.
 - `_includes/featured-research.html` (featured project plus compact research items) and `_includes/featured-software.html` (compact software list).
-- `_includes/hanwen-ip.md` and `_includes/hanwen-awards.md`: intellectual property and honors.
+- `_includes/hanwen-ip.md` and `_includes/hanwen-awards.md`: render the CV lists from `ip.yml` and `honors.yml`.
 
 The previous JSON CV is preserved in `templates/legacy-cv.json` as a historical snapshot, excluded from publication. It is not a second editable source. `scripts/update_cv_json.sh` intentionally refuses to regenerate it. Old CV URLs redirect to `/cv/`.
 
@@ -29,3 +32,9 @@ The CV page links to `assets/hanwen-zhang-cv.pdf`. After any CV change, rebuild 
 Template examples, sample attachments, unused archive pages and maintenance files are excluded in `_config.yml`. Sample sources are retained in the repository. No blog feed is advertised until there is a real blog to publish. GitHub Pages may still generate an empty feed; it must contain no sample posts.
 
 Build with `bundle exec jekyll build`, then run `python3 scripts/check_site.py _site`. Check responsive layout at 375, 768, 1024 and 1440px, dark mode, keyboard navigation, and CV printing after layout changes.
+
+## Homepage hierarchy
+
+1. Primary: research statement, Bone-to-Shape, research internships.
+2. Secondary: rank and GPA (hero credential line), publication and patent, three selected honors, top courses.
+3. Supporting (CV only): lesser scholarships and titles, MCM, CCF CSP, CET-6, exchange programs, service roles other than the AI Club, skills, course and game projects.

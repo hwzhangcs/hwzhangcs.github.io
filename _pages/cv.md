@@ -33,18 +33,19 @@ Seeking long-term remote research internships. Planning to apply for Fall 2028 P
 
 ## Education
 
-<div class="entry-heading"><h3>Sichuan University</h3><span class="entry-date">Sep 2024 – Present</span></div>
-<p class="entry-meta">B.Eng. in Computer Science and Technology<br>Top-notch Student Training Program 2.0 (Honors Class)</p>
+{% assign edu = site.data.education %}
+<div class="entry-heading"><h3>{{ edu.institution }}</h3><span class="entry-date">{{ edu.dates }}</span></div>
+<p class="entry-meta">{{ edu.degree }}<br>{{ edu.program }}</p>
 
-**GPA: 3.96/4.00 · Rank: 1st in honors class**<br>
-Weighted average: 93.76/100. Grades as of September 23, 2026.
+**GPA: {{ edu.gpa }} · Rank: {{ edu.rank }}**<br>
+Weighted average: {{ edu.weighted_average }}. Grades as of {{ edu.as_of }}.
 
 <details markdown="1">
 <summary>Coursework and additional grade details</summary>
 
-Compulsory-course GPA: 3.95/4.00; compulsory-course weighted average: 93.61/100.
+Compulsory-course GPA: {{ edu.compulsory_gpa }}; compulsory-course weighted average: {{ edu.compulsory_weighted_average }}.
 
-Selected coursework: Operating System (99), Theory of Computation (98), Theory of Optimization (98), Probability Statistics (97), Numerical Computing Method (97), Introduction to Artificial Intelligence (96), Discrete Mathematics (94), Introduction to Multimodal Learning (90).
+Selected coursework: {% for course in edu.courses %}{{ course.name }} ({{ course.score }}){% unless forloop.last %}, {% endunless %}{% endfor %}.
 </details>
 
 ## Research Interests
@@ -79,11 +80,6 @@ Visual generation and 3D reconstruction, with a longer-term interest in generati
 
 {% include projects.html %}
 
-<article class="entry additional-project">
-<div class="entry-heading"><h3>Deep-Hole Guardian (深孔卫士)</h3><span class="entry-date">2026</span></div>
-<p class="entry-meta">Team Member · University-Level Undergraduate Innovation Training Program</p>
-<p>Participated in a project on embodied perception for deep blind-hole defect identification and control with a SCARA robot. Passed the college midterm review.</p>
-</article>
 
 ## Activities & Service
 {: #activities }

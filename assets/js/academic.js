@@ -9,7 +9,6 @@
     if (dark) root.dataset.theme = 'dark'; else root.removeAttribute('data-theme');
     toggle.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
     toggle.title = toggle.getAttribute('aria-label');
-    toggle.querySelector('i').className = dark ? 'fas fa-sun' : 'fas fa-moon';
   };
   applyTheme();
   toggle.addEventListener('click', () => {

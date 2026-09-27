@@ -6,6 +6,6 @@
       <li><a href="{{ link.url | relative_url }}"{% unless link.url contains '#' %}{% if page.url contains link.url %} aria-current="page"{% endif %}{% endunless %}>{{ link.title }}</a></li>
       {% endfor %}
     </ul>
-    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme"><i class="fas fa-moon" aria-hidden="true"></i></button>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme"><span class="theme-icon-dark">{% include icon.html name="moon" %}</span><span class="theme-icon-light">{% include icon.html name="sun" %}</span></button>
   </nav>
 </header>

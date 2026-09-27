@@ -15,15 +15,16 @@
 - `_pages/bone-to-shape.md`: research overview and progress, linked from the home and CV.
 - `assets/diagrams/`: original, explicitly labeled workflow schematics, not experimental figures.
 - `_includes/featured-research.html` (featured project plus compact research items) and `_includes/featured-software.html` (compact software list).
-- `_includes/hanwen-ip.md` and `_includes/hanwen-awards.md`: render the CV lists from `ip.yml` and `honors.yml`.
+- `_includes/cv-ip.md` and `_includes/cv-honors.md`: render the CV lists from `ip.yml` and `honors.yml`.
+- `_config.yml` `author`: email, GitHub, Google Scholar, ORCID and location, used by the homepage, CV header, footer and structured data.
 
-The previous JSON CV is preserved in `templates/legacy-cv.json` as a historical snapshot, excluded from publication. It is not a second editable source. `scripts/update_cv_json.sh` intentionally refuses to regenerate it. Old CV URLs redirect to `/cv/`.
+Old CV URLs (`/resume`, `/cv-json/`, `/resume-json`) redirect to `/cv/`. The retired JSON CV and the AcademicPages sample content remain in git history only.
 
 ## Presentation
 
-Public pages use `_layouts/academic.html`, with the AcademicPages base styles and `_sass/layout/_academic.scss` overrides. Every page uses one 760px reading column; the homepage replaces the page title with the hero. Breakpoints are 760px (hero and featured project stack) and 600px (navigation wraps below the name).
+Every page uses `_layouts/academic.html` inside `_layouts/default.html`. Styles are `_sass/_base.scss` (element defaults) and `_sass/_academic.scss` (tokens, layout, components, dark theme, print). Icons are inline SVGs in `_includes/icon.html`; add a Font Awesome Free 6.5.2 path there if a new one is needed. Every page uses one 760px reading column; the homepage replaces the page title with the hero. Breakpoints are 760px (hero and featured project stack) and 600px (navigation wraps below the name).
 
-`assets/js/academic.js` handles only theme, homepage section state and printing. Normal pages do not load the previous 4.4 MB JavaScript bundle. Set `math: true`, `mermaid: true` or `plotly: true` on a page only when its content uses that library. Plotly pages must initialize their own plots.
+`assets/js/academic.js` handles only the theme toggle, homepage section highlighting and CV printing. There is no other JavaScript.
 
 The PDF CV (`assets/hanwen-zhang-cv.pdf`, linked from the homepage and `/cv/`) is compiled from `latex/cv.tex`, which uses the Jake's Resume layout (MIT). The web CV reads `_data/`; the LaTeX source is maintained by hand. After changing either:
 
@@ -35,7 +36,7 @@ The web CV's Print button still prints the HTML page; supplemental grades expand
 
 ## Publication hygiene
 
-Template examples, sample attachments, unused archive pages and maintenance files are excluded in `_config.yml`. Sample sources are retained in the repository. No blog feed is advertised until there is a real blog to publish. GitHub Pages may still generate an empty feed; it must contain no sample posts.
+`_config.yml` excludes everything that is not part of the site (docs, LaTeX, scripts, Docker and Ruby files) and sets `theme: null` so GitHub Pages does not add its default theme stylesheet. `scripts/check_site.py` fails if anything other than the known pages, `assets/`, `images/` and the sitemap is published.
 
 Build with `bundle exec jekyll build`, then run `python3 scripts/check_site.py _site`. Check responsive layout at 375, 768, 1024 and 1440px, dark mode, keyboard navigation, and CV printing after layout changes.
 

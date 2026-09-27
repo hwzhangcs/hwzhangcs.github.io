@@ -64,11 +64,11 @@ Visual generation and 3D reconstruction, with a longer-term interest in generati
 ## Patents & Software Copyrights
 {: #intellectual-property }
 
-{% include hanwen-ip.md %}
+{% include cv-ip.md %}
 
 ## Honors
 
-{% include hanwen-awards.md %}
+{% include cv-honors.md %}
 
 ### Competitions & Assessments
 {: .cv-subheading }

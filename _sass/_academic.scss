@@ -30,13 +30,6 @@
   --accent-strong: #0f4652;
   --tint: #f1efe8;
 
-  --global-bg-color: var(--paper);
-  --global-text-color: var(--ink);
-  --global-text-color-light: var(--muted);
-  --global-border-color: var(--rule);
-  --global-link-color: var(--accent);
-  --global-link-color-hover: var(--accent-strong);
-  --global-link-color-visited: var(--accent);
 }
 html[data-theme="dark"] {
   --paper: #14181b;
@@ -47,13 +40,6 @@ html[data-theme="dark"] {
   --accent-strong: #b3e0ea;
   --tint: #1c2125;
 
-  --global-bg-color: var(--paper);
-  --global-text-color: var(--ink);
-  --global-text-color-light: var(--muted);
-  --global-border-color: var(--rule);
-  --global-link-color: var(--accent);
-  --global-link-color-hover: var(--accent-strong);
-  --global-link-color-visited: var(--accent);
 }
 
 html { scroll-padding-top: 88px; background: var(--paper); }
@@ -91,6 +77,8 @@ body.academic-site {
 .academic-site .nav-links a:hover, .academic-site .nav-links a[aria-current] { color: var(--ink); border-bottom-color: var(--accent); }
 .theme-toggle { color: var(--muted); background: none; border: 0; width: 40px; height: 40px; margin-right: -10px; border-radius: 50%; }
 .theme-toggle:hover { color: var(--ink); background: var(--tint); }
+.theme-icon-light, html[data-theme="dark"] .theme-icon-dark { display: none; }
+html[data-theme="dark"] .theme-icon-light { display: inline; }
 .no-js .theme-toggle, .no-js .print-button { display: none; }
 
 /* Page frame */
@@ -139,7 +127,7 @@ html[data-theme="dark"] .hero-lead strong { color: var(--ink); }
 .hero-portrait img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); outline: 1px solid color-mix(in srgb, var(--ink) 10%, transparent); outline-offset: -1px; }
 .page .hero-contact { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 7px; font-size: 14px; line-height: 1.45; }
 .page .hero-contact li { display: grid; grid-template-columns: 16px minmax(0, 1fr); gap: 10px; align-items: baseline; margin: 0; }
-.hero-contact i { color: var(--muted); font-size: 13px; text-align: center; }
+.hero-contact .icon { color: var(--muted); font-size: 13px; justify-self: center; }
 .hero-location { color: var(--muted); }
 
 /* Shared dated list: a narrow margin column for dates and venues */
@@ -210,8 +198,6 @@ html[data-theme="dark"] .feature-figure img, html[data-theme="dark"] .project-di
 .page .entry-bullets { margin-top: 10px; }
 .entry p:last-child, .entry ul:last-child { margin-bottom: 0; }
 .resource-links { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 14.5px; margin-top: 10px !important; }
-.page .section-link { font-size: 15px; margin: 20px 0 0; }
-.additional-project { border-top: 1px solid var(--rule); padding-top: 22px; margin-top: 22px; }
 .page .cv-subheading { font-size: 15px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-top: 26px; }
 .cv-index { font-size: 14px; margin: 24px 0 8px; padding: 12px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
 .page .cv-index ul { display: flex; flex-wrap: wrap; gap: 4px 18px; list-style: none; margin: 0; padding: 0; }

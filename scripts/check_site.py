@@ -87,18 +87,18 @@ expected = {'index.html', 'cv/index.html', 'publications/index.html', 'portfolio
 actual = {p.relative_to(root).as_posix() for p in pages}
 if actual != expected:
     errors.append(f'Unexpected public routes: added={actual - expected}, missing={expected - actual}')
-for filename in ['sitemap.xml', 'feed.xml']:
-    path = root / filename
-    if path.exists():
-        xml = ET.fromstring(path.read_text())
-        for text in xml.itertext():
-            if any(marker in text for marker in ['Blog Post number', 'Paper Title Number', '/markdown/', '/posts/', '/teaching/', '/talks/', '2199-']):
-                errors.append(f'{filename}: template content leaked into output')
-for rel in ['index.html', 'cv/index.html', 'portfolio/index.html', 'publications/index.html']:
-    source = (root / rel).read_text()
-    if any(marker in source for marker in ['main.min.js', 'MathJax-script', 'mermaid.esm', 'plotly.min.js']):
-        errors.append(f'{rel}: unnecessary heavy script loaded')
+published = {p.relative_to(root).as_posix() for p in root.rglob('*') if p.is_file()}
+allowed_other = {'sitemap.xml', 'redirects.json', 'robots.txt'}
+stray = sorted(f for f in published - actual - allowed_other if not f.startswith(('assets/', 'images/')))
+if stray:
+    errors.append(f'Files published outside assets/ and images/: {stray}')
+sitemap = root / 'sitemap.xml'
+if sitemap.exists():
+    listed = {urlsplit(loc.text).path for loc in ET.fromstring(sitemap.read_text()).iter() if loc.tag.endswith('loc')}
+    redirects = {'/about.html', '/about/', '/cv-json/', '/resume.html', '/resume-json.html'}
+    if listed & redirects:
+        errors.append(f'sitemap.xml lists redirect pages: {sorted(listed & redirects)}')
 if errors:
     print('\n'.join(errors))
     sys.exit(1)
-print(f'PASS: {len(pages)} HTML pages; local links, anchors, heading structure, canonical URLs, public routes and template exclusions.')
+print(f'PASS: {len(pages)} HTML pages; local links, anchors, heading structure, canonical URLs, public routes and published files.')

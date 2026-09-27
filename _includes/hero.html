@@ -9,12 +9,12 @@
     <img src="{{ '/images/portrait.jpg' | relative_url }}" alt="Portrait of Hanwen Zhang" width="480" height="600" fetchpriority="high">
   </figure>
   <ul class="hero-contact" aria-label="Contact and profiles">
-    <li><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:{{ site.author.email }}">hanwen_zhang@<wbr>stu.scu.edu.cn</a></li>
-    <li><i class="fab fa-google-scholar" aria-hidden="true"></i><a href="{{ site.author.googlescholar }}">Google Scholar</a></li>
-    <li><i class="fab fa-orcid" aria-hidden="true"></i><a href="{{ site.author.orcid }}">ORCID</a></li>
-    <li><i class="fab fa-github" aria-hidden="true"></i><a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
-    <li><i class="fas fa-file-lines" aria-hidden="true"></i><span><a href="{{ '/cv/' | relative_url }}">CV</a> · <a href="{{ '/assets/hanwen-zhang-cv.pdf' | relative_url }}">PDF</a></span></li>
-    <li class="hero-location"><i class="fas fa-location-dot" aria-hidden="true"></i>{{ site.author.location }}</li>
+    <li>{% include icon.html name="envelope" %}<a href="mailto:{{ site.author.email }}">hanwen_zhang@<wbr>stu.scu.edu.cn</a></li>
+    <li>{% include icon.html name="google-scholar" %}<a href="{{ site.author.googlescholar }}">Google Scholar</a></li>
+    <li>{% include icon.html name="orcid" %}<a href="{{ site.author.orcid }}">ORCID</a></li>
+    <li>{% include icon.html name="github" %}<a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
+    <li>{% include icon.html name="file-lines" %}<span><a href="{{ '/cv/' | relative_url }}">CV</a> · <a href="{{ '/assets/hanwen-zhang-cv.pdf' | relative_url }}">PDF</a></span></li>
+    <li class="hero-location">{% include icon.html name="location-dot" %}{{ site.author.location }}</li>
   </ul>
   <div class="hero-text">
     <p class="hero-lead">I study how to recover <strong>3D structure from very little visual evidence</strong>, combining generative models with geometric and anatomical priors.</p>

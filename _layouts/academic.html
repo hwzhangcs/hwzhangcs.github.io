@@ -3,7 +3,7 @@ layout: default
 ---
 <main id="content" class="page{% if page.url == '/cv/' %} cv-content{% endif %}{% if page.hero %} page--home{% endif %}">
   {% if page.hero %}
-    {% include hero.html %}
+    {% include home/hero.html %}
   {% else %}
   <header class="page-header">
     {% if page.back_url %}<a class="back-link" href="{{ page.back_url | relative_url }}">← {{ page.back_label }}</a>{% elsif page.collection == 'portfolio' %}<a class="back-link" href="{{ '/portfolio/' | relative_url }}">← Software</a>{% endif %}

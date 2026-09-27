@@ -14,30 +14,24 @@ html {
 body { margin: 0; line-height: 1.5; }
 ::selection { color: var(--paper); background: var(--ink); }
 
-h1, h2, h3, h4, h5, h6 { margin: 2em 0 .5em; line-height: 1.2; font-weight: bold; }
+h1, h2, h3 { margin: 2em 0 .5em; line-height: 1.2; font-weight: bold; }
 h1 { margin-top: 0; font-size: 1.563em; }
 h2 { font-size: 1.25em; }
 h3 { font-size: 1em; }
-h4, h5, h6 { font-size: .75em; }
 p { margin-bottom: 1.3em; }
 p, ul, ol, figure, table { orphans: 3; widows: 3; }
-sub, sup { position: relative; font-size: 75%; line-height: 0; vertical-align: baseline; }
-sup { top: -.5em; }
-sub { bottom: -.25em; }
 
 a { color: var(--accent); }
 
 ul li, ol li { margin-bottom: .5em; }
-li ul, li ol { margin-top: .5em; }
 nav ul { margin: 0; padding: 0; }
 nav li { list-style: none; }
 nav a { text-decoration: none; }
-nav ul li, nav ol li { margin-bottom: 0; }
+nav ul li { margin-bottom: 0; }
 
 img { max-width: 100%; height: auto; vertical-align: middle; border: 0; }
 figure { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; margin: 2em 0; }
 figure img { width: 100%; margin-bottom: 1em; border-radius: 4px; }
-figure > a { display: block; }
 figcaption { margin-bottom: .5em; color: var(--muted); font-family: Georgia, Times, serif; font-size: .75em; }
 
 /* Text for screen readers only. */
@@ -47,8 +41,8 @@ figcaption { margin-bottom: .5em; color: var(--muted); font-family: Georgia, Tim
 
 button { margin: 0; font-size: 100%; line-height: normal; vertical-align: middle; cursor: pointer; }
 
-code, pre { font-family: Monaco, Consolas, "Lucida Console", monospace; }
-td > code, li > code, p > code {
+code { font-family: Monaco, Consolas, "Lucida Console", monospace; }
+td > code {
   padding: .1rem .2em;
   font-size: .75em;
   color: var(--ink);

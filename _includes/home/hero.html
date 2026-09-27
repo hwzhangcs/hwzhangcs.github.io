@@ -3,13 +3,13 @@
   <div class="hero-head">
     <h1 class="hero-name">Hanwen Zhang <span lang="zh">张瀚文</span></h1>
     <p class="hero-role">Computer Science Honors Class · {{ edu.institution }}</p>
-    <p class="hero-credentials"><span class="cred">Third-year</span><span class="sep" aria-hidden="true">·</span><span class="cred"><strong>Ranked 1st</strong> in class</span><span class="sep" aria-hidden="true">·</span><span class="cred">GPA <strong>{{ edu.gpa | split: '/' | first }}</strong>/{{ edu.gpa | split: '/' | last }}</span></p>
+    <p class="hero-credentials"><span class="cred">Third-year</span><span class="sep" aria-hidden="true">·</span><span class="cred"><strong>Ranked {{ edu.rank_short }}</strong> in class</span><span class="sep" aria-hidden="true">·</span><span class="cred">GPA <strong>{{ edu.gpa | split: '/' | first }}</strong>/{{ edu.gpa | split: '/' | last }}</span></p>
   </div>
   <figure class="hero-portrait">
     <img src="{{ '/images/portrait.jpg' | relative_url }}" alt="Portrait of Hanwen Zhang" width="480" height="600" fetchpriority="high">
   </figure>
   <ul class="hero-contact" aria-label="Contact and profiles">
-    <li>{% include icon.html name="envelope" %}<a href="mailto:{{ site.author.email }}">hanwen_zhang@<wbr>stu.scu.edu.cn</a></li>
+    <li>{% include icon.html name="envelope" %}<a href="mailto:{{ site.author.email }}">{{ site.author.email | replace: "@", "@<wbr>" }}</a></li>
     <li>{% include icon.html name="google-scholar" %}<a href="{{ site.author.googlescholar }}">Google Scholar</a></li>
     <li>{% include icon.html name="orcid" %}<a href="{{ site.author.orcid }}">ORCID</a></li>
     <li>{% include icon.html name="github" %}<a href="https://github.com/{{ site.author.github }}">GitHub</a></li>

@@ -2,23 +2,30 @@
 
 ## Sources of truth
 
-- `_includes/hero.html`: name, research statement, background and availability at the top of the homepage.
+- `_includes/home/hero.html`: name, research statement, credentials and availability at the top of the homepage.
 - `_pages/about.md`: homepage section order (News, Research, Publications, Software).
 - `_data/news.yml`: dated news items, newest first. Only confirmed months, and only items with research or academic weight.
-- `_data/education.yml`: GPA, rank, averages and courses. Used by the hero, the homepage Education & Honors section and the CV. `home: true` courses appear on the homepage.
+- `_data/education.yml`: GPA, rank (`rank_short` is shown on the homepage), averages and courses. Used by the hero, the homepage Education & Honors section and the CV. `home: true` courses appear on the homepage.
 - `_data/honors.yml`: all honors for the CV; `home: true` marks the three shown on the homepage.
 - `_data/ip.yml`: patents and software copyrights for the CV; `home: true` lists an item under Publications & Patents on the homepage.
 - `_pages/cv.md`: education, activities, service and skills; update `updated` only when CV content changes.
-- `_data/research.yml`: research facts. `selected: true` includes a record on the homepage; `details` appear only in the CV. Keep unknown dates and affiliations absent.
+- `_data/research.yml`: research facts. Every entry appears in the CV; an entry with a `homepage` block also appears on the homepage (`featured: true` for the large figure layout). `details` appear only in the CV. Keep unknown dates and affiliations absent.
 - `_data/publications.yml`: exact titles, author order, publication metadata, contribution and DOI. Rendered consistently on the homepage, Publications and CV.
 - `_portfolio/*.md`: project facts and detail pages; `home: true` lists a project on the homepage. `purpose`, `contribution`, `stack`, `code_url`, optional `year` and `order` also power project lists and the CV. Only use verified repository links.
 - `_pages/bone-to-shape.md`: research overview and progress, linked from the home and CV.
 - `assets/diagrams/`: original, explicitly labeled workflow schematics, not experimental figures.
-- `_includes/featured-research.html` (featured project plus compact research items) and `_includes/featured-software.html` (compact software list).
-- `_includes/cv-ip.md` and `_includes/cv-honors.md`: render the CV lists from `ip.yml` and `honors.yml`.
+
 - `_config.yml` `author`: email, GitHub, Google Scholar, ORCID and location, used by the homepage, CV header, footer and structured data.
 
 Old CV URLs (`/resume`, `/cv-json/`, `/resume-json`) redirect to `/cv/`. The retired JSON CV and the AcademicPages sample content remain in git history only.
+
+## Templates
+
+- `_includes/home/`: homepage sections (hero, news, research, patents, education, software).
+- `_includes/cv/`: CV-only lists (research, honors, patents and copyrights).
+- `_includes/`: shared pieces (head, masthead, footer, icons, publications, project list).
+
+Templates only arrange data; wording lives in `_data/`, page front matter or the page body.
 
 ## Presentation
 

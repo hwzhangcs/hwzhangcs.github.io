@@ -1,6 +1,4 @@
 ---
-layout: "academic"
-collection: "portfolio"
 title: "Paper Refiner"
 order: 1
 home: true

@@ -1,7 +1,6 @@
 {% assign projects = site.portfolio | sort: 'order' %}
 <div class="entry-list">
 {% for project in projects %}
-  {% if include.selected != true or project.order == 1 %}
   <article class="entry">
     <div class="entry-heading"><h{{ include.level | default: 3 }}><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h{{ include.level | default: 3 }}>{% if project.year %}<span class="entry-date">{{ project.year }}</span>{% endif %}</div>
     <p class="entry-meta">{{ project.purpose }}</p>
@@ -9,6 +8,5 @@
     {% if project.stack %}<p class="entry-meta">{{ project.stack }}</p>{% endif %}
     <p class="resource-links">{% if project.code_url %}<a href="{{ project.code_url }}">GitHub<span class="sr-only">: {{ project.title }}</span></a>{% endif %}<a href="{{ project.url | relative_url }}">Details<span class="sr-only">: {{ project.title }}</span></a></p>
   </article>
-  {% endif %}
 {% endfor %}
 </div>

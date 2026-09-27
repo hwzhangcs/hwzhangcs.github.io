@@ -1,6 +1,4 @@
 ---
-layout: "academic"
-collection: "portfolio"
 title: "Granular Network Threat Detection System"
 order: 4
 home: true

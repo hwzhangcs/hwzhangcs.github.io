@@ -1,6 +1,4 @@
 ---
-layout: "academic"
-collection: "portfolio"
 title: "Bouncing Birds"
 order: 3
 purpose: "Physics game with save/load and replay"

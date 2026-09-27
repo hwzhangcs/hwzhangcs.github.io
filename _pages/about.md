@@ -11,27 +11,27 @@ redirect_from:
 
 <section class="section" id="news" aria-labelledby="news-heading">
 <h2 id="news-heading">News</h2>
-{% include news.html %}
+{% include home/news.html %}
 </section>
 
 <section class="section" id="research" aria-labelledby="research-heading">
 <h2 id="research-heading">Research</h2>
-{% include featured-research.html %}
+{% include home/research.html %}
 <p class="section-more"><a href="{{ '/cv/#research-experience' | relative_url }}">All research experience in the CV →</a></p>
 </section>
 
 <section class="section" id="publications" aria-labelledby="publications-heading">
 <h2 id="publications-heading">Publications &amp; Patents</h2>
 {% include publications.html %}
-{% include home-patents.html %}
+{% include home/patents.html %}
 </section>
 
 <section class="section" id="education" aria-labelledby="education-heading">
 <h2 id="education-heading">Education &amp; Honors</h2>
-{% include education-honors.html %}
+{% include home/education.html %}
 </section>
 
 <section class="section" id="software" aria-labelledby="software-heading">
 <h2 id="software-heading">Software</h2>
-{% include featured-software.html %}
+{% include home/software.html %}
 </section>

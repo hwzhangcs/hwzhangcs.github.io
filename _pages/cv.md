@@ -55,7 +55,7 @@ Visual generation and 3D reconstruction, with a longer-term interest in generati
 
 ## Research Experience
 
-{% include research.html %}
+{% include cv/research.html %}
 
 ## Publications
 
@@ -64,11 +64,11 @@ Visual generation and 3D reconstruction, with a longer-term interest in generati
 ## Patents & Software Copyrights
 {: #intellectual-property }
 
-{% include cv-ip.md %}
+{% include cv/ip.md %}
 
 ## Honors
 
-{% include cv-honors.md %}
+{% include cv/honors.md %}
 
 ### Competitions & Assessments
 {: .cv-subheading }

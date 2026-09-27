@@ -1,6 +1,4 @@
 ---
-layout: "academic"
-collection: "portfolio"
 title: "Smart POS System"
 order: 2
 purpose: "Checkout application"

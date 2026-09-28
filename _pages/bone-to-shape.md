@@ -39,10 +39,10 @@ I led the project. My work focused on combining the animal pose and shape prior 
 ## Progress
 
 - Applied to Sichuan University's Undergraduate Innovation Training Program in the {{ project.applied }} round; approved in the 2026 project list announced {{ project.approved }}.
-- Passed the college midterm review under the Provincial Undergraduate Innovation Training Program.
+- Passed the college midterm review and the final review under the Provincial Undergraduate Innovation Training Program; completed September 20, 2026.
 - First-listed inventor on the related Chinese invention patent application, **202611403381.7**, filed September 10, 2026.
 - The application passed preliminary examination on September 22, 2026. It is pending publication and **has not been granted**.
 
-<p class="project-status"><strong>Project period ended September 20, 2026.</strong> This overview describes the reconstruction workflow, research focus, and project milestones.</p>
+<p class="project-status"><strong>Completed September 20, 2026.</strong> This overview describes the reconstruction workflow, research focus, and project milestones.</p>
 
 <p class="resource-links"><a href="{{ '/#outputs' | relative_url }}">Patent application details</a><a href="mailto:hanwen_zhang@stu.scu.edu.cn">Contact about this project</a></p>

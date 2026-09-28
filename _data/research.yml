@@ -21,7 +21,7 @@
     - "Project title: Bone-to-Shape: Anatomy-Constrained 3D Reconstruction for Veterinary Applications (骨影生形)."
     - "Project pipeline: use AniMer for an animal pose and shape prior, then draw on the sparse-view video diffusion and 3DGS reconstruction pattern of ReconX. The project treats generated views as model predictions rather than new observations."
     - Applied in the November 18 – December 9, 2025 round; approved in the 2026 project list announced January 19, 2026.
-    - Passed the college midterm review; the project period ended September 20, 2026. Related patent application details are listed under Intellectual Property.
+    - Passed the college midterm review and the final review; completed September 20, 2026. Related patent application details are listed under Intellectual Property.
   homepage:
     featured: true
     name: Bone-to-Shape
@@ -30,7 +30,7 @@
     deck: Animal reconstruction from a single image with shape priors and video diffusion
     summary: From one photograph of an animal, the project combines an AniMer-based animal shape prior with a ReconX-inspired video diffusion stage to generate orbit views and reconstruct a 3D Gaussian Splatting model.
     outcomes:
-      - Passed the college midterm review
+      - Passed the midterm and final reviews
       - Invention patent application filed, first-listed inventor
 
 - id: cityu
@@ -58,13 +58,13 @@
   date: "Jan 2026 – Sep 20, 2026"
   bullets:
     - Ran tool-based experiments and analyzed depth point clouds for deep blind-hole defect identification and control with a SCARA robot.
-    - Passed the college midterm review; the project period ended September 20, 2026.
+    - Passed the college midterm review and the final review; completed September 20, 2026.
   homepage:
     period: Jan–Sep 2026
     kicker: Embodied perception
     title: Deep-hole defect inspection with a SCARA robot
     meta: 'Team Member · Deep-Hole Guardian <span lang="zh">(深孔卫士)</span> · University-Level Undergraduate Innovation Training Program'
-    summary: Tool-based experiments and depth point-cloud analysis for deep blind-hole defect inspection with a SCARA robot; project period ended September 20, 2026.
+    summary: Tool-based experiments and depth point-cloud analysis for deep blind-hole defect inspection with a SCARA robot; passed the final review, completed September 20, 2026.
 
 - id: outlier-detection
   title: Kernel-Based Outlier Detection

@@ -3,7 +3,7 @@
 <article class="feature">
   <a class="feature-figure" href="{{ item.detail_url | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ item.diagram | relative_url }}" alt="" width="560" height="360"></a>
   <div class="feature-body">
-    <p class="kicker">Current project · since {{ home.since }}</p>
+    <p class="kicker">{{ home.status | default: 'Current project' }}</p>
     <h3><a href="{{ item.detail_url | relative_url }}">{{ home.name }}</a>{% if home.zh %} <span class="title-zh" lang="zh">{{ home.zh }}</span>{% endif %}</h3>
     <p class="feature-deck">{{ home.deck }}</p>
     <p>{{ home.summary }}</p>

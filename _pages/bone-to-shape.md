@@ -43,6 +43,6 @@ I lead the project. My work focuses on combining the animal pose and shape prior
 - First-listed inventor on the related Chinese invention patent application, **202611403381.7**, filed September 10, 2026.
 - The application passed preliminary examination on September 22, 2026. It is pending publication and **has not been granted**.
 
-<p class="project-status"><strong>Ongoing work.</strong> This overview describes the reconstruction workflow, research focus, and current project milestones.</p>
+<p class="project-status"><strong>Project period completed September 20, 2026.</strong> This overview describes the reconstruction workflow, research focus, and project milestones.</p>
 
 <p class="resource-links"><a href="{{ '/#outputs' | relative_url }}">Patent application details</a><a href="mailto:hanwen_zhang@stu.scu.edu.cn">Contact about this project</a></p>

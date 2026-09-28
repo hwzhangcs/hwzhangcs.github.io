@@ -28,7 +28,7 @@ I study generative 3D vision for recovering and representing structure from inco
 
 <ul class="cv-highlight-list">
 <li><strong>Bone-to-Shape.</strong> Project lead on single-image animal reconstruction using animal pose and shape priors, video diffusion, and 3D Gaussian Splatting. <a href="{{ '/research/bone-to-shape/' | relative_url }}">Project overview →</a></li>
-<li><strong>City University of Hong Kong.</strong> Research intern exploring sparse-view scene generation with video diffusion models; Vision Banana was an exploratory direction.</li>
+<li><strong>City University of Hong Kong.</strong> Continuing remotely as a research intern exploring sparse-view scene generation with video diffusion models; working toward a CVPR submission.</li>
 <li><strong>Deep-Hole Guardian.</strong> Team member running tool-based experiments and depth point-cloud analysis for deep blind-hole defect inspection with a SCARA robot.</li>
 <li><strong>Publication.</strong> Third author of a 2026 <em>International Journal of Approximate Reasoning</em> article on kernel self-representation learning based fuzzy-neighborhood outlier detection.</li>
 </ul>

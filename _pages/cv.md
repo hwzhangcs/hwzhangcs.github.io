@@ -22,7 +22,7 @@ Computer Science Honors Class · Sichuan University · Chengdu, China<br>
 
 ## Research focus
 
-I study generative 3D vision for recovering and representing structure from incomplete visual observations: single-image and sparse-view generation and reconstruction with video diffusion and 3D Gaussian Splatting, and generative models as general visual and 3D learners. Longer term, I aim to build visual world models for spatial reasoning and embodied agents.
+I am interested in spatial reasoning in multimodal models and world models for embodied agents: helping vision-language and vision-language-action models understand 3D structure, depth and viewpoint, and predict how scenes change. My background is in 3D reconstruction and video generation, including single-image animal reconstruction and sparse-view scene generation with video diffusion models.
 
 ## Selected experience
 

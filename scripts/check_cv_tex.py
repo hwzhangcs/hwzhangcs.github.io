@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check that latex/cv.tex still states the key facts kept in _data/ (stdlib + PyYAML-free)."""
+"""Check that the one-page latex/cv.tex states its selected core facts."""
 import re
 import sys
 from pathlib import Path
@@ -22,10 +22,8 @@ def scalars(path):
 
 
 checks = {
-    'education.yml': ['gpa', 'weighted_average', 'rank', 'degree', 'program'],
-    'honors.yml': ['title'],
+    'education.yml': ['gpa', 'weighted_average', 'rank', 'degree'],
     'publications.yml': ['title', 'doi', 'journal'],
-    'ip.yml': ['title', 'number'],
 }
 missing = []
 for filename, keys in checks.items():
@@ -34,12 +32,20 @@ for filename, keys in checks.items():
             needle = value.replace('https://doi.org/', '')
             if needle.lower() not in plain.lower():
                 missing.append(f'{filename}: {key} "{value}"')
-for course in re.findall(r'name: ([^,}]+), score: (\d+)', (root / '_data' / 'education.yml').read_text()):
-    if f'{course[0].strip()} ({course[1]})' not in plain:
-        missing.append(f'education.yml: course "{course[0].strip()} ({course[1]})"')
+# The one-page CV intentionally lists representative coursework rather than every course.
+required_one_page_facts = [
+    'First-Class Single-Category Scholarship',
+    'Provincial Third Prize, Ascend AI Track',
+    'Third Prize, Sichuan Division',
+    'Animal 3D Reconstruction Using Body-Shape Priors',
+    '202611403381.7',
+]
+for fact in required_one_page_facts:
+    if fact.lower() not in plain.lower():
+        missing.append(f'one-page CV fact "{fact}"')
 
 if missing:
     print('latex/cv.tex is out of sync with _data/:')
     print('\n'.join(f'  - {item}' for item in missing))
     sys.exit(1)
-print('PASS: latex/cv.tex matches education, honors, publications and IP data.')
+print('PASS: one-page latex/cv.tex matches selected education, publication, patent and honor facts.')

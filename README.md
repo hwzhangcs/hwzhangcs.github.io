@@ -34,7 +34,7 @@ Or with Docker: `docker compose up`, or open the folder in the VS Code Dev Conta
 ```bash
 bundle exec jekyll build
 python3 scripts/check_site.py _site   # links, anchors, headings, canonical URLs, published files
-python3 scripts/check_cv_tex.py       # LaTeX CV agrees with _data/
+python3 scripts/check_cv_tex.py       # one-page LaTeX CV core facts agree with _data/
 ./scripts/build_cv_pdf.sh             # rebuild assets/hanwen-zhang-cv.pdf (Tectonic or latexmk)
 ```
 

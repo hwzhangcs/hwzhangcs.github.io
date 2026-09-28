@@ -17,7 +17,7 @@ Computer Science Honors Class · Sichuan University · Chengdu, China<br>
 
 <div class="cv-actions">
 <a class="button-link" href="{{ '/assets/hanwen-zhang-cv.pdf' | relative_url }}">View or download CV PDF</a>
-<span class="cv-action-note">Two-page academic CV · Updated September 28, 2026</span>
+<span class="cv-action-note">One-page academic CV · Updated September 28, 2026</span>
 </div>
 
 ## Research focus

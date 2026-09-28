@@ -35,7 +35,7 @@ Every page uses `_layouts/academic.html` inside `_layouts/default.html`. Styles 
 The PDF CV (`assets/hanwen-zhang-cv.pdf`, linked from the homepage and `/cv/`) is compiled from `latex/cv.tex`, which uses the Jake's Resume layout (MIT). The web CV is a lightweight landing page; the LaTeX source is the complete CV and is maintained by hand. After changing the PDF source:
 
 1. Edit `latex/cv.tex` to match (it is plain ASCII LaTeX, so it also compiles on Overleaf with pdfLaTeX).
-2. Run `python3 scripts/check_cv_tex.py` to confirm GPA, rank, courses, honors, publications and patent numbers agree with `_data/`.
+2. Run `python3 scripts/check_cv_tex.py` to confirm the one-page CV's selected GPA, rank, publication, patent and honor facts agree with `_data/`.
 3. Run `./scripts/build_cv_pdf.sh` (Tectonic, or latexmk as a fallback) and commit the PDF.
 
 The PDF is the canonical printable CV; the `/cv/` page provides the public summary and download entry point.

@@ -3,7 +3,12 @@
   text: >-
     A Chinese invention patent application on animal 3D reconstruction with body-shape priors,
     on which I am first-listed inventor, passed preliminary examination. It is pending publication and not granted.
-  url: /#outputs
+  url: /#patents
+- date: 2026-09
+  text: >-
+    Bone-to-Shape, the single-image animal reconstruction project I led, passed its final review
+    and was completed on September 20, 2026.
+  url: /research/bone-to-shape/
 - date: 2026-07
   text: >-
     Began a research internship with Xinke Li at City University of Hong Kong on sparse-view

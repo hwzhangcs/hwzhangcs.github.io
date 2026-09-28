@@ -3,11 +3,11 @@
 ## Sources of truth
 
 - `_includes/home/hero.html`: name, research statement, credentials and availability at the top of the homepage.
-- `_pages/about.md`: homepage section order (News, Research, Selected Outputs, Education, Software).
+- `_pages/about.md`: homepage section order (News, Research, Publications & Patents, Education, Software).
 - `_data/news.yml`: dated news items, newest first. Only confirmed months, and only items with research or academic weight.
 - `_data/education.yml`: GPA, rank (`rank_short` is shown on the homepage), averages and courses. Used by the hero and the homepage Education & Honors section; the complete CV is maintained in `latex/cv.tex`. `home: true` courses appear on the homepage.
 - `_data/honors.yml`: honors record for the complete CV; `home: true` marks the three shown on the homepage.
-- `_data/ip.yml`: patents and software copyrights record for the complete CV; `home: true` lists an item under Selected Outputs on the homepage.
+- `_data/ip.yml`: patents and software copyrights record for the complete CV; `home: true` lists an item under Publications & Patents on the homepage.
 - `_pages/cv.md`: lightweight CV and PDF landing page; update `updated` only when its summary or PDF link changes. The complete CV is maintained in `latex/cv.tex`.
 - `_data/research.yml`: research facts used by the homepage and as verified source notes for the complete LaTeX CV record. An entry with a `homepage` block appears on the homepage (`featured: true` for the large figure layout). Keep unknown dates and affiliations absent.
 - `_data/publications.yml`: exact titles, author order, publication metadata, contribution and DOI. Rendered on the homepage and maintained in the complete LaTeX CV.

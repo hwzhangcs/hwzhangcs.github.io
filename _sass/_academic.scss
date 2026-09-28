@@ -154,6 +154,9 @@ html[data-theme="dark"] .feature-figure img, html[data-theme="dark"] .project-di
 .feature-body { font-size: 16px; }
 .page .question { font-family: var(--serif); font-size: 17.5px; line-height: 1.5; padding-left: 14px; border-left: 2px solid var(--accent); margin: 16px 0; }
 .question span { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); margin-right: 4px; }
+.current-work { font-size: 16px; margin: 0 0 40px; padding-left: 20px; border-left: 3px solid var(--accent); }
+.page .current-work h3 { font-family: var(--serif); font-size: 24px; line-height: 1.25; letter-spacing: -.01em; margin-bottom: 4px; }
+.current-work p:last-child { margin-bottom: 0; }
 .work-list { margin-top: 36px !important; font-size: 16px; }
 .work-list > li > div > p:last-child { margin-bottom: 0; }
 

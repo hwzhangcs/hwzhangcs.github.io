@@ -2,8 +2,8 @@
 main:
   - title: "Research"
     url: /#research
-  - title: "Outputs"
-    url: /#outputs
+  - title: "Publications"
+    url: /#publications
   - title: "Software"
     url: /portfolio/
   - title: "CV"

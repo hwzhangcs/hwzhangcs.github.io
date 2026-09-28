@@ -17,11 +17,10 @@ redirect_from:
 <section class="section" id="research" aria-labelledby="research-heading">
 <h2 id="research-heading">Research</h2>
 {% include home/research.html %}
-<p class="section-more"><a href="{{ '/research/bone-to-shape/' | relative_url }}">Read the Bone-to-Shape project overview →</a></p>
 </section>
 
-<section class="section" id="outputs" aria-labelledby="outputs-heading">
-<h2 id="outputs-heading">Selected Outputs</h2>
+<section class="section" id="publications" aria-labelledby="publications-heading">
+<h2 id="publications-heading">Publications &amp; Patents</h2>
 {% include publications.html %}
 {% include home/patents.html %}
 </section>

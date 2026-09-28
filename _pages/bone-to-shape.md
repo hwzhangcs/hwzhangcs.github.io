@@ -45,4 +45,4 @@ I led the project. My work focused on combining the animal pose and shape prior 
 
 <p class="project-status"><strong>Completed September 20, 2026.</strong> This overview describes the reconstruction workflow, research focus, and project milestones.</p>
 
-<p class="resource-links"><a href="{{ '/#outputs' | relative_url }}">Patent application details</a><a href="mailto:hanwen_zhang@stu.scu.edu.cn">Contact about this project</a></p>
+<p class="resource-links"><a href="{{ '/#patents' | relative_url }}">Patent application details</a><a href="mailto:hanwen_zhang@stu.scu.edu.cn">Contact about this project</a></p>

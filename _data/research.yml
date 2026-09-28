@@ -1,7 +1,26 @@
 # Research experience, in CV order. Source notes for the homepage and latex/cv.tex (the one-page PDF selects from these).
 # An entry with a `homepage` block also appears in the homepage Research section
-# (_includes/home/research.html); `featured: true` gives it the large figure layout.
+# (_includes/home/research.html); `current: true` puts it first as current work,
+# `featured: true` gives it the large figure layout, and the rest are listed as related work.
 # Keep unknown dates and affiliations absent rather than estimated.
+
+- id: cityu
+  title: City University of Hong Kong
+  role: Research Intern
+  institution: Department of Data Science
+  date: "Jul 15, 2026 – Present"
+  mode: "Remote Jul 15–31; on site Aug 1–Sep 1; continuing remotely"
+  supervisor: Xinke Li
+  bullets:
+    - Used video diffusion models for sparse-view scene generation: predicting unobserved views of a scene from a few input images.
+    - Studied Vision Banana ("Image Generators are Generalist Vision Learners"), which casts perception tasks such as depth estimation and segmentation as image generation.
+    - Continuing remotely while working toward a CVPR submission.
+  homepage:
+    current: true
+    kicker: Current research · Jul 2026–
+    title: Sparse-view scene generation with video diffusion
+    meta: "Research intern · Department of Data Science, City University of Hong Kong · Supervisor: Xinke Li"
+    summary: 'Using video diffusion models to predict unobserved views of a scene from a few input images, the kind of prediction generative world models rely on. Alongside this, studied Vision Banana (<a href="https://arxiv.org/abs/2604.20329">Image Generators are Generalist Vision Learners</a>), which casts perception tasks such as depth estimation as image generation. Working toward a CVPR submission.'
 
 - id: animal-reconstruction
   title: "Bone-to-Shape: Single-Image Animal Reconstruction"
@@ -26,30 +45,12 @@
     featured: true
     name: Bone-to-Shape
     zh: 骨影生形
-    status: Project period Jan–Sep 2026
+    status: Completed project · Jan–Sep 2026
     deck: Animal reconstruction from a single image with shape priors and video diffusion
-    summary: From one photograph of an animal, the project combines an AniMer-based animal shape prior with a ReconX-inspired video diffusion stage to generate orbit views and reconstruct a 3D Gaussian Splatting model.
+    summary: From one photograph of an animal, the project combines an AniMer-based animal shape prior with a ReconX-inspired video diffusion stage to generate orbit views and reconstruct a 3D Gaussian Splatting model. Generated views are treated as model predictions, not new observations.
     outcomes:
       - Passed the midterm and final reviews
       - Invention patent application filed, first-listed inventor
-
-- id: cityu
-  title: City University of Hong Kong
-  role: Research Intern
-  institution: Department of Data Science
-  date: "Jul 15, 2026 – Present"
-  mode: "Remote Jul 15–31; on site Aug 1–Sep 1; continuing remotely"
-  supervisor: Xinke Li
-  bullets:
-    - Explored sparse-view scene generation with video diffusion models.
-    - Studied Vision Banana ("Image Generators are Generalist Vision Learners"), which casts perception tasks such as depth estimation and segmentation as image generation.
-    - Continuing remotely while working toward a CVPR submission.
-  homepage:
-    period: Jul 2026–
-    kicker: Current research
-    title: Sparse-view scene generation with video diffusion
-    meta: "Research intern · Department of Data Science, City University of Hong Kong · Supervisor: Xinke Li"
-    summary: 'Sparse-view scene generation with video diffusion models, alongside a study of Vision Banana (<a href="https://arxiv.org/abs/2604.20329">Image Generators are Generalist Vision Learners</a>), which casts perception tasks such as depth estimation as image generation. Working toward a CVPR submission.'
 
 - id: deep-hole
   title: "Deep-Hole Guardian (深孔卫士)"

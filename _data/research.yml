@@ -8,25 +8,23 @@
   title: City University of Hong Kong
   role: Research Intern
   institution: Department of Data Science
-  date: "Jul 15, 2026 – Present"
-  mode: "Remote Jul 15–31; on site Aug 1–Sep 1; continuing remotely"
+  date: "Jul 2026 – Present"
   supervisor: Xinke Li
   bullets:
-    - Used video diffusion models for sparse-view scene generation: predicting unobserved views of a scene from a few input images.
-    - Studied Vision Banana ("Image Generators are Generalist Vision Learners"), which casts perception tasks such as depth estimation and segmentation as image generation.
-    - Continuing remotely while working toward a CVPR submission.
+    - Investigated sparse-view 3D scene reconstruction with video diffusion, predicting unobserved views from a small set of input images.
+    - Reproduced the GenRecon and ReconViaGen pipelines and analyzed where reconstruction errors arise across their stages.
   homepage:
     current: true
     kicker: Current research · Jul 2026–
     title: Sparse-view scene generation with video diffusion
     meta: "Research intern · Department of Data Science, City University of Hong Kong · Supervisor: Xinke Li"
-    summary: 'Using video diffusion models to predict unobserved views of a scene from a few input images, the kind of prediction generative world models rely on. Alongside this, studied Vision Banana (<a href="https://arxiv.org/abs/2604.20329">Image Generators are Generalist Vision Learners</a>), which casts perception tasks such as depth estimation as image generation. Working toward a CVPR submission.'
+    summary: 'Investigating sparse-view 3D scene reconstruction with video diffusion by predicting unobserved views from a small set of input images. Reproduced the GenRecon and ReconViaGen pipelines and analyzed where reconstruction errors arise across their stages.'
 
 - id: animal-reconstruction
   title: "Bone-to-Shape: Single-Image Animal Reconstruction"
   role: Project Lead
   institution: Sichuan University
-  date: "Jan 2026 – Sep 20, 2026"
+  date: "Jan 2026 – Sep 2026"
   program: Provincial Undergraduate Innovation Training Program
   applied: November 18 – December 9, 2025
   approved: January 19, 2026
@@ -56,7 +54,7 @@
   title: "Deep-Hole Guardian (深孔卫士)"
   role: Team Member
   program: University-Level Undergraduate Innovation Training Program
-  date: "Jan 2026 – Sep 20, 2026"
+  date: "Jan 2026 – Sep 2026"
   bullets:
     - Took depth-camera measurements and analyzed the resulting point clouds for deep blind-hole defect identification and control with a SCARA robot.
     - Passed the college midterm review and the final review; completed September 20, 2026.

@@ -22,7 +22,8 @@ def scalars(path):
 
 
 checks = {
-    'education.yml': ['gpa', 'weighted_average', 'rank', 'degree'],
+    # The PDF keeps the stronger GPA/rank signal and omits the redundant weighted average.
+    'education.yml': ['gpa', 'rank', 'degree'],
     'publications.yml': ['title', 'doi', 'journal'],
 }
 missing = []

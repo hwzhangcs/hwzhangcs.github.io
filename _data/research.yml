@@ -1,4 +1,4 @@
-# Research experience, in CV order for the complete PDF record.
+# Research experience, in CV order. Source notes for the homepage and latex/cv.tex (the one-page PDF selects from these).
 # An entry with a `homepage` block also appears in the homepage Research section
 # (_includes/home/research.html); `featured: true` gives it the large figure layout.
 # Keep unknown dates and affiliations absent rather than estimated.
@@ -15,13 +15,13 @@
   diagram: /assets/diagrams/bone-to-shape.svg
   question: How can generative view completion and animal shape priors make single-image 3D reconstruction more structurally plausible and view-consistent?
   bullets:
-    - Lead a project that combines AniMer-based animal pose and shape estimation with a ReconX-inspired sparse-view video diffusion stage and 3D Gaussian Splatting (3DGS) reconstruction.
-    - Generate orbit-view video from a single animal image and study how anatomical and body-shape priors constrain the reconstructed geometry.
+    - Led a project that combined AniMer-based animal pose and shape estimation with a ReconX-inspired sparse-view video diffusion stage and 3D Gaussian Splatting (3DGS) reconstruction.
+    - Generated orbit-view video from a single animal image and studied how anatomical and body-shape priors constrain the reconstructed geometry.
   details:
     - "Project title: Bone-to-Shape: Anatomy-Constrained 3D Reconstruction for Veterinary Applications (骨影生形)."
-    - "Project pipeline: use AniMer for an animal pose and shape prior, then draw on the sparse-view video diffusion and 3DGS reconstruction pattern of ReconX. The project treats generated views as predicted observations, providing a concrete starting point for future visual world modeling."
+    - "Project pipeline: use AniMer for an animal pose and shape prior, then draw on the sparse-view video diffusion and 3DGS reconstruction pattern of ReconX. The project treats generated views as model predictions rather than new observations."
     - Applied in the November 18 – December 9, 2025 round; approved in the 2026 project list announced January 19, 2026.
-    - Completed the project period on September 20, 2026 after passing the college midterm review. Related patent application details are listed under Intellectual Property.
+    - Passed the college midterm review; the project period ended September 20, 2026. Related patent application details are listed under Intellectual Property.
   homepage:
     featured: true
     name: Bone-to-Shape
@@ -38,18 +38,18 @@
   role: Research Intern
   institution: Department of Data Science
   date: "Jul 15, 2026 – Present"
-  mode: "Continuing remotely"
+  mode: "Remote Jul 15–31; on site Aug 1–Sep 1; continuing remotely"
   supervisor: Xinke Li
   bullets:
     - Explored sparse-view scene generation with video diffusion models.
-    - Explored Vision Banana as a generative visual model for scene generation.
+    - Studied Vision Banana ("Image Generators are Generalist Vision Learners"), which casts perception tasks such as depth estimation and segmentation as image generation.
     - Continuing remotely while working toward a CVPR submission.
   homepage:
     period: Jul 2026–
-    kicker: Research extension
+    kicker: Current research
     title: Sparse-view scene generation with video diffusion
     meta: "Research intern · Department of Data Science, City University of Hong Kong · Supervisor: Xinke Li"
-    summary: Continuing remote work on sparse-view scene generation with video diffusion models, with Vision Banana as an exploratory direction toward view-consistent visual prediction and a CVPR submission.
+    summary: 'Sparse-view scene generation with video diffusion models, alongside a study of Vision Banana (<a href="https://arxiv.org/abs/2604.20329">Image Generators are Generalist Vision Learners</a>), which casts perception tasks such as depth estimation as image generation. Working toward a CVPR submission.'
 
 - id: deep-hole
   title: "Deep-Hole Guardian (深孔卫士)"
@@ -58,13 +58,13 @@
   date: "Jan 2026 – Sep 20, 2026"
   bullets:
     - Ran tool-based experiments and analyzed depth point clouds for deep blind-hole defect identification and control with a SCARA robot.
-    - Passed the college midterm review; completed the project period on September 20, 2026.
+    - Passed the college midterm review; the project period ended September 20, 2026.
   homepage:
     period: Jan–Sep 2026
-    kicker: Related perception and embodied engineering work
-    title: Embodied perception for deep-hole defect inspection
+    kicker: Embodied perception
+    title: Deep-hole defect inspection with a SCARA robot
     meta: 'Team Member · Deep-Hole Guardian <span lang="zh">(深孔卫士)</span> · University-Level Undergraduate Innovation Training Program'
-    summary: Tool-based experiments and depth point-cloud analysis for deep blind-hole defect inspection with a SCARA robot; project period completed September 20, 2026.
+    summary: Tool-based experiments and depth point-cloud analysis for deep blind-hole defect inspection with a SCARA robot; project period ended September 20, 2026.
 
 - id: outlier-detection
   title: Kernel-Based Outlier Detection

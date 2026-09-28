@@ -32,7 +32,7 @@ Every page uses `_layouts/academic.html` inside `_layouts/default.html`. Styles 
 
 `assets/js/academic.js` handles only the theme toggle and homepage section highlighting. There is no other JavaScript.
 
-The PDF CV (`assets/hanwen-zhang-cv.pdf`, linked from the homepage and `/cv/`) is compiled from `latex/cv.tex`, which uses the Jake's Resume layout (MIT). The web CV is a lightweight landing page; the LaTeX source is the complete CV and is maintained by hand. After changing the PDF source:
+The PDF CV (`assets/hanwen-zhang-cv.pdf`, linked from the homepage and `/cv/`) is compiled from `latex/cv.tex`, which uses the Jake's Resume layout (MIT). The web CV is a lightweight landing page; the LaTeX source is a one-page selection from `_data/` and is maintained by hand. After changing the PDF source:
 
 1. Edit `latex/cv.tex` to match (it is plain ASCII LaTeX, so it also compiles on Overleaf with pdfLaTeX).
 2. Run `python3 scripts/check_cv_tex.py` to confirm the one-page CV's selected GPA, rank, publication, patent and honor facts agree with `_data/`.

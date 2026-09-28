@@ -22,13 +22,13 @@ Computer Science Honors Class · Sichuan University · Chengdu, China<br>
 
 ## Research focus
 
-I study generative 3D vision for recovering and representing structure from incomplete visual observations. My current work focuses on single-image animal reconstruction and sparse-view scene generation; longer-term interests include multimodal world models for multiview and future-state prediction, grounded spatial reasoning, controllable scene simulation, and embodied agents.
+I study generative 3D vision for recovering and representing structure from incomplete visual observations: single-image and sparse-view generation and reconstruction with video diffusion and 3D Gaussian Splatting, and generative models as general visual and 3D learners. Longer term, I aim to build visual world models for spatial reasoning and embodied agents.
 
 ## Selected experience
 
 <ul class="cv-highlight-list">
 <li><strong>Bone-to-Shape.</strong> Project lead on single-image animal reconstruction using animal pose and shape priors, video diffusion, and 3D Gaussian Splatting. <a href="{{ '/research/bone-to-shape/' | relative_url }}">Project overview →</a></li>
-<li><strong>City University of Hong Kong.</strong> Continuing remotely as a research intern exploring sparse-view scene generation with video diffusion models; working toward a CVPR submission.</li>
+<li><strong>City University of Hong Kong.</strong> Research intern (remote, with a month on site in August 2026) on sparse-view scene generation with video diffusion models, alongside a study of Vision Banana; working toward a CVPR submission.</li>
 <li><strong>Deep-Hole Guardian.</strong> Team member running tool-based experiments and depth point-cloud analysis for deep blind-hole defect inspection with a SCARA robot.</li>
 <li><strong>Publication.</strong> Third author of a 2026 <em>International Journal of Approximate Reasoning</em> article on kernel self-representation learning based fuzzy-neighborhood outlier detection.</li>
 </ul>
@@ -37,5 +37,5 @@ I study generative 3D vision for recovering and representing structure from inco
 
 <p class="cv-profile-links"><a href="{{ site.author.googlescholar }}">Google Scholar</a><a href="{{ site.author.orcid }}">ORCID</a><a href="https://github.com/{{ site.author.github }}">GitHub</a><a href="mailto:{{ site.author.email }}">Email</a></p>
 
-<p class="cv-next-step">The PDF contains the complete education, research, publication, intellectual property, project, honors, service, and skills record.</p>
+<p class="cv-next-step">The one-page PDF covers education, research, publication, intellectual property, selected honors and skills. A fuller record of honors, software copyrights, service and activities is available on request.</p>
 </div>

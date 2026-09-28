@@ -28,13 +28,13 @@ excerpt: "Single-image animal reconstruction with animal shape priors and video 
 <li><strong>Reconstruct a 3D representation.</strong> Use the generated video to build a 3D Gaussian Splatting (3DGS) representation.</li>
 </ol>
 
-The research explores **animal pose, anatomical, and body-shape priors** as constraints on the reconstructed geometry. AniMer provides the animal pose and shape prior; the video diffusion stage supplies predicted views in the spirit of sparse-view reconstruction. Generated views and observed evidence play different roles: the additional views are predictions from the model, rather than new observations. This makes the project a concrete starting point for studying view-consistent visual prediction and, later, controllable future-state simulation.
+The research explores **animal pose, anatomical, and body-shape priors** as constraints on the reconstructed geometry. AniMer provides the animal pose and shape prior; the video diffusion stage supplies predicted views in the spirit of sparse-view reconstruction. Generated views and observed evidence play different roles: the additional views are predictions from the model, rather than new observations.
 
 <p class="resource-links"><a href="https://luoxue-star.github.io/AniMer_project_page/">AniMer: animal pose and shape estimation</a><a href="https://arxiv.org/abs/2408.16767">ReconX: sparse-view reconstruction with video diffusion</a></p>
 
 ## My Role
 
-I lead the project. My work focuses on combining the animal pose and shape prior with the single-image-to-novel-view-to-3DGS workflow, and on studying how anatomical and body-shape constraints affect the reconstructed geometry.
+I led the project. My work focused on combining the animal pose and shape prior with the single-image-to-novel-view-to-3DGS workflow, and on studying how anatomical and body-shape constraints affect the reconstructed geometry.
 
 ## Progress
 
@@ -43,6 +43,6 @@ I lead the project. My work focuses on combining the animal pose and shape prior
 - First-listed inventor on the related Chinese invention patent application, **202611403381.7**, filed September 10, 2026.
 - The application passed preliminary examination on September 22, 2026. It is pending publication and **has not been granted**.
 
-<p class="project-status"><strong>Project period completed September 20, 2026.</strong> This overview describes the reconstruction workflow, research focus, and project milestones.</p>
+<p class="project-status"><strong>Project period ended September 20, 2026.</strong> This overview describes the reconstruction workflow, research focus, and project milestones.</p>
 
 <p class="resource-links"><a href="{{ '/#outputs' | relative_url }}">Patent application details</a><a href="mailto:hanwen_zhang@stu.scu.edu.cn">Contact about this project</a></p>

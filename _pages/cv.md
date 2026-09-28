@@ -22,7 +22,7 @@ Computer Science Honors Class · Sichuan University · Chengdu, China<br>
 
 ## Research focus
 
-I am interested in spatial reasoning in multimodal models and world models for embodied agents: helping vision-language and vision-language-action models understand 3D structure, depth and viewpoint, and predict how scenes change. My background is in generative 3D vision, including single-image animal reconstruction and sparse-view scene generation with video diffusion models.
+I am interested in spatial reasoning in multimodal models and generative world models for embodied agents: helping vision-language and vision-language-action models understand 3D structure, depth and viewpoint, and building video and 3D generative models that simulate how scenes change. My background is in generative 3D vision, including single-image animal reconstruction and sparse-view scene generation with video diffusion models.
 
 ## Selected experience
 

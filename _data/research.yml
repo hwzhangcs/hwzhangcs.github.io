@@ -1,7 +1,7 @@
 # Research experience, in CV order. Source notes for the homepage and latex/cv.tex (the one-page PDF selects from these).
 # An entry with a `homepage` block also appears in the homepage Research section
 # (_includes/home/research.html); `current: true` puts it first as current work,
-# `featured: true` gives it the large figure layout, and the rest are listed as related work.
+# `featured: true` gives it the large figure layout, and the rest are listed under Other research.
 # Keep unknown dates and affiliations absent rather than estimated.
 
 - id: cityu

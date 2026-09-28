@@ -36,7 +36,7 @@ The research explores **animal pose, anatomical, and body-shape priors** as cons
 
 I led the project. My work focused on combining the animal pose and shape prior with the single-image-to-novel-view-to-3DGS workflow, and on studying how anatomical and body-shape constraints affect the reconstructed geometry.
 
-## Progress
+## Outcomes
 
 - Applied to Sichuan University's Undergraduate Innovation Training Program in the {{ project.applied }} round; approved in the 2026 project list announced {{ project.approved }}.
 - Passed the college midterm review and the final review under the Provincial Undergraduate Innovation Training Program; completed September 20, 2026.

@@ -8,7 +8,7 @@ excerpt: "Explore Hanwen Zhang's research, publications, software projects, and 
 - [Home]({{ '/' | relative_url }})
 - [Research]({{ '/#research' | relative_url }})
 - [Publications]({{ '/publications/' | relative_url }})
-- [Software Projects]({{ '/portfolio/' | relative_url }})
+- [Software]({{ '/portfolio/' | relative_url }})
 - [CV]({{ '/cv/' | relative_url }})
 
 ## Research Project Details

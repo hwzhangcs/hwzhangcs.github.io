@@ -1,7 +1,6 @@
 ---
 title: "Granular Network Threat Detection System"
 order: 4
-home: true
 year: 2025
 purpose: "Network threat detection using subspace learning and granular computing"
 contribution: "Co-developed the system; joint holder of its registered software copyright."

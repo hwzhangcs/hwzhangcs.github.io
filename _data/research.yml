@@ -58,14 +58,14 @@
   program: University-Level Undergraduate Innovation Training Program
   date: "Jan 2026 – Sep 20, 2026"
   bullets:
-    - Ran tool-based experiments and analyzed depth point clouds for deep blind-hole defect identification and control with a SCARA robot.
+    - Took depth-camera measurements and analyzed the resulting point clouds for deep blind-hole defect identification and control with a SCARA robot.
     - Passed the college midterm review and the final review; completed September 20, 2026.
   homepage:
     period: Jan–Sep 2026
     kicker: Embodied perception
     title: Deep-hole defect inspection with a SCARA robot
     meta: 'Team Member · Deep-Hole Guardian <span lang="zh">(深孔卫士)</span> · University-Level Undergraduate Innovation Training Program'
-    summary: Tool-based experiments and depth point-cloud analysis for deep blind-hole defect inspection with a SCARA robot; passed the final review, completed September 20, 2026.
+    summary: Depth-camera measurement and point-cloud analysis for identifying deep blind-hole defects, in a project that uses a SCARA robot for inspection and control. Passed the final review; completed September 20, 2026.
 
 - id: outlier-detection
   title: Kernel-Based Outlier Detection

@@ -4,16 +4,16 @@ title: "Bone-to-Shape"
 permalink: /research/bone-to-shape/
 back_url: /#research
 back_label: Research
-excerpt: "Anatomy-constrained single-image animal reconstruction for veterinary applications: project workflow, research questions, and Hanwen Zhang's role."
+excerpt: "Single-image animal reconstruction with animal shape priors and video diffusion, with potential veterinary applications."
 ---
 {% assign project = site.data.research | where: 'id', 'animal-reconstruction' | first %}
 
-<p class="project-deck">Anatomy-Constrained 3D Reconstruction for Veterinary Applications <span lang="zh">· 骨影生形</span></p>
+<p class="project-deck">Animal reconstruction from a single image with shape priors and video diffusion <span lang="zh">· 骨影生形</span></p>
 <p class="entry-meta">{{ project.role }} · {{ project.institution }} · {{ project.date }}<br>{{ project.program }}</p>
 
 ## Research Question
 
-{{ project.question }} The project explores this question in the context of animal reconstruction for veterinary applications.
+{{ project.question }} The project explores this question in the context of animal reconstruction with potential veterinary applications.
 
 ## Reconstruction Workflow
 
@@ -24,15 +24,17 @@ excerpt: "Anatomy-constrained single-image animal reconstruction for veterinary 
 
 <ol class="method-steps">
 <li><strong>Start from a single animal image.</strong> This is the observed input to the project’s reconstruction pipeline.</li>
-<li><strong>Generate novel views.</strong> Produce an orbit-view video to supply additional views for reconstruction.</li>
+<li><strong>Generate novel views.</strong> Draw on a ReconX-inspired video diffusion approach to produce an orbit-view video and supply additional views for reconstruction.</li>
 <li><strong>Reconstruct a 3D representation.</strong> Use the generated video to build a 3D Gaussian Splatting (3DGS) representation.</li>
 </ol>
 
-The research explores **anatomical and body-shape priors** as constraints on the reconstructed animal geometry. Generated views and observed evidence play different roles: the additional views are predictions from the model, rather than new observations.
+The research explores **animal pose, anatomical, and body-shape priors** as constraints on the reconstructed geometry. AniMer provides the animal pose and shape prior; the video diffusion stage supplies predicted views in the spirit of sparse-view reconstruction. Generated views and observed evidence play different roles: the additional views are predictions from the model, rather than new observations. This makes the project a concrete starting point for studying view-consistent visual prediction and, later, controllable future-state simulation.
+
+<p class="resource-links"><a href="https://luoxue-star.github.io/AniMer_project_page/">AniMer: animal pose and shape estimation</a><a href="https://arxiv.org/abs/2408.16767">ReconX: sparse-view reconstruction with video diffusion</a></p>
 
 ## My Role
 
-I lead the project. My work focuses on the single-image-to-novel-view-to-3DGS workflow and the exploration of priors for animal geometry.
+I lead the project. My work focuses on combining the animal pose and shape prior with the single-image-to-novel-view-to-3DGS workflow, and on studying how anatomical and body-shape constraints affect the reconstructed geometry.
 
 ## Progress
 
@@ -43,4 +45,4 @@ I lead the project. My work focuses on the single-image-to-novel-view-to-3DGS wo
 
 <p class="project-status"><strong>Ongoing work.</strong> This overview describes the reconstruction workflow, research focus, and current project milestones.</p>
 
-<p class="resource-links"><a href="{{ '/cv/#intellectual-property' | relative_url }}">Patent application details</a><a href="mailto:hanwen_zhang@stu.scu.edu.cn">Contact about this project</a></p>
+<p class="resource-links"><a href="{{ '/#outputs' | relative_url }}">Patent application details</a><a href="mailto:hanwen_zhang@stu.scu.edu.cn">Contact about this project</a></p>

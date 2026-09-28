@@ -14,9 +14,11 @@
   </div>
 </article>
 {% endif %}{% endfor %}
+<h3 class="research-subheading">Research extensions and related work</h3>
 <ol class="dated-list work-list">
 {% for item in site.data.research %}{% if item.homepage and item.homepage.featured != true %}
   <li><time>{{ item.homepage.period }}</time><div>
+    {% if item.homepage.kicker %}<p class="kicker">{{ item.homepage.kicker }}</p>{% endif %}
     <h3>{{ item.homepage.title }}</h3>
     <p class="meta">{{ item.homepage.meta }}{% if item.mode %}<br>{{ item.mode }}{% endif %}</p>
     <p>{{ item.homepage.summary }}</p>

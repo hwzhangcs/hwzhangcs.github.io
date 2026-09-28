@@ -4,7 +4,7 @@
 locale      : "en-US"
 title       : "Hanwen Zhang / 张瀚文"
 name        : "Hanwen Zhang"
-description : "Hanwen Zhang - Computer science honors undergraduate researching 3D reconstruction and generative visual priors"
+description : "Hanwen Zhang - Computer science honors undergraduate studying generative 3D vision and visual world models for incomplete visual observations"
 url         : "https://hwzhangcs.github.io"
 baseurl     : ""
 repository  : "hwzhangcs/hwzhangcs.github.io"
@@ -52,6 +52,7 @@ exclude:
   - latex
   - scripts
   - vendor
+  - local
 
 # Build
 markdown: kramdown

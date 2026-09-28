@@ -3,12 +3,12 @@
   text: >-
     A Chinese invention patent application on animal 3D reconstruction with body-shape priors,
     on which I am first-listed inventor, passed preliminary examination. It is pending publication and not granted.
-  url: /cv/#intellectual-property
+  url: /#outputs
 - date: 2026-07
   text: >-
-    Research internship with Xinke Li at City University of Hong Kong, studying generative
-    visual priors for 3D reconstruction (July 15 – September 1).
-  url: /cv/#cityu
+    Research internship with Xinke Li at City University of Hong Kong, exploring
+    sparse-view scene generation with video diffusion models (July 15 – September 1).
+  url: /#research
 - date: 2026-07
   text: >-
     Our paper on kernel self-representation learning for fuzzy neighborhood outlier detection

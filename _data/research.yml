@@ -1,4 +1,4 @@
-# Research experience, in CV order. Every entry appears in the CV (_includes/cv/research.html).
+# Research experience, in CV order for the complete PDF record.
 # An entry with a `homepage` block also appears in the homepage Research section
 # (_includes/home/research.html); `featured: true` gives it the large figure layout.
 # Keep unknown dates and affiliations absent rather than estimated.
@@ -13,12 +13,13 @@
   approved: January 19, 2026
   detail_url: /research/bone-to-shape/
   diagram: /assets/diagrams/bone-to-shape.svg
-  question: How can anatomical and body-shape priors constrain the geometry reconstructed from a single animal image?
+  question: How can generative view completion and animal shape priors make single-image 3D reconstruction more structurally plausible and view-consistent?
   bullets:
-    - Lead a project that generates orbit-view video from a single animal image and reconstructs a 3D Gaussian Splatting (3DGS) representation.
-    - Explore anatomical and body-shape priors to constrain reconstructed geometry.
+    - Lead a project that combines AniMer-based animal pose and shape estimation with a ReconX-inspired sparse-view video diffusion stage and 3D Gaussian Splatting (3DGS) reconstruction.
+    - Generate orbit-view video from a single animal image and study how anatomical and body-shape priors constrain the reconstructed geometry.
   details:
     - "Project title: Bone-to-Shape: Anatomy-Constrained 3D Reconstruction for Veterinary Applications (骨影生形)."
+    - "Current pipeline: use AniMer for an animal pose and shape prior, then draw on the sparse-view video diffusion and 3DGS reconstruction pattern of ReconX. The project treats generated views as predicted observations, providing a concrete starting point for future visual world modeling."
     - Applied in the November 18 – December 9, 2025 round; approved in the 2026 project list announced January 19, 2026.
     - Passed the college midterm review. Related patent application details are listed under Intellectual Property.
   homepage:
@@ -26,8 +27,8 @@
     name: Bone-to-Shape
     zh: 骨影生形
     since: Jan 2026
-    deck: Anatomy-constrained animal reconstruction from a single image
-    summary: From one photograph of an animal, the pipeline generates an orbit-view video and reconstructs a 3D Gaussian Splatting model, for veterinary applications.
+    deck: Animal reconstruction from a single image with shape priors and video diffusion
+    summary: From one photograph of an animal, the project combines an AniMer-based animal shape prior with a ReconX-inspired video diffusion stage to generate orbit views and reconstruct a 3D Gaussian Splatting model.
     outcomes:
       - Passed the college midterm review
       - Invention patent application filed, first-listed inventor
@@ -40,13 +41,14 @@
   mode: "Remote Jul 15–31; on site Aug 1–Sep 1"
   supervisor: Xinke Li
   bullets:
-    - Investigated generative visual priors for 3D reconstruction using TRELLIS.2.
-    - Contributed to ground-truth calibration and geometric registration for FARO laser scanning in complex physical environments.
+    - Explored sparse-view scene generation with video diffusion models.
+    - Explored Vision Banana as a generative visual model for scene generation.
   homepage:
     period: Jul–Sep 2026
-    title: Generative visual priors for 3D reconstruction
+    kicker: Research extension
+    title: Sparse-view scene generation with video diffusion
     meta: "Research intern · Department of Data Science, City University of Hong Kong · Supervisor: Xinke Li"
-    summary: Investigated generative visual priors with TRELLIS.2, and contributed to ground-truth calibration and geometric registration for FARO laser scanning in complex physical environments.
+    summary: Explored sparse-view scene generation with video diffusion models, with Vision Banana as an exploratory direction toward view-consistent visual prediction.
 
 - id: deep-hole
   title: "Deep-Hole Guardian (深孔卫士)"
@@ -54,20 +56,14 @@
   program: University-Level Undergraduate Innovation Training Program
   date: "Jan 2026 – Present"
   bullets:
-    - Participated in a project on embodied perception for deep blind-hole defect identification and control with a SCARA robot.
+    - Ran tool-based experiments and analyzed depth point clouds for deep blind-hole defect identification and control with a SCARA robot.
     - Passed the college midterm review.
   homepage:
     period: Jan 2026–
+    kicker: Related perception and embodied engineering work
     title: Embodied perception for deep-hole defect inspection
     meta: 'Team Member · Deep-Hole Guardian <span lang="zh">(深孔卫士)</span> · University-Level Undergraduate Innovation Training Program'
-    summary: Embodied perception for identifying and controlling deep blind-hole defects with a SCARA robot. Passed the college midterm review.
-
-- id: sparse-view
-  title: Sparse-View Generation and Reconstruction
-  role: Research Project
-  bullets:
-    - Study sparse-view 3D generation and reconstruction using TRELLIS and GenRecon.
-    - Investigate how generative priors complete unseen structure while preserving observed evidence.
+    summary: Tool-based experiments and depth point-cloud analysis for deep blind-hole defect inspection with a SCARA robot. Passed the college midterm review.
 
 - id: outlier-detection
   title: Kernel-Based Outlier Detection

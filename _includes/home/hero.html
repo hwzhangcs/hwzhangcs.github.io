@@ -13,12 +13,12 @@
     <li>{% include icon.html name="google-scholar" %}<a href="{{ site.author.googlescholar }}">Google Scholar</a></li>
     <li>{% include icon.html name="orcid" %}<a href="{{ site.author.orcid }}">ORCID</a></li>
     <li>{% include icon.html name="github" %}<a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
-    <li>{% include icon.html name="file-lines" %}<span><a href="{{ '/cv/' | relative_url }}">CV</a> · <a href="{{ '/assets/hanwen-zhang-cv.pdf' | relative_url }}">PDF</a></span></li>
+    <li>{% include icon.html name="file-lines" %}<span><a class="cv-primary" href="{{ '/assets/hanwen-zhang-cv.pdf' | relative_url }}">View/download CV PDF</a> · <a href="{{ '/cv/' | relative_url }}">CV page</a></span></li>
     <li class="hero-location">{% include icon.html name="location-dot" %}{{ site.author.location }}</li>
   </ul>
   <div class="hero-text">
-    <p class="hero-lead">I study how to recover <strong>3D structure from very little visual evidence</strong>, combining generative models with geometric and anatomical priors.</p>
-    <p>I lead <a href="{{ '/research/bone-to-shape/' | relative_url }}">Bone-to-Shape</a>, a provincial innovation project that reconstructs animal geometry from a single image using generated views and body-shape priors. In summer 2026 I was a research intern with Xinke Li at City University of Hong Kong, studying generative priors for 3D reconstruction. In the longer term, I am interested in <strong>world models</strong> for spatial reasoning and action.</p>
+    <p class="hero-lead">I study how generative 3D vision can <strong>recover and represent structure from incomplete visual observations</strong>.</p>
+    <p>My current work explores <a href="{{ '/research/bone-to-shape/' | relative_url }}">single-image animal reconstruction</a> and sparse-view scene generation through shape priors, video diffusion, and 3D Gaussian Splatting. Longer term, I aim to study multimodal world models that simulate plausible future states for grounded spatial reasoning, controllable scene simulation, and embodied agents.</p>
     <p class="hero-status"><span class="status-dot" aria-hidden="true"></span>Open to long-term remote research internships. Planning to apply for PhD programs for Fall 2028.</p>
   </div>
 </header>

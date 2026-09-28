@@ -37,17 +37,4 @@
     sectionLinks.forEach(item => observer.observe(item.section));
   }
 
-  const details = Array.from(document.querySelectorAll('.cv-content details'));
-  let printState;
-  window.addEventListener('beforeprint', () => {
-    if (printState) return;
-    printState = details.map(detail => detail.open);
-    details.forEach(detail => { detail.open = true; });
-  });
-  window.addEventListener('afterprint', () => {
-    if (!printState) return;
-    details.forEach((detail, index) => { detail.open = printState[index]; });
-    printState = undefined;
-  });
-  document.querySelector('[data-print]')?.addEventListener('click', () => window.print());
 })();

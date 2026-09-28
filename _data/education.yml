@@ -1,4 +1,4 @@
-# Education record used by the homepage hero, the homepage Education & Honors section and the CV.
+# Education record used by the homepage hero and the homepage Education & Honors section.
 institution: Sichuan University
 degree: B.Eng. in Computer Science and Technology
 program: Top-notch Student Training Program 2.0 (Honors Class)
@@ -11,7 +11,7 @@ weighted_average: "93.76/100"
 as_of: September 23, 2026
 compulsory_gpa: "3.95/4.00"
 compulsory_weighted_average: "93.61/100"
-# `home: true` courses appear on the homepage; all appear in the CV.
+# `home: true` courses appear on the homepage; the complete CV is maintained in `latex/cv.tex`.
 courses:
   - { name: Operating System, score: 99, home: true }
   - { name: Theory of Computation, score: 98, home: true }

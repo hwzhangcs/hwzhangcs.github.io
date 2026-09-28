@@ -3,7 +3,7 @@ layout: academic
 hero: true
 permalink: /
 title: "Hanwen Zhang"
-excerpt: "Hanwen Zhang is a computer science undergraduate at Sichuan University, ranked first in the Honors Class, working on 3D reconstruction from limited visual evidence, including single-image animal reconstruction with generative and anatomical priors."
+excerpt: "Hanwen Zhang is a computer science undergraduate at Sichuan University, ranked first in the Honors Class, studying generative 3D vision for recovering structure from incomplete visual observations and exploring visual world models."
 redirect_from:
   - /about/
   - /about.html
@@ -17,11 +17,11 @@ redirect_from:
 <section class="section" id="research" aria-labelledby="research-heading">
 <h2 id="research-heading">Research</h2>
 {% include home/research.html %}
-<p class="section-more"><a href="{{ '/cv/#research-experience' | relative_url }}">All research experience in the CV →</a></p>
+<p class="section-more"><a href="{{ '/research/bone-to-shape/' | relative_url }}">Read the Bone-to-Shape project overview →</a></p>
 </section>
 
-<section class="section" id="publications" aria-labelledby="publications-heading">
-<h2 id="publications-heading">Publications &amp; Patents</h2>
+<section class="section" id="outputs" aria-labelledby="outputs-heading">
+<h2 id="outputs-heading">Selected Outputs</h2>
 {% include publications.html %}
 {% include home/patents.html %}
 </section>

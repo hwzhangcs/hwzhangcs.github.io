@@ -4,7 +4,7 @@
   <li><time>{{ edu.year_label }}</time><div>
     <h3>{{ edu.institution }}</h3>
     <p class="meta">{{ edu.degree }} · {{ edu.program }}</p>
-    <p class="standing">GPA <strong>{{ edu.gpa }}</strong> · <strong>Ranked {{ edu.rank_short }}</strong> in class · Weighted average {{ edu.weighted_average }}</p>
+    <p class="standing">GPA <strong>{{ edu.gpa }}</strong> · <strong>Ranked {{ edu.rank_short }}</strong> in major · Weighted average {{ edu.weighted_average }}</p>
     <p class="courses"><span>Top courses</span> {% assign courses = edu.courses | where: 'home', true %}{% for course in courses %}{{ course.name }} <b>{{ course.score }}</b>{% unless forloop.last %}<span class="sep" aria-hidden="true"> · </span>{% endunless %}{% endfor %}</p>
   </div></li>
 </ol>

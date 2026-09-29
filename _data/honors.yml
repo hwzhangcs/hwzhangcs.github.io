@@ -5,20 +5,23 @@
   date: 2025–2026 academic year
   short_date: 2025–26
   home: true
-- title: Third-Class Comprehensive Scholarship
-  zh: 综合三等奖学金
-  detail: Sichuan University
-  date: 2024–2025 academic year
-  short_date: 2024–25
 - title: Third Prize, Sichuan Division
   detail: 17th Chinese Mathematics Competition for College Students, Non-Mathematics Category A
   date: "2025"
   short_date: "2025"
   home: true
-- title: Outstanding Undergraduate Student Cadre
+- title: Third-Class Comprehensive Scholarship
+  zh: 综合三等奖学金
   detail: Sichuan University
   date: 2024–2025 academic year
   short_date: 2024–25
+  home: true
+- title: Outstanding Undergraduate Student Cadre
+  zh: 优秀学生干部
+  detail: Sichuan University
+  date: 2024–2025 academic year
+  short_date: 2024–25
+  home: true
 - title: Provincial Third Prize, Ascend AI Track
   detail: Huawei ICT Competition
   date: "2024"

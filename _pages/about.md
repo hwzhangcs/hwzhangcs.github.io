@@ -3,7 +3,7 @@ layout: academic
 hero: true
 permalink: /
 title: "Hanwen Zhang"
-excerpt: "Hanwen Zhang is a computer science undergraduate at Sichuan University, ranked first in the Honors Class, interested in spatial reasoning in multimodal models and generative world models for embodied agents, with a background in generative 3D vision."
+excerpt: "Hanwen Zhang ranks first in the Computer Science Honors Class at Sichuan University, a selective standalone major, and is interested in spatial reasoning in multimodal models and generative world models for embodied agents, with a background in generative 3D vision."
 redirect_from:
   - /about/
   - /about.html

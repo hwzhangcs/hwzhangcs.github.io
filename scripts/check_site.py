@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Validate the built site's public surface, markup and local links (stdlib only)."""
+import re
 import sys
 from collections import Counter
 from html.parser import HTMLParser
@@ -16,6 +17,8 @@ class Page(HTMLParser):
         self.nested_paragraph = False
         self.in_paragraph = False
         self.main_count = 0
+        self.raw_markdown = []
+        self.skip_text = 0
         self.feed(source)
 
     def handle_starttag(self, tag, attrs):
@@ -40,10 +43,19 @@ class Page(HTMLParser):
         if tag == 'p':
             self.nested_paragraph |= self.in_paragraph
             self.in_paragraph = True
+        if tag in ('script', 'style', 'code', 'pre'):
+            self.skip_text += 1
 
     def handle_endtag(self, tag):
         if tag == 'p':
             self.in_paragraph = False
+        if tag in ('script', 'style', 'code', 'pre'):
+            self.skip_text -= 1
+
+    def handle_data(self, data):
+        # Markdown left unrendered (e.g. inside an HTML block) shows up as literal markers.
+        if not self.skip_text and re.search(r'(^|\n)\s*#{1,6} \S|\*\*\S', data):
+            self.raw_markdown.append(data.strip()[:60])
 
 
 root = Path(sys.argv[1] if len(sys.argv) > 1 else '_site').resolve()
@@ -59,6 +71,8 @@ for path, page in pages.items():
             errors.append(f'{rel}: expected one main and one h1')
         if page.nested_paragraph:
             errors.append(f'{rel}: nested paragraph markup')
+        if page.raw_markdown:
+            errors.append(f'{rel}: unrendered Markdown {page.raw_markdown}')
         if len(page.canonical) != 1:
             errors.append(f'{rel}: expected one canonical URL')
         for previous, current in zip(page.headings, page.headings[1:]):

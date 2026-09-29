@@ -11,14 +11,14 @@
   date: "Jul 2026 – Present"
   supervisor: Xinke Li
   bullets:
-    - Investigated sparse-view 3D scene reconstruction with video diffusion, predicting unobserved views from a small set of input images.
+    - Investigating sparse-view 3D scene reconstruction building on GenRecon, which lifts an object-level 3D generative prior (TRELLIS) to scene scale.
     - Reproduced the GenRecon and ReconViaGen pipelines and analyzed where reconstruction errors arise across their stages.
   homepage:
     current: true
     kicker: Current research · Jul 2026–
-    title: Sparse-view scene generation with video diffusion
+    title: Sparse-view 3D scene reconstruction with 3D generative priors
     meta: "Research intern · Department of Data Science, City University of Hong Kong · Supervisor: Xinke Li"
-    summary: 'Investigating sparse-view 3D scene reconstruction with video diffusion by predicting unobserved views from a small set of input images. Reproduced the GenRecon and ReconViaGen pipelines and analyzed where reconstruction errors arise across their stages.'
+    summary: 'Investigating sparse-view 3D scene reconstruction building on GenRecon, which lifts an object-level 3D generative prior (TRELLIS) to scene scale. Reproduced the GenRecon and ReconViaGen pipelines and analyzed where reconstruction errors arise across their stages.'
 
 - id: animal-reconstruction
   title: "Bone-to-Shape: Single-Image Animal Reconstruction"

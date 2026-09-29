@@ -20,20 +20,20 @@ Computer Science Honors Class · Sichuan University · Chengdu, China<br>
 <span class="cv-action-note">One-page academic CV · Updated September 28, 2026</span>
 </div>
 
-## Research focus
+<h2 id="research-focus">Research focus</h2>
 
-I am interested in spatial reasoning in multimodal models and generative world models for embodied agents. My background is in generative 3D vision: single-image animal reconstruction with shape priors, and sparse-view scene reconstruction with video diffusion models.
+<p>I am interested in spatial reasoning in multimodal models and generative world models for embodied agents. My background is in generative 3D vision: single-image animal reconstruction with shape priors and video diffusion, and sparse-view 3D scene reconstruction with 3D generative priors.</p>
 
-## Selected experience
+<h2 id="selected-experience">Selected experience</h2>
 
 <ul class="cv-highlight-list">
-<li><strong>City University of Hong Kong.</strong> Research intern investigating sparse-view 3D scene reconstruction with video diffusion; reproduced the GenRecon and ReconViaGen pipelines and analyzed where reconstruction errors arise across their stages.</li>
+<li><strong>City University of Hong Kong.</strong> Research intern investigating sparse-view 3D scene reconstruction that builds on GenRecon and its TRELLIS-based 3D generative prior; reproduced the GenRecon and ReconViaGen pipelines and analyzed where reconstruction errors arise across their stages.</li>
 <li><strong>Bone-to-Shape.</strong> Project lead on single-image animal reconstruction using animal pose and shape priors, video diffusion, and 3D Gaussian Splatting. <a href="{{ '/research/bone-to-shape/' | relative_url }}">Project overview →</a></li>
 <li><strong>Deep-Hole Guardian.</strong> Team member processing depth-camera point clouds for deep blind-hole defect detection in a SCARA-robot inspection system.</li>
 <li><strong>Publication.</strong> Third author of a 2026 <em>International Journal of Approximate Reasoning</em> article on kernel self-representation learning based fuzzy-neighborhood outlier detection.</li>
 </ul>
 
-## Academic links
+<h2 id="academic-links">Academic links</h2>
 
 <p class="cv-profile-links"><a href="{{ site.author.googlescholar }}">Google Scholar</a><a href="{{ site.author.orcid }}">ORCID</a><a href="https://github.com/{{ site.author.github }}">GitHub</a><a href="mailto:{{ site.author.email }}">Email</a></p>
 

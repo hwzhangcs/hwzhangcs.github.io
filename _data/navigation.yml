@@ -1,10 +1,13 @@
-# Main navigation. Hash links point to sections of the homepage.
+# Main navigation. Homepage sections use hash links; CV is the only standalone page.
+# `section` marks the item as current on pages under that path (e.g. project detail pages).
 main:
   - title: "Research"
     url: /#research
+    section: /research/
   - title: "Publications"
     url: /#publications
   - title: "Software"
-    url: /portfolio/
+    url: /#software
+    section: /portfolio/
   - title: "CV"
     url: /cv/

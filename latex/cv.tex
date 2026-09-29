@@ -66,7 +66,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1\vspace{-2pt}}
   }
 }
 
@@ -109,8 +109,17 @@
     \end{tabularx}\vspace{-7pt}
 }
 
-% A full-width line of small text inside a section (publications, research interests).
+% Full-width lines of small text inside a section (research interests, publications, skills).
+\newcommand{\resumeLineListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=4pt, parsep=0pt]}
+\newcommand{\resumeLineListEnd}{\end{itemize}}
 \newcommand{\resumeLine}[1]{\item\small{#1}}
+% A line of text with a right-aligned date, aligned with the dates of \resumeSubheading.
+\newcommand{\resumeDatedLine}[2]{
+    \item
+    \begin{tabularx}{0.97\textwidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{1.5em}}r@{}}
+      \small#1 & \small#2 \\
+    \end{tabularx}\vspace{-4pt}
+}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -133,28 +142,28 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Sichuan University}{Chengdu, China}
-      {B.Eng. in Computer Science and Technology; Honors Class}{Sep 2024 -- Expected 2028}
+      {Sichuan University}{Sep 2024 -- Expected 2028}
+      {B.Eng. in Computer Science and Technology; Honors Class}{Chengdu, China}
       \resumeItemListStart
-        \resumeItem{\textbf{GPA: 3.96/4.00 $\cdot$ Rank: 1/12}.}
-        \resumeItem{Relevant coursework: Theory of Optimization (98), Probability and Statistics (97), Artificial Intelligence (96), Multimodal Learning (90).}
+        \resumeItem{\textbf{GPA: 3.96/4.00}, ranked \textbf{1/12} in the Honors Class.}
+        \resumeItem{Relevant coursework: Theory of Optimization (98), Probability and Statistics (97), Introduction to Artificial Intelligence (96), Introduction to Multimodal Learning (90).}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %-----------RESEARCH INTERESTS-----------
 \section{Research Interests}
-  \begin{itemize}[leftmargin=0.15in, label={}]
-    \resumeLine{Generative 3D vision and spatial intelligence, with interests in geometry-aware reasoning in vision-language models and world models for embodied agents.}
-  \end{itemize}
+  \resumeLineListStart
+    \resumeLine{Spatial reasoning in multimodal models and generative world models for embodied agents, building on a background in generative 3D vision and video diffusion.}
+  \resumeLineListEnd
 
 %-----------RESEARCH EXPERIENCE-----------
 \section{Research Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
       {City University of Hong Kong}{Jul 2026 -- Present}
-      {Research Intern, Department of Data Science (Supervisor: Xinke Li)}{Hong Kong}
+      {Research Intern, Department of Data Science (Supervisor: Xinke Li)}{Hong Kong \& Remote}
       \resumeItemListStart
-        \resumeItem{Investigated sparse-view 3D scene reconstruction with video diffusion, predicting unobserved views from a small set of input images.}
+        \resumeItem{Investigating sparse-view 3D scene reconstruction with video diffusion, predicting unobserved views from a small set of input images.}
         \resumeItem{Reproduced the GenRecon and ReconViaGen pipelines and analyzed where reconstruction errors arise across their stages.}
       \resumeItemListEnd
 
@@ -162,12 +171,12 @@
       {Bone-to-Shape: Single-Image Animal Reconstruction}{Jan 2026 -- Sep 2026}
       {Project Lead, Provincial Undergraduate Innovation Training Program}{Sichuan University}
       \resumeItemListStart
-        \resumeItem{Built an end-to-end pipeline for single-image animal reconstruction using pose and shape priors, video-diffusion-based novel-view synthesis, and 3D Gaussian Splatting (3DGS).}
-        \resumeItem{Investigated how anatomical and body-shape priors constrain geometry across generated views; first inventor on the ``Animal 3D Reconstruction Using Body-Shape Priors'' patent application, No. 202611403381.7 (filed Sep 2026).}
+        \resumeItem{Built a single-image animal reconstruction pipeline combining AniMer pose and shape priors, video-diffusion novel-view synthesis, and 3D Gaussian Splatting (3DGS).}
+        \resumeItem{Investigated how anatomical and body-shape priors constrain geometry across generated views; this work led to the patent application listed below.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Deep-Hole Guardian: Embodied Perception for Defect Inspection}{Jan 2026 -- Sep 2026}
+      {Deep-Hole Guardian: Robotic Deep-Hole Defect Inspection}{Jan 2026 -- Sep 2026}
       {Team Member, University-Level Undergraduate Innovation Training Program}{Sichuan University}
       \resumeItemListStart
         \resumeItem{Processed depth-camera point clouds for deep blind-hole defect detection in a SCARA-robot inspection system.}
@@ -175,28 +184,28 @@
   \resumeSubHeadingListEnd
 
 %-----------PUBLICATIONS-----------
-\section{Publications}
-  \begin{itemize}[leftmargin=0.15in, label={}]
-    \resumeLine{Yijia Chen, Ze Zhang, \textbf{Hanwen Zhang}, Jiaqi Yang, Bingye Zhou, and Zhong Yuan. ``Kernel self-representation learning based fuzzy neighborhood outlier detection.'' \textit{International Journal of Approximate Reasoning}, 198:109769, 2026. \href{https://doi.org/10.1016/j.ijar.2026.109769}{\underline{DOI}}. Third author; contribution: Methodology, Formal Analysis.}
-  \end{itemize}
+\section{Publications \& Patents}
+  \resumeLineListStart
+    \resumeLine{Yijia Chen, Ze Zhang, \textbf{Hanwen Zhang}, Jiaqi Yang, Bingye Zhou, and Zhong Yuan. ``Kernel self-representation learning based fuzzy neighborhood outlier detection.'' \textit{International Journal of Approximate Reasoning}, 198:109769, 2026. \href{https://doi.org/10.1016/j.ijar.2026.109769}{\underline{DOI}}. \\ \textit{Contribution: methodology and formal analysis.}}
+    \resumeLine{``Animal 3D Reconstruction Using Body-Shape Priors.'' Chinese invention patent application No. 202611403381.7, filed Sep 2026; applicant: Sichuan University. \\ \textit{\textbf{First-listed inventor}. Passed preliminary examination; pending publication, not granted.}}
+  \resumeLineListEnd
 
 %-----------HONORS-----------
 \section{Honors \& Awards}
-  \begin{itemize}[leftmargin=0.15in, label={}]
-    \resumeLine{First-Class Single-Category Scholarship, Sichuan University (2025--2026).}
-    \resumeLine{Third-Class Comprehensive Scholarship, Sichuan University (2024--2025).}
-    \resumeLine{Provincial Third Prize, Ascend AI Track, Huawei ICT Competition (2024).}
-    \resumeLine{Third Prize, Sichuan Division, Chinese Mathematics Competition for College Students (2025).}
-  \end{itemize}
+  \resumeLineListStart
+    \resumeDatedLine{First-Class Single-Category Scholarship, Sichuan University}{2025 -- 2026}
+    \resumeDatedLine{Third Prize, Sichuan Division, Chinese Mathematics Competition for College Students}{2025}
+    \resumeDatedLine{Third-Class Comprehensive Scholarship, Sichuan University}{2024 -- 2025}
+    \resumeDatedLine{Provincial Third Prize, Ascend AI Track, Huawei ICT Competition}{2024}
+  \resumeLineListEnd
 
 %-----------SKILLS-----------
 \section{Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Methods}{: video diffusion, 3D Gaussian Splatting, novel-view synthesis, point-cloud processing} \\
-     \textbf{Programming / ML}{: Python, PyTorch, C/C++, scikit-learn}
-    }}
- \end{itemize}
+  \resumeLineListStart
+    \resumeLine{\textbf{Methods:} video diffusion, 3D Gaussian Splatting, novel-view synthesis, point-cloud processing \\
+      \textbf{Programming:} Python, C/C++ \\
+      \textbf{Frameworks:} PyTorch, scikit-learn}
+  \resumeLineListEnd
 
 %-------------------------------------------
 \end{document}

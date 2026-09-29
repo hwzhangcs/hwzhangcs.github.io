@@ -3,7 +3,8 @@
     <a class="site-name" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Hanwen Zhang</a>
     <ul class="nav-links">
       {% for link in site.data.navigation.main %}
-      <li><a href="{{ link.url | relative_url }}"{% unless link.url contains '#' %}{% if page.url contains link.url %} aria-current="page"{% endif %}{% endunless %}>{{ link.title }}</a></li>
+      {% assign current = false %}{% unless link.url contains '#' %}{% if page.url contains link.url %}{% assign current = true %}{% endif %}{% endunless %}{% if link.section and page.url contains link.section %}{% assign current = true %}{% endif %}
+      <li><a href="{{ link.url | relative_url }}"{% if current %} aria-current="page"{% endif %}>{{ link.title }}</a></li>
       {% endfor %}
     </ul>
     <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme"><span class="theme-icon-dark">{% include icon.html name="moon" %}</span><span class="theme-icon-light">{% include icon.html name="sun" %}</span></button>

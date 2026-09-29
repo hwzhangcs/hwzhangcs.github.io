@@ -80,7 +80,7 @@ for path, page in pages.items():
             errors.append(f'{rel}: missing anchor {link}')
 
 expected = {'index.html', 'cv/index.html', 'publications/index.html', 'portfolio/index.html',
-            'research/bone-to-shape/index.html', 'sitemap/index.html', '404.html', 'about.html', 'about/index.html',
+            'research/index.html', 'research/bone-to-shape/index.html', 'sitemap/index.html', '404.html', 'about.html', 'about/index.html',
             'cv-json/index.html', 'resume.html', 'resume-json.html',
             'portfolio/paper-refiner/index.html', 'portfolio/bouncing-birds/index.html',
             'portfolio/smart-pos-system/index.html', 'portfolio/network-threat-detection/index.html'}
@@ -95,7 +95,7 @@ if stray:
 sitemap = root / 'sitemap.xml'
 if sitemap.exists():
     listed = {urlsplit(loc.text).path for loc in ET.fromstring(sitemap.read_text()).iter() if loc.tag.endswith('loc')}
-    redirects = {'/about.html', '/about/', '/cv-json/', '/resume.html', '/resume-json.html'}
+    redirects = {'/about.html', '/about/', '/research/', '/publications/', '/cv-json/', '/resume.html', '/resume-json.html'}
     if listed & redirects:
         errors.append(f'sitemap.xml lists redirect pages: {sorted(listed & redirects)}')
 if errors:

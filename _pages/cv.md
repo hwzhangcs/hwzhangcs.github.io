@@ -22,7 +22,7 @@ Computer Science Honors Class · Sichuan University · Chengdu, China<br>
 
 ## Research focus
 
-I am interested in generative 3D vision and spatial intelligence, especially geometry-aware reasoning in vision-language models and world models for embodied agents. My background includes single-image animal reconstruction and sparse-view scene reconstruction with video diffusion models.
+I am interested in spatial reasoning in multimodal models and generative world models for embodied agents. My background is in generative 3D vision: single-image animal reconstruction with shape priors, and sparse-view scene reconstruction with video diffusion models.
 
 ## Selected experience
 

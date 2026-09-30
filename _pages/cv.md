@@ -2,7 +2,7 @@
 layout: academic
 title: "CV"
 permalink: /cv/
-updated: 2026-09-28
+updated: 2026-09-30
 excerpt: "Hanwen Zhang's official PDF CV, research focus, selected experience, and academic links."
 redirect_from:
   - /resume
@@ -17,12 +17,12 @@ Computer Science Honors Class · Sichuan University · Chengdu, China<br>
 
 <div class="cv-actions">
 <a class="button-link" href="{{ '/assets/hanwen-zhang-cv.pdf' | relative_url }}">View or download CV PDF</a>
-<span class="cv-action-note">One-page academic CV · Updated September 28, 2026</span>
+<span class="cv-action-note">One-page academic CV · Updated September 30, 2026</span>
 </div>
 
 <h2 id="research-focus">Research focus</h2>
 
-<p>I am interested in spatial reasoning in multimodal models and generative world models for embodied agents. My background is in generative 3D vision: single-image animal reconstruction with shape priors and video diffusion, and sparse-view 3D scene reconstruction with 3D generative priors.</p>
+<p>I am interested in spatial and temporal reasoning in multimodal models, world models, and embodied and agentic AI. My background is in generative 3D vision: single-image animal reconstruction with shape priors and video diffusion, and sparse-view 3D scene reconstruction with 3D generative priors.</p>
 
 <h2 id="selected-experience">Selected experience</h2>
 

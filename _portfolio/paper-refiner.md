@@ -15,7 +15,7 @@ excerpt: "Multi-agent LaTeX paper revision system. Designed and implemented the 
 
 ## What the System Does
 
-Paper Refiner connects paper review with source-level editing. A reviewer provides feedback, an editor proposes changes, and an orchestrator coordinates the revision process, compilation, and version tracking.
+Paper Refiner connects paper review with source-level editing. A reviewer provides feedback, an editor proposes changes, and an orchestrator coordinates the revision process, verification of each edit, and version tracking.
 
 <figure class="project-diagram">
 <img src="{{ '/assets/diagrams/paper-refiner.svg' | relative_url }}" alt="An orchestrator coordinates a reviewer and editor. Feedback leads to JSON patches, with version history and revision reports." width="560" height="360">
@@ -27,7 +27,7 @@ Paper Refiner connects paper review with source-level editing. A reviewer provid
 <ol class="method-steps">
 <li><strong>Establish a review baseline.</strong> The initial review uses a compiled PDF to identify prioritized issues and produce a baseline score.</li>
 <li><strong>Revise in focused passes.</strong> Subsequent iterations address structure, coherence, paragraphs, sentences, and polish. Reviewer feedback guides the editor’s JSON patches to the LaTeX source.</li>
-<li><strong>Check and record changes.</strong> The orchestrator manages compilation checks and revision history. Reports explain the edits and track issues.</li>
+<li><strong>Verify and record changes.</strong> After each patch, the reviewer checks whether the targeted issue is resolved. The orchestrator saves every section version and records each patch with its issue, rationale, and verification result. Reports explain the edits and track issues.</li>
 </ol>
 
 ## My Contribution

@@ -96,7 +96,7 @@ for path, page in pages.items():
 expected = {'index.html', 'cv/index.html', 'publications/index.html', 'portfolio/index.html',
             'research/index.html', 'research/bone-to-shape/index.html', 'sitemap/index.html', '404.html', 'about.html', 'about/index.html',
             'cv-json/index.html', 'resume.html', 'resume-json.html',
-            'portfolio/paper-refiner/index.html', 'portfolio/bouncing-birds/index.html',
+            'portfolio/mllm-dpo/index.html', 'portfolio/paper-refiner/index.html', 'portfolio/bouncing-birds/index.html',
             'portfolio/smart-pos-system/index.html', 'portfolio/network-threat-detection/index.html'}
 actual = {p.relative_to(root).as_posix() for p in pages}
 if actual != expected:

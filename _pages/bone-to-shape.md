@@ -24,7 +24,7 @@ excerpt: "Single-image animal reconstruction with animal shape priors and video 
 
 <ol class="method-steps">
 <li><strong>Start from a single animal image.</strong> This is the observed input to the project’s reconstruction pipeline.</li>
-<li><strong>Generate novel views.</strong> Draw on a ReconX-inspired video diffusion approach to produce an orbit-view video and supply additional views for reconstruction.</li>
+<li><strong>Generate novel views.</strong> Following ReconX, use a pretrained video diffusion model to produce an orbit-view video and supply additional views for reconstruction.</li>
 <li><strong>Reconstruct a 3D representation.</strong> Use the generated video to build a 3D Gaussian Splatting (3DGS) representation.</li>
 </ol>
 

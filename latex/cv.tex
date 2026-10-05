@@ -146,14 +146,13 @@
       {B.Eng. in Computer Science and Technology; Honors Class}{Chengdu, China}
       \resumeItemListStart
         \resumeItem{\textbf{GPA: 3.96/4.00}, ranked \textbf{1/12} in major (the Honors Class is a selective standalone major).}
-        \resumeItem{Relevant coursework: Theory of Optimization (98), Probability and Statistics (97), Numerical Computing Method (97), Introduction to Artificial Intelligence (96).}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %-----------RESEARCH INTERESTS-----------
 \section{Research Interests}
   \resumeLineListStart
-    \resumeLine{Spatial and temporal reasoning in multimodal models, world models, and embodied and agentic AI, building on a background in generative 3D vision and video diffusion.}
+    \resumeLine{Multimodal reasoning about the physical world, and when it can be trusted: how multimodal LLMs and agents infer space, unseen regions, and change from images and video, and how to tell what they saw from what they imagined.}
   \resumeLineListEnd
 
 %-----------RESEARCH EXPERIENCE-----------
@@ -163,16 +162,16 @@
       {City University of Hong Kong}{Jul 2026 -- Present}
       {Research Intern, Department of Data Science (Supervisor: Xinke Li)}{Hong Kong \& Remote}
       \resumeItemListStart
-        \resumeItem{Investigating sparse-view 3D scene reconstruction building on GenRecon, which lifts an object-level 3D generative prior (TRELLIS) to scene scale.}
-        \resumeItem{Reproduced the GenRecon and ReconViaGen pipelines and analyzed where reconstruction errors arise across their stages.}
+        \resumeItem{Improving the generation process of GenRecon, a TRELLIS-based generative scene reconstructor, for sparse-view 3D reconstruction.}
+        \resumeItem{Reproduced GenRecon and ReconViaGen and analyzed where errors arise across stages. Paper in preparation.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Bone-to-Shape: Single-Image Animal Reconstruction}{Jan 2026 -- Sep 2026}
       {Project Lead, Provincial Undergraduate Innovation Training Program}{Sichuan University}
       \resumeItemListStart
-        \resumeItem{Built a single-image animal reconstruction pipeline combining AniMer pose and shape priors, video-diffusion novel-view synthesis, and 3D Gaussian Splatting (3DGS).}
-        \resumeItem{Investigated how anatomical and body-shape priors constrain geometry across generated views; this work led to the patent application listed below.}
+        \resumeItem{Combined AniMer shape priors, novel views from a pretrained video diffusion model, and 3DGS for single-image animal reconstruction.}
+        \resumeItem{Studied how body-shape priors constrain geometry across generated views; led to the patent application below.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -183,10 +182,26 @@
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeWrapHeading
+      {\textbf{MLLM Hallucination Mitigation with DPO} $|$ \emph{Qwen2.5-VL, LLaMA-Factory} $|$ \href{https://github.com/hwzhangcs/multimodal}{\underline{Code}}}{2026}
+      \resumeItemListStart
+        \resumeItem{Course project: an LLM judge picks the least/most-hallucinated of ten answers, giving 5,059 DPO pairs.}
+        \resumeItem{Fine-tuned Qwen2.5-VL-3B-Instruct with LoRA DPO on 8$\times$A100 GPUs; evaluated on AMBER.}
+      \resumeItemListEnd
+    \resumeWrapHeading
+      {\textbf{Paper Refiner: Multi-Agent LaTeX Revision} $|$ \emph{Python, LLM APIs} $|$ \href{https://github.com/hwzhangcs/paper-refiner}{\underline{Code}}}{2026}
+      \resumeItemListStart
+        \resumeItem{Designed the orchestrator of a reviewer--editor agent loop that applies feedback as JSON patches to LaTeX.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
 %-----------PUBLICATIONS-----------
 \section{Publications \& Patents}
   \resumeLineListStart
-    \resumeLine{Yijia Chen, Ze Zhang, \textbf{Hanwen Zhang}, Jiaqi Yang, Bingye Zhou, and Zhong Yuan. ``Kernel self-representation learning based fuzzy neighborhood outlier detection.'' \textit{International Journal of Approximate Reasoning}, 198:109769, 2026. \href{https://doi.org/10.1016/j.ijar.2026.109769}{\underline{DOI}}. \\ \textit{Contribution: methodology and formal analysis.}}
+    \resumeLine{Yijia Chen, Ze Zhang, \textbf{Hanwen Zhang}, Jiaqi Yang, Bingye Zhou, and Zhong Yuan. ``Kernel self-representation learning based fuzzy neighborhood outlier detection.'' \textit{International Journal of Approximate Reasoning}, 198:109769, 2026. \href{https://doi.org/10.1016/j.ijar.2026.109769}{\underline{DOI}}. \textit{Contribution: method design and formal analysis.}}
     \resumeLine{``Animal 3D Reconstruction Using Body-Shape Priors.'' Chinese invention patent application No. 202611403381.7, filed Sep 2026; applicant: Sichuan University. \\ \textit{\textbf{First-listed inventor}. Passed preliminary examination; pending publication, not granted.}}
   \resumeLineListEnd
 
@@ -195,17 +210,14 @@
   \resumeLineListStart
     \resumeDatedLine{First-Class Single-Category Scholarship, Sichuan University}{2025 -- 2026}
     \resumeDatedLine{Third Prize, Sichuan Division, Chinese Mathematics Competition for College Students}{2025}
-    \resumeDatedLine{Third-Class Comprehensive Scholarship, Sichuan University}{2024 -- 2025}
-    \resumeDatedLine{Outstanding Undergraduate Student Cadre, Sichuan University}{2024 -- 2025}
     \resumeDatedLine{Provincial Third Prize, Ascend AI Track, Huawei ICT Competition}{2024}
   \resumeLineListEnd
 
 %-----------SKILLS-----------
 \section{Skills}
   \resumeLineListStart
-    \resumeLine{\textbf{Methods:} 3D generative priors (TRELLIS), video diffusion, 3D Gaussian Splatting, point-cloud processing \\
-      \textbf{Programming:} Python, C/C++ \\
-      \textbf{Frameworks:} PyTorch, scikit-learn}
+    \resumeLine{\textbf{Methods:} VLM fine-tuning (LoRA, DPO), LLM-as-judge pipelines, TRELLIS, 3D Gaussian Splatting, point clouds \\
+      \textbf{Tools:} Python, C/C++, PyTorch, LLaMA-Factory, scikit-learn}
   \resumeLineListEnd
 
 %-------------------------------------------

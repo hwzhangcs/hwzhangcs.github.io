@@ -21,7 +21,7 @@ The course provided ten on-policy answers from Qwen2.5-VL-3B-Instruct for each o
 
 <ol class="method-steps">
 <li><strong>Judge the candidates.</strong> A multimodal LLM judge scores the ten answers per question. Each decision is stored with its confidence, score gap, and reasoning, so the preference data can be audited.</li>
-<li><strong>Re-judge uncertain cases.</strong> Pairs with low judge confidence or a small score gap are re-judged by a second model on the same image, prompt, and candidates. About 3,100 of the final 10,000 pairs were revised this way.</li>
+<li><strong>Re-judge uncertain cases.</strong> Pairs with low judge confidence or a small score gap are re-judged by a second model on the same image, prompt, and candidates. About 3,100 of the final 10,000 pairs were re-judged this way.</li>
 <li><strong>Train and evaluate.</strong> The model is fine-tuned with LoRA DPO in LLaMA-Factory for two epochs and compared with the base model on the AMBER hallucination benchmark, using the same queries and unchanged evaluation code.</li>
 </ol>
 

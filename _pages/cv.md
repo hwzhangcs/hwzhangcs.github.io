@@ -22,7 +22,7 @@ Computer Science Honors Class · Sichuan University · Chengdu, China<br>
 
 <h2 id="research-focus">Research focus</h2>
 
-<p>I am interested in multimodal reasoning about the physical world, and in when that reasoning can be trusted: how multimodal LLMs and agents infer space, unseen regions, and change from images and video, and how to tell what they saw from what they imagined. My background is in generative 3D vision: single-image animal reconstruction with shape priors and novel views from a pretrained video diffusion model, and sparse-view 3D scene reconstruction with 3D generative priors. In a course project, I also fine-tuned a vision-language model with DPO for hallucination mitigation.</p>
+<p>I am interested in how multimodal models and agents reason about the physical world: where things are, how views relate, and what lies out of view. I am also interested in generative models that fill in what a model cannot see, and in keeping their predictions consistent with what was observed. My background is in generative 3D vision: single-image animal reconstruction with shape priors and novel views from a pretrained video diffusion model, and sparse-view 3D scene reconstruction with 3D generative priors. In a course project, I also fine-tuned a vision-language model with DPO for hallucination mitigation.</p>
 
 <h2 id="selected-experience">Selected experience</h2>
 

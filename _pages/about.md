@@ -3,7 +3,7 @@ layout: academic
 hero: true
 permalink: /
 title: "Hanwen Zhang"
-excerpt: "Hanwen Zhang ranks first in the Computer Science Honors Class at Sichuan University, a selective standalone major, and is interested in multimodal reasoning about the physical world and when it can be trusted, with a background in generative 3D vision."
+excerpt: "Hanwen Zhang ranks first in the Computer Science Honors Class at Sichuan University, a selective standalone major, and is interested in multimodal reasoning about the physical world and generative models of what a model cannot see, with a background in generative 3D vision."
 redirect_from:
   - /about/
   - /about.html

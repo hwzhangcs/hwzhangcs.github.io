@@ -8,14 +8,14 @@
   title: City University of Hong Kong
   role: Research Intern
   institution: Department of Data Science
-  date: "Jul 2026 – Present"
+  date: "Mar 2026 – Present"
   supervisor: Xinke Li
   bullets:
     - Improving the generation process of GenRecon, which lifts an object-level 3D generative prior (TRELLIS) to scene scale, for sparse-view 3D reconstruction.
     - Reproduced the GenRecon and ReconViaGen pipelines and analyzed where reconstruction errors arise across their stages. A paper on this work is in preparation.
   homepage:
     current: true
-    kicker: Current research · Jul 2026–
+    kicker: Current research · Mar 2026–
     title: Sparse-view 3D scene reconstruction with 3D generative priors
     meta: "Research intern · Department of Data Science, City University of Hong Kong · Supervisor: Xinke Li"
     summary: 'Improving the generation process of GenRecon, which lifts an object-level 3D generative prior (TRELLIS) to scene scale, for sparse-view 3D reconstruction. Reproduced the GenRecon and ReconViaGen pipelines and analyzed where reconstruction errors arise across their stages. A paper on this work is in preparation.'
